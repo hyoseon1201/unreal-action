@@ -48,6 +48,21 @@
     <ClInclude Include="..\..\Source\W1\Characters\W1CharacterBase.h">
       <Filter>Source\W1\Characters</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\W1\Characters\W1HeroCharacter.cpp">
+      <Filter>Source\W1\Characters</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Characters\W1HeroCharacter.h">
+      <Filter>Source\W1\Characters</Filter>
+    </ClInclude>
+    <Filter Include="Source\W1\Controllers">
+      <UniqueIdentifier>{FD44A824-E318-3F0C-9A14-F5954997E0A7}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\W1\Controllers\W1HeroController.cpp">
+      <Filter>Source\W1\Controllers</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Controllers\W1HeroController.h">
+      <Filter>Source\W1\Controllers</Filter>
+    </ClInclude>
     <Filter Include="Source\W1\GameModes">
       <UniqueIdentifier>{708CE336-F685-37F6-A199-5F21D6D4A4F6}</UniqueIdentifier>
     </Filter>
