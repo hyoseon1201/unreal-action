@@ -1,7 +1,6 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
 #include "Characters/W1CharacterBase.h"
 #include "W1HeroCharacter.generated.h"
 

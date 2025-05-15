@@ -39,6 +39,15 @@
     <ClInclude Include="..\..\Source\W1\W1.h">
       <Filter>Source\W1</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\W1\W1DebugHelper.h">
+      <Filter>Source\W1</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\W1\W1GameplayTags.cpp">
+      <Filter>Source\W1</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\W1GameplayTags.h">
+      <Filter>Source\W1</Filter>
+    </ClInclude>
     <Filter Include="Source\W1\Characters">
       <UniqueIdentifier>{83F7527B-9074-3C0B-906E-8ABB6B347664}</UniqueIdentifier>
     </Filter>
@@ -71,11 +80,6 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\W1\GameModes\W1GameModeBase.h">
       <Filter>Source\W1\GameModes</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Source\W1\W1DebugHelper.h">
-      <Filter>Source\W1</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
