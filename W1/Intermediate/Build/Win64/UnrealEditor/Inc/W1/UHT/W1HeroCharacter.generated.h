@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define W1_W1HeroCharacter_generated_h
 
-#define FID_unreal_action_W1_Source_W1_Characters_W1HeroCharacter_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_unreal_action_W1_Source_W1_Characters_W1HeroCharacter_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAW1HeroCharacter(); \
 	friend struct Z_Construct_UClass_AW1HeroCharacter_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(AW1HeroCharacter)
 
 
-#define FID_unreal_action_W1_Source_W1_Characters_W1HeroCharacter_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_unreal_action_W1_Source_W1_Characters_W1HeroCharacter_h_14_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AW1HeroCharacter(); \
 private: \
@@ -37,12 +37,12 @@ public: \
 	NO_API virtual ~AW1HeroCharacter();
 
 
-#define FID_unreal_action_W1_Source_W1_Characters_W1HeroCharacter_h_12_PROLOG
-#define FID_unreal_action_W1_Source_W1_Characters_W1HeroCharacter_h_15_GENERATED_BODY \
+#define FID_unreal_action_W1_Source_W1_Characters_W1HeroCharacter_h_11_PROLOG
+#define FID_unreal_action_W1_Source_W1_Characters_W1HeroCharacter_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_unreal_action_W1_Source_W1_Characters_W1HeroCharacter_h_15_INCLASS_NO_PURE_DECLS \
-	FID_unreal_action_W1_Source_W1_Characters_W1HeroCharacter_h_15_ENHANCED_CONSTRUCTORS \
+	FID_unreal_action_W1_Source_W1_Characters_W1HeroCharacter_h_14_INCLASS_NO_PURE_DECLS \
+	FID_unreal_action_W1_Source_W1_Characters_W1HeroCharacter_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

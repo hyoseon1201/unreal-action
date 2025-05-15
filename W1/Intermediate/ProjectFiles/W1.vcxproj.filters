@@ -73,4 +73,9 @@
       <Filter>Source\W1\GameModes</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\W1\W1DebugHelper.h">
+      <Filter>Source\W1</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
