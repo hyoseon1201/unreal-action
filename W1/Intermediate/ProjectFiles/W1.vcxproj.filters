@@ -11,6 +11,7 @@
     <None Include="..\..\Source\W1Editor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -37,6 +38,24 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\W1\W1.h">
       <Filter>Source\W1</Filter>
+    </ClInclude>
+    <Filter Include="Source\W1\Characters">
+      <UniqueIdentifier>{83F7527B-9074-3C0B-906E-8ABB6B347664}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\W1\Characters\W1CharacterBase.cpp">
+      <Filter>Source\W1\Characters</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Characters\W1CharacterBase.h">
+      <Filter>Source\W1\Characters</Filter>
+    </ClInclude>
+    <Filter Include="Source\W1\GameModes">
+      <UniqueIdentifier>{708CE336-F685-37F6-A199-5F21D6D4A4F6}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\W1\GameModes\W1GameModeBase.cpp">
+      <Filter>Source\W1\GameModes</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\GameModes\W1GameModeBase.h">
+      <Filter>Source\W1\GameModes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

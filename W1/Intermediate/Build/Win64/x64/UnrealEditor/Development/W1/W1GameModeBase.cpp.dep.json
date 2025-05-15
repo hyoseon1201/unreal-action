@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\unreal-action\\w1\\source\\w1\\gamemodes\\w1gamemodebase.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\unreal-action\\w1\\intermediate\\build\\win64\\x64\\w1editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "e:\\unreal-action\\w1\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\w1\\definitions.w1.h",
+            "e:\\unreal-action\\w1\\source\\w1\\gamemodes\\w1gamemodebase.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "e:\\unreal-action\\w1\\intermediate\\build\\win64\\unrealeditor\\inc\\w1\\uht\\w1gamemodebase.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
