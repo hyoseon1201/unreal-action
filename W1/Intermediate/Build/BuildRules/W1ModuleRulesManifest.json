@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"E:\\unreal-action\\W1\\Source\\W1\\W1.Build.cs",
+		"E:\\unreal-action\\W1\\Source\\W1.Target.cs",
+		"E:\\unreal-action\\W1\\Source\\W1Editor.Target.cs"
+	],
+	"EngineVersion": "5.4.4"
+}

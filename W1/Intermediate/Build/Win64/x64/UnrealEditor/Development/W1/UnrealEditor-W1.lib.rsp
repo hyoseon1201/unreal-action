@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-W1.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"E:\unreal-action\W1\Intermediate\Build\Win64\x64\W1Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
+"E:\unreal-action\W1\Intermediate\Build\Win64\x64\UnrealEditor\Development\W1\W1.cpp.obj"
+"E:\unreal-action\W1\Intermediate\Build\Win64\x64\UnrealEditor\Development\W1\Default.rc2.res"
+/OUT:"E:\unreal-action\W1\Intermediate\Build\Win64\x64\UnrealEditor\Development\W1\UnrealEditor-W1.lib"
