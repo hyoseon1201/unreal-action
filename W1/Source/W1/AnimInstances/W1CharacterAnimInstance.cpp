@@ -22,5 +22,5 @@ void UW1CharacterAnimInstance::NativeThreadSafeUpdateAnimation(float DeltaSecond
 
 	GroundSpeed = OwningCharacter->GetVelocity().Size2D();
 
-	bAsAcceleration = OwningMovementComponent->GetCurrentAcceleration().SizeSquared2D() > 0.f;
+	bHasAcceleration = OwningMovementComponent->GetCurrentAcceleration().SizeSquared2D() > 0.f;
 }
