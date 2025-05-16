@@ -48,6 +48,36 @@
     <ClInclude Include="..\..\Source\W1\W1GameplayTags.h">
       <Filter>Source\W1</Filter>
     </ClInclude>
+    <Filter Include="Source\W1\AnimInstances">
+      <UniqueIdentifier>{ECA4739C-EE81-3D85-9607-48E3E8DFB66B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\W1\AnimInstances\W1AnimInstanceBase.cpp">
+      <Filter>Source\W1\AnimInstances</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\AnimInstances\W1AnimInstanceBase.h">
+      <Filter>Source\W1\AnimInstances</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\W1\AnimInstances\W1CharacterAnimInstance.cpp">
+      <Filter>Source\W1\AnimInstances</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\AnimInstances\W1CharacterAnimInstance.h">
+      <Filter>Source\W1\AnimInstances</Filter>
+    </ClInclude>
+    <Filter Include="Source\W1\AnimInstances\Hero">
+      <UniqueIdentifier>{4141C765-6527-366D-967A-3BE12C6FDE1A}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\W1\AnimInstances\Hero\W1HeroAnimInstance.cpp">
+      <Filter>Source\W1\AnimInstances\Hero</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\AnimInstances\Hero\W1HeroAnimInstance.h">
+      <Filter>Source\W1\AnimInstances\Hero</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\W1\AnimInstances\Hero\W1HeroLinkedAnimLayer.cpp">
+      <Filter>Source\W1\AnimInstances\Hero</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\AnimInstances\Hero\W1HeroLinkedAnimLayer.h">
+      <Filter>Source\W1\AnimInstances\Hero</Filter>
+    </ClInclude>
     <Filter Include="Source\W1\Characters">
       <UniqueIdentifier>{83F7527B-9074-3C0B-906E-8ABB6B347664}</UniqueIdentifier>
     </Filter>

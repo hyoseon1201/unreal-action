@@ -5,8 +5,10 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"E:/unreal-action/W1/Content/PlayerCharacter/BP_Hero_Character1.uasset",
-				"E:/unreal-action/W1/Content/PlayerCharacter/BP_HeroCharacter.uasset"
+				"E:/unreal-action/W1/Content/PlayerCharacter/BP_HeroCharacter.uasset",
+				"E:/unreal-action/W1/Content/PlayerCharacter/AnimBP/ABP_Hero.uasset",
+				"E:/unreal-action/W1/Content/PlayerCharacter/AnimBP/BlendSpace/BS_UnarmedLocomotion.uasset",
+				"E:/unreal-action/W1/Content/PlayerCharacter/BP_Hero_Character1.uasset"
 			]
 		}
 	]

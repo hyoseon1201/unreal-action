@@ -267,6 +267,22 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\W1\W1GameplayTags.h"/>
+    <ClCompile Include="..\..\Source\W1\AnimInstances\W1AnimInstanceBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\AnimInstances\W1AnimInstanceBase.h"/>
+    <ClCompile Include="..\..\Source\W1\AnimInstances\W1CharacterAnimInstance.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\AnimInstances\W1CharacterAnimInstance.h"/>
+    <ClCompile Include="..\..\Source\W1\AnimInstances\Hero\W1HeroAnimInstance.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\AnimInstances\Hero\W1HeroAnimInstance.h"/>
+    <ClCompile Include="..\..\Source\W1\AnimInstances\Hero\W1HeroLinkedAnimLayer.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\AnimInstances\Hero\W1HeroLinkedAnimLayer.h"/>
     <ClCompile Include="..\..\Source\W1\Characters\W1CharacterBase.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
