@@ -63,6 +63,18 @@
     <ClInclude Include="..\..\Source\W1\Characters\W1HeroCharacter.h">
       <Filter>Source\W1\Characters</Filter>
     </ClInclude>
+    <Filter Include="Source\W1\Components">
+      <UniqueIdentifier>{FC02A64D-D098-3476-B233-A65D711ABDD7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\W1\Components\Input">
+      <UniqueIdentifier>{E2DBC069-0CB4-3239-8F07-6506DA10383D}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\W1\Components\Input\W1InputComponent.cpp">
+      <Filter>Source\W1\Components\Input</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Components\Input\W1InputComponent.h">
+      <Filter>Source\W1\Components\Input</Filter>
+    </ClInclude>
     <Filter Include="Source\W1\Controllers">
       <UniqueIdentifier>{FD44A824-E318-3F0C-9A14-F5954997E0A7}</UniqueIdentifier>
     </Filter>
@@ -71,6 +83,18 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\W1\Controllers\W1HeroController.h">
       <Filter>Source\W1\Controllers</Filter>
+    </ClInclude>
+    <Filter Include="Source\W1\DataAssets">
+      <UniqueIdentifier>{05CC9218-C3BA-37C3-9995-35D451877012}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\W1\DataAssets\Input">
+      <UniqueIdentifier>{7332273F-FBE3-3A5C-AD40-D805D6186A64}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\W1\DataAssets\Input\DA_InputConfig.cpp">
+      <Filter>Source\W1\DataAssets\Input</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\DataAssets\Input\DA_InputConfig.h">
+      <Filter>Source\W1\DataAssets\Input</Filter>
     </ClInclude>
     <Filter Include="Source\W1\GameModes">
       <UniqueIdentifier>{708CE336-F685-37F6-A199-5F21D6D4A4F6}</UniqueIdentifier>

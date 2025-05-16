@@ -275,10 +275,18 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\W1\Characters\W1HeroCharacter.h"/>
+    <ClCompile Include="..\..\Source\W1\Components\Input\W1InputComponent.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Components\Input\W1InputComponent.h"/>
     <ClCompile Include="..\..\Source\W1\Controllers\W1HeroController.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\W1\Controllers\W1HeroController.h"/>
+    <ClCompile Include="..\..\Source\W1\DataAssets\Input\DA_InputConfig.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\DataAssets\Input\DA_InputConfig.h"/>
     <ClCompile Include="..\..\Source\W1\GameModes\W1GameModeBase.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
