@@ -63,6 +63,15 @@
     <ClInclude Include="..\..\Source\W1\AbilitySystems\W1AttributeSet.h">
       <Filter>Source\W1\AbilitySystems</Filter>
     </ClInclude>
+    <Filter Include="Source\W1\AbilitySystems\Abilities">
+      <UniqueIdentifier>{F242F0DE-5BC6-3B64-B880-9349200D47F5}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\W1\AbilitySystems\Abilities\W1GameplayAbility.cpp">
+      <Filter>Source\W1\AbilitySystems\Abilities</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\AbilitySystems\Abilities\W1GameplayAbility.h">
+      <Filter>Source\W1\AbilitySystems\Abilities</Filter>
+    </ClInclude>
     <Filter Include="Source\W1\AnimInstances">
       <UniqueIdentifier>{ECA4739C-EE81-3D85-9607-48E3E8DFB66B}</UniqueIdentifier>
     </Filter>
@@ -149,6 +158,24 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\W1\GameModes\W1GameModeBase.h">
       <Filter>Source\W1\GameModes</Filter>
+    </ClInclude>
+    <Filter Include="Source\W1\Items">
+      <UniqueIdentifier>{B377E2CC-6BDD-3F6B-B463-A4B692C306BE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\W1\Items\Weapons">
+      <UniqueIdentifier>{81A8DCB3-0567-30C0-8E9F-9F0CBC1811FB}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\W1\Items\Weapons\W1HeroWeapon.cpp">
+      <Filter>Source\W1\Items\Weapons</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Items\Weapons\W1HeroWeapon.h">
+      <Filter>Source\W1\Items\Weapons</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\W1\Items\Weapons\W1WeaponBase.cpp">
+      <Filter>Source\W1\Items\Weapons</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Items\Weapons\W1WeaponBase.h">
+      <Filter>Source\W1\Items\Weapons</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
