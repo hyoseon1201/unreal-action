@@ -48,6 +48,21 @@
     <ClInclude Include="..\..\Source\W1\W1GameplayTags.h">
       <Filter>Source\W1</Filter>
     </ClInclude>
+    <Filter Include="Source\W1\AbilitySystems">
+      <UniqueIdentifier>{C7F3684D-9F0E-3489-973C-0FFDACC2CFA6}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\W1\AbilitySystems\W1AbilitySystemComponent.cpp">
+      <Filter>Source\W1\AbilitySystems</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\AbilitySystems\W1AbilitySystemComponent.h">
+      <Filter>Source\W1\AbilitySystems</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\W1\AbilitySystems\W1AttributeSet.cpp">
+      <Filter>Source\W1\AbilitySystems</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\AbilitySystems\W1AttributeSet.h">
+      <Filter>Source\W1\AbilitySystems</Filter>
+    </ClInclude>
     <Filter Include="Source\W1\AnimInstances">
       <UniqueIdentifier>{ECA4739C-EE81-3D85-9607-48E3E8DFB66B}</UniqueIdentifier>
     </Filter>

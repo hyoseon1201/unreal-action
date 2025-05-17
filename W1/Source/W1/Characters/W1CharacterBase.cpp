@@ -1,5 +1,7 @@
 
 #include "Characters/W1CharacterBase.h"
+#include "AbilitySystems/W1AbilitySystemComponent.h"
+#include "AbilitySystems/W1AttributeSet.h"
 
 // Sets default values
 AW1CharacterBase::AW1CharacterBase()
@@ -9,5 +11,23 @@ AW1CharacterBase::AW1CharacterBase()
 	PrimaryActorTick.bStartWithTickEnabled = false;
 
 	GetMesh()->bReceivesDecals = false;
+
+	W1AbilitySystemComponent = CreateDefaultSubobject<UW1AbilitySystemComponent>(TEXT("W1AbilitySystemComponent"));
+	W1AttributeSet = CreateDefaultSubobject<UW1AttributeSet>(TEXT("W1AttributeSet"));
+}
+
+UAbilitySystemComponent* AW1CharacterBase::GetAbilitySystemComponent() const
+{
+	return GetW1AbilitySystemComponent();
+}
+
+void AW1CharacterBase::PossessedBy(AController* NewController)
+{
+	Super::PossessedBy(NewController);
+
+	if (W1AbilitySystemComponent)
+	{
+		W1AbilitySystemComponent->InitAbilityActorInfo(this, this);
+	}
 }
 

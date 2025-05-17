@@ -8,6 +8,7 @@
 #include "DataAssets/Input/DA_InputConfig.h"
 #include "Components/Input/W1InputComponent.h"
 #include "W1GameplayTags.h"
+#include "AbilitySystems/W1AbilitySystemComponent.h"
 
 #include "W1DebugHelper.h"
 
@@ -35,6 +36,18 @@ AW1HeroCharacter::AW1HeroCharacter()
 	GetCharacterMovement()->BrakingDecelerationWalking = 2000.f;
 }
 
+void AW1HeroCharacter::PossessedBy(AController* NewController)
+{
+	Super::PossessedBy(NewController);
+
+	if (W1AbilitySystemComponent && W1AttributeSet)
+	{
+		const FString ASCText = FString::Printf(TEXT("Owner Actor : %s, AvatarActor : %s"), *W1AbilitySystemComponent->GetOwnerActor()->GetActorLabel(), *W1AbilitySystemComponent->GetAvatarActor()->GetActorLabel());
+		Debug::Print(TEXT("Ability system component valid.") + ASCText, FColor::Green);
+		Debug::Print(TEXT("AttributeSet valid.") + ASCText, FColor::Green);
+	}
+}
+
 void AW1HeroCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	checkf(InputConfigDataAsset, TEXT("Forgot to assign a valid data asset as input config"));
@@ -54,8 +67,6 @@ void AW1HeroCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 void AW1HeroCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-
-	Debug::Print(TEXT("Working"));
 }
 
 void AW1HeroCharacter::Input_Move(const FInputActionValue& InputActionValue)
