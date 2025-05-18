@@ -7,7 +7,7 @@
 
 class UW1AbilitySystemComponent;
 class UW1AttributeSet;
-class UDA_HeroStartUpData;
+class UDA_StartUpDataBase;
 
 UCLASS()
 class W1_API AW1CharacterBase : public ACharacter, public IAbilitySystemInterface
@@ -34,7 +34,7 @@ protected:
 	UW1AttributeSet* W1AttributeSet;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "CharacterData")
-	TSoftObjectPtr<UDA_HeroStartUpData> CharacterStartUpData;
+	TSoftObjectPtr<UDA_StartUpDataBase> CharacterStartUpData;
 
 public:
 	FORCEINLINE UW1AbilitySystemComponent* GetW1AbilitySystemComponent() const

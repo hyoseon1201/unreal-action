@@ -28,6 +28,8 @@ void AW1CharacterBase::PossessedBy(AController* NewController)
 	if (W1AbilitySystemComponent)
 	{
 		W1AbilitySystemComponent->InitAbilityActorInfo(this, this);
+
+		ensureMsgf(!CharacterStartUpData.IsNull(), TEXT("Forgot to assign start up data to %s"), *GetName());
 	}
 }
 

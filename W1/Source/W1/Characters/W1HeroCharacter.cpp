@@ -9,6 +9,7 @@
 #include "Components/Input/W1InputComponent.h"
 #include "W1GameplayTags.h"
 #include "AbilitySystems/W1AbilitySystemComponent.h"
+#include "DataAssets/DA_HeroStartUpData.h"
 
 #include "W1DebugHelper.h"
 
@@ -40,11 +41,12 @@ void AW1HeroCharacter::PossessedBy(AController* NewController)
 {
 	Super::PossessedBy(NewController);
 
-	if (W1AbilitySystemComponent && W1AttributeSet)
+	if (!CharacterStartUpData.IsNull())
 	{
-		const FString ASCText = FString::Printf(TEXT("Owner Actor : %s, AvatarActor : %s"), *W1AbilitySystemComponent->GetOwnerActor()->GetActorLabel(), *W1AbilitySystemComponent->GetAvatarActor()->GetActorLabel());
-		Debug::Print(TEXT("Ability system component valid.") + ASCText, FColor::Green);
-		Debug::Print(TEXT("AttributeSet valid.") + ASCText, FColor::Green);
+		if (UDA_StartUpDataBase* LoadedData = CharacterStartUpData.LoadSynchronous())
+		{
+			LoadedData->GiveToAbilitySystemComponent(W1AbilitySystemComponent);
+		}
 	}
 }
 
