@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define W1_W1WeaponBase_generated_h
 
-#define FID_unreal_action_W1_Source_W1_Items_Weapons_W1WeaponBase_h_11_INCLASS_NO_PURE_DECLS \
+#define FID_unreal_action_W1_Source_W1_Items_Weapons_W1WeaponBase_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAW1WeaponBase(); \
 	friend struct Z_Construct_UClass_AW1WeaponBase_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(AW1WeaponBase)
 
 
-#define FID_unreal_action_W1_Source_W1_Items_Weapons_W1WeaponBase_h_11_ENHANCED_CONSTRUCTORS \
+#define FID_unreal_action_W1_Source_W1_Items_Weapons_W1WeaponBase_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	AW1WeaponBase(AW1WeaponBase&&); \
@@ -35,12 +35,12 @@ public: \
 	NO_API virtual ~AW1WeaponBase();
 
 
-#define FID_unreal_action_W1_Source_W1_Items_Weapons_W1WeaponBase_h_8_PROLOG
-#define FID_unreal_action_W1_Source_W1_Items_Weapons_W1WeaponBase_h_11_GENERATED_BODY \
+#define FID_unreal_action_W1_Source_W1_Items_Weapons_W1WeaponBase_h_10_PROLOG
+#define FID_unreal_action_W1_Source_W1_Items_Weapons_W1WeaponBase_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_unreal_action_W1_Source_W1_Items_Weapons_W1WeaponBase_h_11_INCLASS_NO_PURE_DECLS \
-	FID_unreal_action_W1_Source_W1_Items_Weapons_W1WeaponBase_h_11_ENHANCED_CONSTRUCTORS \
+	FID_unreal_action_W1_Source_W1_Items_Weapons_W1WeaponBase_h_13_INCLASS_NO_PURE_DECLS \
+	FID_unreal_action_W1_Source_W1_Items_Weapons_W1WeaponBase_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

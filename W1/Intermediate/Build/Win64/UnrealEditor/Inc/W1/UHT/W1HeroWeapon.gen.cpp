@@ -83,10 +83,10 @@ AW1HeroWeapon::~AW1HeroWeapon() {}
 struct Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Items_Weapons_W1HeroWeapon_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AW1HeroWeapon, AW1HeroWeapon::StaticClass, TEXT("AW1HeroWeapon"), &Z_Registration_Info_UClass_AW1HeroWeapon, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AW1HeroWeapon), 3432514657U) },
+		{ Z_Construct_UClass_AW1HeroWeapon, AW1HeroWeapon::StaticClass, TEXT("AW1HeroWeapon"), &Z_Registration_Info_UClass_AW1HeroWeapon, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AW1HeroWeapon), 313856737U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Items_Weapons_W1HeroWeapon_h_3260143718(TEXT("/Script/W1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Items_Weapons_W1HeroWeapon_h_3478361618(TEXT("/Script/W1"),
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Items_Weapons_W1HeroWeapon_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Items_Weapons_W1HeroWeapon_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

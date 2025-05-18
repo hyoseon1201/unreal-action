@@ -141,6 +141,18 @@
     <Filter Include="Source\W1\DataAssets">
       <UniqueIdentifier>{05CC9218-C3BA-37C3-9995-35D451877012}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\W1\DataAssets\DA_HeroStartUpData.cpp">
+      <Filter>Source\W1\DataAssets</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\DataAssets\DA_HeroStartUpData.h">
+      <Filter>Source\W1\DataAssets</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\W1\DataAssets\DA_StartUpDataBase.cpp">
+      <Filter>Source\W1\DataAssets</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\DataAssets\DA_StartUpDataBase.h">
+      <Filter>Source\W1\DataAssets</Filter>
+    </ClInclude>
     <Filter Include="Source\W1\DataAssets\Input">
       <UniqueIdentifier>{7332273F-FBE3-3A5C-AD40-D805D6186A64}</UniqueIdentifier>
     </Filter>

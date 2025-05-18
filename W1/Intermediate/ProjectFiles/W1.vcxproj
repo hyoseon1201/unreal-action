@@ -311,6 +311,14 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\W1\Controllers\W1HeroController.h"/>
+    <ClCompile Include="..\..\Source\W1\DataAssets\DA_HeroStartUpData.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\DataAssets\DA_HeroStartUpData.h"/>
+    <ClCompile Include="..\..\Source\W1\DataAssets\DA_StartUpDataBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\DataAssets\DA_StartUpDataBase.h"/>
     <ClCompile Include="..\..\Source\W1\DataAssets\Input\DA_InputConfig.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>

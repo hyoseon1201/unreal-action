@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("W1ModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+51bfac591edefb05d818b43587dc17670b05b761")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3cb35df1880bf14dbe675df341cae05dee71236e")]
 [assembly: System.Reflection.AssemblyProductAttribute("W1ModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("W1ModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

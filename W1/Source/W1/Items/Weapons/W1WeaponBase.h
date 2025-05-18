@@ -5,6 +5,8 @@
 #include "GameFramework/Actor.h"
 #include "W1WeaponBase.generated.h"
 
+class UBoxComponent;
+
 UCLASS()
 class W1_API AW1WeaponBase : public AActor
 {
@@ -15,11 +17,15 @@ public:
 	AW1WeaponBase();
 
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Weapons")
+	UStaticMeshComponent* WeaponMesh;
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Weapons")
+	UBoxComponent* WeaponCollisionBox;
 
+public:
+	FORCEINLINE UBoxComponent* GetWeaponCollisionBox() const
+	{
+		return WeaponCollisionBox;
+	}
 };

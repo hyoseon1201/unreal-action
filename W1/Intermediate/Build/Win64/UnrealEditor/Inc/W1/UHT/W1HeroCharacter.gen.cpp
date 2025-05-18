@@ -116,10 +116,10 @@ AW1HeroCharacter::~AW1HeroCharacter() {}
 struct Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Characters_W1HeroCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AW1HeroCharacter, AW1HeroCharacter::StaticClass, TEXT("AW1HeroCharacter"), &Z_Registration_Info_UClass_AW1HeroCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AW1HeroCharacter), 3967708694U) },
+		{ Z_Construct_UClass_AW1HeroCharacter, AW1HeroCharacter::StaticClass, TEXT("AW1HeroCharacter"), &Z_Registration_Info_UClass_AW1HeroCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AW1HeroCharacter), 3410773596U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Characters_W1HeroCharacter_h_2516315409(TEXT("/Script/W1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Characters_W1HeroCharacter_h_3759428405(TEXT("/Script/W1"),
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Characters_W1HeroCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Characters_W1HeroCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
