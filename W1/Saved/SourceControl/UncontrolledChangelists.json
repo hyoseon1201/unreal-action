@@ -15,6 +15,10 @@
 				"E:/unreal-action/W1/Content/Assets/HeroCharacter/SK_Hero.uasset",
 				"E:/unreal-action/W1/Content/PlayerCharacter/DA_Hero.uasset",
 				"E:/unreal-action/W1/Content/PlayerCharacter/GameplayAbility/GA_Hero_EquipAxe.uasset",
+				"E:/unreal-action/W1/Content/PlayerCharacter/DA_InputConfig.uasset",
+				"E:/unreal-action/W1/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"E:/unreal-action/W1/Content/PlayerCharacter/Input/Actions/IA_EquipAxe.uasset",
+				"E:/unreal-action/W1/Content/PlayerCharacter/Input/Actions/IA_Jump.uasset",
 				"E:/unreal-action/W1/Content/PlayerCharacter/BP_HeroWeaponBase.uasset",
 				"E:/unreal-action/W1/Content/Shared/GameplayAbility/GA_Hero_SpawnAxe.uasset",
 				"E:/unreal-action/W1/Content/PlayerCharacter/BP_Hero_Character1.uasset"

@@ -118,10 +118,17 @@ struct Z_Construct_UClass_UDA_InputConfig_Statics
 		{ "ModuleRelativePath", "DataAssets/Input/DA_InputConfig.h" },
 		{ "TitleProperty", "InputTag" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AbilityInputActions_MetaData[] = {
+		{ "Category", "DA_InputConfig" },
+		{ "ModuleRelativePath", "DataAssets/Input/DA_InputConfig.h" },
+		{ "TitleProperty", "InputTag" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_DefaultMappingContext;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_NativeInputActions_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_NativeInputActions;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_AbilityInputActions_Inner;
+	static const UECodeGen_Private::FArrayPropertyParams NewProp_AbilityInputActions;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -132,10 +139,14 @@ struct Z_Construct_UClass_UDA_InputConfig_Statics
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UDA_InputConfig_Statics::NewProp_DefaultMappingContext = { "DefaultMappingContext", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDA_InputConfig, DefaultMappingContext), Z_Construct_UClass_UInputMappingContext_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultMappingContext_MetaData), NewProp_DefaultMappingContext_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UDA_InputConfig_Statics::NewProp_NativeInputActions_Inner = { "NativeInputActions", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FW1InputActionConfig, METADATA_PARAMS(0, nullptr) }; // 2135789688
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UDA_InputConfig_Statics::NewProp_NativeInputActions = { "NativeInputActions", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDA_InputConfig, NativeInputActions), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NativeInputActions_MetaData), NewProp_NativeInputActions_MetaData) }; // 2135789688
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UDA_InputConfig_Statics::NewProp_AbilityInputActions_Inner = { "AbilityInputActions", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FW1InputActionConfig, METADATA_PARAMS(0, nullptr) }; // 2135789688
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UDA_InputConfig_Statics::NewProp_AbilityInputActions = { "AbilityInputActions", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDA_InputConfig, AbilityInputActions), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AbilityInputActions_MetaData), NewProp_AbilityInputActions_MetaData) }; // 2135789688
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UDA_InputConfig_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDA_InputConfig_Statics::NewProp_DefaultMappingContext,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDA_InputConfig_Statics::NewProp_NativeInputActions_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDA_InputConfig_Statics::NewProp_NativeInputActions,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDA_InputConfig_Statics::NewProp_AbilityInputActions_Inner,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDA_InputConfig_Statics::NewProp_AbilityInputActions,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UDA_InputConfig_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UDA_InputConfig_Statics::DependentSingletons[])() = {
@@ -182,10 +193,10 @@ struct Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_DataAssets_Input_DA_
 		{ FW1InputActionConfig::StaticStruct, Z_Construct_UScriptStruct_FW1InputActionConfig_Statics::NewStructOps, TEXT("W1InputActionConfig"), &Z_Registration_Info_UScriptStruct_W1InputActionConfig, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FW1InputActionConfig), 2135789688U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UDA_InputConfig, UDA_InputConfig::StaticClass, TEXT("UDA_InputConfig"), &Z_Registration_Info_UClass_UDA_InputConfig, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDA_InputConfig), 757903386U) },
+		{ Z_Construct_UClass_UDA_InputConfig, UDA_InputConfig::StaticClass, TEXT("UDA_InputConfig"), &Z_Registration_Info_UClass_UDA_InputConfig, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDA_InputConfig), 4243688945U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_DataAssets_Input_DA_InputConfig_h_3912356654(TEXT("/Script/W1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_DataAssets_Input_DA_InputConfig_h_2232077024(TEXT("/Script/W1"),
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_DataAssets_Input_DA_InputConfig_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_DataAssets_Input_DA_InputConfig_h_Statics::ClassInfo),
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_DataAssets_Input_DA_InputConfig_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_DataAssets_Input_DA_InputConfig_h_Statics::ScriptStructInfo),
 	nullptr, 0);
