@@ -279,6 +279,10 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\W1\AbilitySystems\Abilities\W1GameplayAbility.h"/>
+    <ClCompile Include="..\..\Source\W1\AbilitySystems\Abilities\W1HeroGameplayAbility.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\AbilitySystems\Abilities\W1HeroGameplayAbility.h"/>
     <ClCompile Include="..\..\Source\W1\AnimInstances\W1AnimInstanceBase.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>

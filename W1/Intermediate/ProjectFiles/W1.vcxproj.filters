@@ -72,6 +72,12 @@
     <ClInclude Include="..\..\Source\W1\AbilitySystems\Abilities\W1GameplayAbility.h">
       <Filter>Source\W1\AbilitySystems\Abilities</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\W1\AbilitySystems\Abilities\W1HeroGameplayAbility.cpp">
+      <Filter>Source\W1\AbilitySystems\Abilities</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\AbilitySystems\Abilities\W1HeroGameplayAbility.h">
+      <Filter>Source\W1\AbilitySystems\Abilities</Filter>
+    </ClInclude>
     <Filter Include="Source\W1\AnimInstances">
       <UniqueIdentifier>{ECA4739C-EE81-3D85-9607-48E3E8DFB66B}</UniqueIdentifier>
     </Filter>

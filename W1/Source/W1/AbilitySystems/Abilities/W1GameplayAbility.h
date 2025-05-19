@@ -1,9 +1,11 @@
 
-
 #pragma once
 
 #include "Abilities/GameplayAbility.h"
 #include "W1GameplayAbility.generated.h"
+
+class UPawnCombatComponent;
+class UW1AbilitySystemComponent;
 
 UENUM(BlueprintType)
 enum class EW1AbilityActivationPolicy : uint8
@@ -29,4 +31,10 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, Category = "W1Ability")
 	EW1AbilityActivationPolicy AbilityActivationPolicy = EW1AbilityActivationPolicy::OnTriggered;
+
+	UFUNCTION(BlueprintPure, Category = "W1|Ability")
+	UPawnCombatComponent* GetPawnCombatComponentFromActorInfo() const;
+
+	UFUNCTION(BlueprintPure, Category = "W1|Ability")
+	UW1AbilitySystemComponent* GetW1AbilitySystemComponent() const;
 };

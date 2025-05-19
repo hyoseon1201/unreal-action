@@ -2,7 +2,10 @@
 #pragma once
 
 #include "Components/PawnExtensionComponentBase.h"
+#include "GameplayTagContainer.h"
 #include "PawnCombatComponent.generated.h"
+
+class AW1WeaponBase;
 
 /**
  * 
@@ -11,5 +14,21 @@ UCLASS()
 class W1_API UPawnCombatComponent : public UPawnExtensionComponentBase
 {
 	GENERATED_BODY()
+
+public:
+	UFUNCTION(BlueprintCallable, Category = "W1|Combat")
+	void RegisterSpawnedWeapon(FGameplayTag InWeaponTagToRegister, AW1WeaponBase* InWeaponToRegister, bool bRegisterAsEquippedWeapon = false);
+
+	UFUNCTION(BlueprintCallable, Category = "W1|Combat")
+	AW1WeaponBase* GetCharacterCarriedWeaponByTag(FGameplayTag InWeaponTagToGet) const;
+
+	UPROPERTY(BlueprintReadWrite, Category = "W1|Combat")
+	FGameplayTag CurrentEquippedWeaponTag;
+
+	UFUNCTION(BlueprintCallable, Category = "W1|Combat")
+	AW1WeaponBase* GetCharacterCurrentEquippedWeapon() const;
+
+private:
+	TMap<FGameplayTag, AW1WeaponBase*> CharacterCarriedWeaponMap;
 	
 };

@@ -83,10 +83,10 @@ UHeroCombatComponent::~UHeroCombatComponent() {}
 struct Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Components_Combat_HeroCombatComponent_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UHeroCombatComponent, UHeroCombatComponent::StaticClass, TEXT("UHeroCombatComponent"), &Z_Registration_Info_UClass_UHeroCombatComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UHeroCombatComponent), 979591235U) },
+		{ Z_Construct_UClass_UHeroCombatComponent, UHeroCombatComponent::StaticClass, TEXT("UHeroCombatComponent"), &Z_Registration_Info_UClass_UHeroCombatComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UHeroCombatComponent), 74967675U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Components_Combat_HeroCombatComponent_h_3563373243(TEXT("/Script/W1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Components_Combat_HeroCombatComponent_h_1357966283(TEXT("/Script/W1"),
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Components_Combat_HeroCombatComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Components_Combat_HeroCombatComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

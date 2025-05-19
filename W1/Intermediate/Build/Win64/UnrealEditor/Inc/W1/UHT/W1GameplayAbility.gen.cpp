@@ -12,6 +12,8 @@ void EmptyLinkFunctionForGeneratedCodeW1GameplayAbility() {}
 // Begin Cross Module References
 GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UGameplayAbility();
 UPackage* Z_Construct_UPackage__Script_W1();
+W1_API UClass* Z_Construct_UClass_UPawnCombatComponent_NoRegister();
+W1_API UClass* Z_Construct_UClass_UW1AbilitySystemComponent_NoRegister();
 W1_API UClass* Z_Construct_UClass_UW1GameplayAbility();
 W1_API UClass* Z_Construct_UClass_UW1GameplayAbility_NoRegister();
 W1_API UEnum* Z_Construct_UEnum_W1_EW1AbilityActivationPolicy();
@@ -69,9 +71,105 @@ UEnum* Z_Construct_UEnum_W1_EW1AbilityActivationPolicy()
 }
 // End Enum EW1AbilityActivationPolicy
 
+// Begin Class UW1GameplayAbility Function GetPawnCombatComponentFromActorInfo
+struct Z_Construct_UFunction_UW1GameplayAbility_GetPawnCombatComponentFromActorInfo_Statics
+{
+	struct W1GameplayAbility_eventGetPawnCombatComponentFromActorInfo_Parms
+	{
+		UPawnCombatComponent* ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "W1|Ability" },
+		{ "ModuleRelativePath", "AbilitySystems/Abilities/W1GameplayAbility.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UW1GameplayAbility_GetPawnCombatComponentFromActorInfo_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1GameplayAbility_eventGetPawnCombatComponentFromActorInfo_Parms, ReturnValue), Z_Construct_UClass_UPawnCombatComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UW1GameplayAbility_GetPawnCombatComponentFromActorInfo_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1GameplayAbility_GetPawnCombatComponentFromActorInfo_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UW1GameplayAbility_GetPawnCombatComponentFromActorInfo_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UW1GameplayAbility_GetPawnCombatComponentFromActorInfo_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UW1GameplayAbility, nullptr, "GetPawnCombatComponentFromActorInfo", nullptr, nullptr, Z_Construct_UFunction_UW1GameplayAbility_GetPawnCombatComponentFromActorInfo_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UW1GameplayAbility_GetPawnCombatComponentFromActorInfo_Statics::PropPointers), sizeof(Z_Construct_UFunction_UW1GameplayAbility_GetPawnCombatComponentFromActorInfo_Statics::W1GameplayAbility_eventGetPawnCombatComponentFromActorInfo_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UW1GameplayAbility_GetPawnCombatComponentFromActorInfo_Statics::Function_MetaDataParams), Z_Construct_UFunction_UW1GameplayAbility_GetPawnCombatComponentFromActorInfo_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UW1GameplayAbility_GetPawnCombatComponentFromActorInfo_Statics::W1GameplayAbility_eventGetPawnCombatComponentFromActorInfo_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UW1GameplayAbility_GetPawnCombatComponentFromActorInfo()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UW1GameplayAbility_GetPawnCombatComponentFromActorInfo_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UW1GameplayAbility::execGetPawnCombatComponentFromActorInfo)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(UPawnCombatComponent**)Z_Param__Result=P_THIS->GetPawnCombatComponentFromActorInfo();
+	P_NATIVE_END;
+}
+// End Class UW1GameplayAbility Function GetPawnCombatComponentFromActorInfo
+
+// Begin Class UW1GameplayAbility Function GetW1AbilitySystemComponent
+struct Z_Construct_UFunction_UW1GameplayAbility_GetW1AbilitySystemComponent_Statics
+{
+	struct W1GameplayAbility_eventGetW1AbilitySystemComponent_Parms
+	{
+		UW1AbilitySystemComponent* ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "W1|Ability" },
+		{ "ModuleRelativePath", "AbilitySystems/Abilities/W1GameplayAbility.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UW1GameplayAbility_GetW1AbilitySystemComponent_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1GameplayAbility_eventGetW1AbilitySystemComponent_Parms, ReturnValue), Z_Construct_UClass_UW1AbilitySystemComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UW1GameplayAbility_GetW1AbilitySystemComponent_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1GameplayAbility_GetW1AbilitySystemComponent_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UW1GameplayAbility_GetW1AbilitySystemComponent_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UW1GameplayAbility_GetW1AbilitySystemComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UW1GameplayAbility, nullptr, "GetW1AbilitySystemComponent", nullptr, nullptr, Z_Construct_UFunction_UW1GameplayAbility_GetW1AbilitySystemComponent_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UW1GameplayAbility_GetW1AbilitySystemComponent_Statics::PropPointers), sizeof(Z_Construct_UFunction_UW1GameplayAbility_GetW1AbilitySystemComponent_Statics::W1GameplayAbility_eventGetW1AbilitySystemComponent_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UW1GameplayAbility_GetW1AbilitySystemComponent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UW1GameplayAbility_GetW1AbilitySystemComponent_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UW1GameplayAbility_GetW1AbilitySystemComponent_Statics::W1GameplayAbility_eventGetW1AbilitySystemComponent_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UW1GameplayAbility_GetW1AbilitySystemComponent()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UW1GameplayAbility_GetW1AbilitySystemComponent_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UW1GameplayAbility::execGetW1AbilitySystemComponent)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(UW1AbilitySystemComponent**)Z_Param__Result=P_THIS->GetW1AbilitySystemComponent();
+	P_NATIVE_END;
+}
+// End Class UW1GameplayAbility Function GetW1AbilitySystemComponent
+
 // Begin Class UW1GameplayAbility
 void UW1GameplayAbility::StaticRegisterNativesUW1GameplayAbility()
 {
+	UClass* Class = UW1GameplayAbility::StaticClass();
+	static const FNameNativePtrPair Funcs[] = {
+		{ "GetPawnCombatComponentFromActorInfo", &UW1GameplayAbility::execGetPawnCombatComponentFromActorInfo },
+		{ "GetW1AbilitySystemComponent", &UW1GameplayAbility::execGetW1AbilitySystemComponent },
+	};
+	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
 IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UW1GameplayAbility);
 UClass* Z_Construct_UClass_UW1GameplayAbility_NoRegister()
@@ -100,6 +198,11 @@ struct Z_Construct_UClass_UW1GameplayAbility_Statics
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_AbilityActivationPolicy;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
+	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_UW1GameplayAbility_GetPawnCombatComponentFromActorInfo, "GetPawnCombatComponentFromActorInfo" }, // 3927840673
+		{ &Z_Construct_UFunction_UW1GameplayAbility_GetW1AbilitySystemComponent, "GetW1AbilitySystemComponent" }, // 2059869175
+	};
+	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UW1GameplayAbility>::IsAbstract,
 	};
@@ -122,11 +225,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UW1GameplayAbility_Stat
 	nullptr,
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
-	nullptr,
+	FuncInfo,
 	Z_Construct_UClass_UW1GameplayAbility_Statics::PropPointers,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
-	0,
+	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_UW1GameplayAbility_Statics::PropPointers),
 	0,
 	0x001000A0u,
@@ -156,10 +259,10 @@ struct Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_AbilitySystems_Abili
 		{ EW1AbilityActivationPolicy_StaticEnum, TEXT("EW1AbilityActivationPolicy"), &Z_Registration_Info_UEnum_EW1AbilityActivationPolicy, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1202955949U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UW1GameplayAbility, UW1GameplayAbility::StaticClass, TEXT("UW1GameplayAbility"), &Z_Registration_Info_UClass_UW1GameplayAbility, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UW1GameplayAbility), 677865064U) },
+		{ Z_Construct_UClass_UW1GameplayAbility, UW1GameplayAbility::StaticClass, TEXT("UW1GameplayAbility"), &Z_Registration_Info_UClass_UW1GameplayAbility, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UW1GameplayAbility), 3809378913U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1GameplayAbility_h_1578907320(TEXT("/Script/W1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1GameplayAbility_h_384312420(TEXT("/Script/W1"),
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1GameplayAbility_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1GameplayAbility_h_Statics::ClassInfo),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1GameplayAbility_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1GameplayAbility_h_Statics::EnumInfo));
