@@ -10,6 +10,7 @@
 #include "W1GameplayTags.h"
 #include "AbilitySystems/W1AbilitySystemComponent.h"
 #include "DataAssets/DA_HeroStartUpData.h"
+#include "Components/Combat/HeroCombatComponent.h"
 
 #include "W1DebugHelper.h"
 
@@ -35,6 +36,8 @@ AW1HeroCharacter::AW1HeroCharacter()
 	GetCharacterMovement()->RotationRate = FRotator(0.f, 500.f, 0.f);
 	GetCharacterMovement()->MaxWalkSpeed = 400.f;
 	GetCharacterMovement()->BrakingDecelerationWalking = 2000.f;
+
+	HeroCombatComponent = CreateDefaultSubobject<UHeroCombatComponent>(TEXT("HeroCombatComponent"));
 }
 
 void AW1HeroCharacter::PossessedBy(AController* NewController)

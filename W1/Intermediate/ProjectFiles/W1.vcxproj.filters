@@ -120,6 +120,27 @@
     <Filter Include="Source\W1\Components">
       <UniqueIdentifier>{FC02A64D-D098-3476-B233-A65D711ABDD7}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\W1\Components\PawnExtensionComponentBase.cpp">
+      <Filter>Source\W1\Components</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Components\PawnExtensionComponentBase.h">
+      <Filter>Source\W1\Components</Filter>
+    </ClInclude>
+    <Filter Include="Source\W1\Components\Combat">
+      <UniqueIdentifier>{7B6B2992-506A-329F-BE12-E8AF03888355}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\W1\Components\Combat\HeroCombatComponent.cpp">
+      <Filter>Source\W1\Components\Combat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Components\Combat\HeroCombatComponent.h">
+      <Filter>Source\W1\Components\Combat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\W1\Components\Combat\PawnCombatComponent.cpp">
+      <Filter>Source\W1\Components\Combat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Components\Combat\PawnCombatComponent.h">
+      <Filter>Source\W1\Components\Combat</Filter>
+    </ClInclude>
     <Filter Include="Source\W1\Components\Input">
       <UniqueIdentifier>{E2DBC069-0CB4-3239-8F07-6506DA10383D}</UniqueIdentifier>
     </Filter>
