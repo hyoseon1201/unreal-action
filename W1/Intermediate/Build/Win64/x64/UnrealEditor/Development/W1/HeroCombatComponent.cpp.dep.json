@@ -10,8 +10,17 @@
             "e:\\unreal-action\\w1\\source\\w1\\components\\combat\\pawncombatcomponent.h",
             "e:\\unreal-action\\w1\\source\\w1\\components\\pawnextensioncomponentbase.h",
             "e:\\unreal-action\\w1\\intermediate\\build\\win64\\unrealeditor\\inc\\w1\\uht\\pawnextensioncomponentbase.generated.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\gameplaytags\\classes\\gameplaytagcontainer.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\core\\public\\misc\\comparisonutility.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\gameplaytags\\uht\\gameplaytagcontainer.generated.h",
             "e:\\unreal-action\\w1\\intermediate\\build\\win64\\unrealeditor\\inc\\w1\\uht\\pawncombatcomponent.generated.h",
-            "e:\\unreal-action\\w1\\intermediate\\build\\win64\\unrealeditor\\inc\\w1\\uht\\herocombatcomponent.generated.h"
+            "e:\\unreal-action\\w1\\intermediate\\build\\win64\\unrealeditor\\inc\\w1\\uht\\herocombatcomponent.generated.h",
+            "e:\\unreal-action\\w1\\source\\w1\\items\\weapons\\w1heroweapon.h",
+            "e:\\unreal-action\\w1\\source\\w1\\items\\weapons\\w1weaponbase.h",
+            "e:\\unreal-action\\w1\\intermediate\\build\\win64\\unrealeditor\\inc\\w1\\uht\\w1weaponbase.generated.h",
+            "e:\\unreal-action\\w1\\source\\w1\\w1types\\w1structtypes.h",
+            "e:\\unreal-action\\w1\\intermediate\\build\\win64\\unrealeditor\\inc\\w1\\uht\\w1structtypes.generated.h",
+            "e:\\unreal-action\\w1\\intermediate\\build\\win64\\unrealeditor\\inc\\w1\\uht\\w1heroweapon.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

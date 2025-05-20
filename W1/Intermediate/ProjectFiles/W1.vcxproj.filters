@@ -216,5 +216,14 @@
     <ClInclude Include="..\..\Source\W1\Items\Weapons\W1WeaponBase.h">
       <Filter>Source\W1\Items\Weapons</Filter>
     </ClInclude>
+    <Filter Include="Source\W1\W1Types">
+      <UniqueIdentifier>{980504CD-F772-3D45-87C9-9AEFF824B573}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\W1\W1Types\W1StructTypes.cpp">
+      <Filter>Source\W1\W1Types</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\W1Types\W1StructTypes.h">
+      <Filter>Source\W1\W1Types</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

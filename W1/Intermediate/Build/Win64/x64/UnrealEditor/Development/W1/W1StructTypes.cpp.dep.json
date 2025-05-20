@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\unreal-action\\w1\\source\\w1\\w1types\\w1structtypes.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\unreal-action\\w1\\intermediate\\build\\win64\\x64\\w1editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "e:\\unreal-action\\w1\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\w1\\definitions.w1.h",
+            "e:\\unreal-action\\w1\\source\\w1\\w1types\\w1structtypes.h",
+            "e:\\unreal-action\\w1\\intermediate\\build\\win64\\unrealeditor\\inc\\w1\\uht\\w1structtypes.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

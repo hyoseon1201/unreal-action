@@ -9,12 +9,18 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AW1HeroWeapon;
+struct FGameplayTag;
 #ifdef W1_HeroCombatComponent_generated_h
 #error "HeroCombatComponent.generated.h already included, missing '#pragma once' in HeroCombatComponent.h"
 #endif
 #define W1_HeroCombatComponent_generated_h
 
-#define FID_unreal_action_W1_Source_W1_Components_Combat_HeroCombatComponent_h_13_INCLASS_NO_PURE_DECLS \
+#define FID_unreal_action_W1_Source_W1_Components_Combat_HeroCombatComponent_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execGetHeroCarriedWeaponByTag);
+
+
+#define FID_unreal_action_W1_Source_W1_Components_Combat_HeroCombatComponent_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUHeroCombatComponent(); \
 	friend struct Z_Construct_UClass_UHeroCombatComponent_Statics; \
@@ -23,7 +29,7 @@ public: \
 	DECLARE_SERIALIZER(UHeroCombatComponent)
 
 
-#define FID_unreal_action_W1_Source_W1_Components_Combat_HeroCombatComponent_h_13_ENHANCED_CONSTRUCTORS \
+#define FID_unreal_action_W1_Source_W1_Components_Combat_HeroCombatComponent_h_15_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UHeroCombatComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -37,12 +43,13 @@ public: \
 	NO_API virtual ~UHeroCombatComponent();
 
 
-#define FID_unreal_action_W1_Source_W1_Components_Combat_HeroCombatComponent_h_10_PROLOG
-#define FID_unreal_action_W1_Source_W1_Components_Combat_HeroCombatComponent_h_13_GENERATED_BODY \
+#define FID_unreal_action_W1_Source_W1_Components_Combat_HeroCombatComponent_h_12_PROLOG
+#define FID_unreal_action_W1_Source_W1_Components_Combat_HeroCombatComponent_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_unreal_action_W1_Source_W1_Components_Combat_HeroCombatComponent_h_13_INCLASS_NO_PURE_DECLS \
-	FID_unreal_action_W1_Source_W1_Components_Combat_HeroCombatComponent_h_13_ENHANCED_CONSTRUCTORS \
+	FID_unreal_action_W1_Source_W1_Components_Combat_HeroCombatComponent_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_unreal_action_W1_Source_W1_Components_Combat_HeroCombatComponent_h_15_INCLASS_NO_PURE_DECLS \
+	FID_unreal_action_W1_Source_W1_Components_Combat_HeroCombatComponent_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

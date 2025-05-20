@@ -1,7 +1,6 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
 #include "AnimInstances/W1CharacterAnimInstance.h"
 #include "W1HeroAnimInstance.generated.h"
 
