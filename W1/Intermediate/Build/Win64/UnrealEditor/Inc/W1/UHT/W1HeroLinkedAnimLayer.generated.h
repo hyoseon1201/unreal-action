@@ -9,10 +9,15 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UW1HeroAnimInstance;
 #ifdef W1_W1HeroLinkedAnimLayer_generated_h
 #error "W1HeroLinkedAnimLayer.generated.h already included, missing '#pragma once' in W1HeroLinkedAnimLayer.h"
 #endif
 #define W1_W1HeroLinkedAnimLayer_generated_h
+
+#define FID_unreal_action_W1_Source_W1_AnimInstances_Hero_W1HeroLinkedAnimLayer_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execGetHeroAnimInstance);
+
 
 #define FID_unreal_action_W1_Source_W1_AnimInstances_Hero_W1HeroLinkedAnimLayer_h_15_INCLASS_NO_PURE_DECLS \
 private: \
@@ -41,6 +46,7 @@ public: \
 #define FID_unreal_action_W1_Source_W1_AnimInstances_Hero_W1HeroLinkedAnimLayer_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_unreal_action_W1_Source_W1_AnimInstances_Hero_W1HeroLinkedAnimLayer_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_unreal_action_W1_Source_W1_AnimInstances_Hero_W1HeroLinkedAnimLayer_h_15_INCLASS_NO_PURE_DECLS \
 	FID_unreal_action_W1_Source_W1_AnimInstances_Hero_W1HeroLinkedAnimLayer_h_15_ENHANCED_CONSTRUCTORS \
 private: \

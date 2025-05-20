@@ -23,7 +23,7 @@ public:
 
 	bool IsValid() const
 	{
-		InputTag.IsValid() && InputAction;
+		return InputTag.IsValid() && InputAction;
 	}
 };
 

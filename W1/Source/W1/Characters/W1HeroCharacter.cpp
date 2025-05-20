@@ -67,6 +67,8 @@ void AW1HeroCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	UW1InputComponent* W1InputComponent = CastChecked<UW1InputComponent>(PlayerInputComponent);
 	W1InputComponent->BindNativeInputAction(InputConfigDataAsset, W1GameplayTags::InputTag_Move, ETriggerEvent::Triggered, this, &ThisClass::Input_Move);
 	W1InputComponent->BindNativeInputAction(InputConfigDataAsset, W1GameplayTags::InputTag_Look, ETriggerEvent::Triggered, this, &ThisClass::Input_Look);
+
+	W1InputComponent->BindAbilityInputAction(InputConfigDataAsset, this, &ThisClass::Input_AbilityInputPressed, &ThisClass::Input_AbilityInputReleased);
 }
 
 void AW1HeroCharacter::BeginPlay()
@@ -107,4 +109,14 @@ void AW1HeroCharacter::Input_Look(const FInputActionValue& InputActionValue)
 	{
 		AddControllerPitchInput(LookAxisVector.Y);
 	}
+}
+
+void AW1HeroCharacter::Input_AbilityInputPressed(FGameplayTag InInputTag)
+{
+	W1AbilitySystemComponent->OnAbilityInputPressed(InInputTag);
+}
+
+void AW1HeroCharacter::Input_AbilityInputReleased(FGameplayTag InInputTag)
+{
+	W1AbilitySystemComponent->OnAbilityInputReleased(InInputTag);
 }
