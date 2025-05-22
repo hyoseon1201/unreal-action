@@ -1,24 +1,10 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
 #include "DataAssets/DA_StartUpDataBase.h"
-#include "GameplayTagContainer.h"
+#include "W1Types/W1StructTypes.h"
 #include "DA_HeroStartUpData.generated.h"
 
-USTRUCT(BlueprintType)
-struct FW1HeroAbilitySet
-{
-	GENERATED_BODY()
-
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (Category = "InputTag"))
-	FGameplayTag InputTag;
-
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
-	TSubclassOf<UW1GameplayAbility> AbilityToGrant;
-
-	bool IsValid() const;
-};
 
 /**
  * 

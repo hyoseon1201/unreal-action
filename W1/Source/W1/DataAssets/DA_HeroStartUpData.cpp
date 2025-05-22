@@ -3,11 +3,6 @@
 #include "AbilitySystems/Abilities/W1GameplayAbility.h"
 #include "AbilitySystems/W1AbilitySystemComponent.h"
 
-bool FW1HeroAbilitySet::IsValid() const
-{
-	return InputTag.IsValid() && AbilityToGrant;
-}
-
 void UDA_HeroStartUpData::GiveToAbilitySystemComponent(UW1AbilitySystemComponent* InASCToGive, int32 ApplyLevel)
 {
 	Super::GiveToAbilitySystemComponent(InASCToGive, ApplyLevel);

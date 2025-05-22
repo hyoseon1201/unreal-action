@@ -9,12 +9,18 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FGameplayAbilitySpecHandle;
 #ifdef W1_W1HeroWeapon_generated_h
 #error "W1HeroWeapon.generated.h already included, missing '#pragma once' in W1HeroWeapon.h"
 #endif
 #define W1_W1HeroWeapon_generated_h
 
-#define FID_unreal_action_W1_Source_W1_Items_Weapons_W1HeroWeapon_h_14_INCLASS_NO_PURE_DECLS \
+#define FID_unreal_action_W1_Source_W1_Items_Weapons_W1HeroWeapon_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execGetGrantedAbilitySpecHandles); \
+	DECLARE_FUNCTION(execAssignGrantedAbilitySpecHandles);
+
+
+#define FID_unreal_action_W1_Source_W1_Items_Weapons_W1HeroWeapon_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAW1HeroWeapon(); \
 	friend struct Z_Construct_UClass_AW1HeroWeapon_Statics; \
@@ -23,7 +29,7 @@ public: \
 	DECLARE_SERIALIZER(AW1HeroWeapon)
 
 
-#define FID_unreal_action_W1_Source_W1_Items_Weapons_W1HeroWeapon_h_14_ENHANCED_CONSTRUCTORS \
+#define FID_unreal_action_W1_Source_W1_Items_Weapons_W1HeroWeapon_h_15_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AW1HeroWeapon(); \
 private: \
@@ -37,12 +43,13 @@ public: \
 	NO_API virtual ~AW1HeroWeapon();
 
 
-#define FID_unreal_action_W1_Source_W1_Items_Weapons_W1HeroWeapon_h_11_PROLOG
-#define FID_unreal_action_W1_Source_W1_Items_Weapons_W1HeroWeapon_h_14_GENERATED_BODY \
+#define FID_unreal_action_W1_Source_W1_Items_Weapons_W1HeroWeapon_h_12_PROLOG
+#define FID_unreal_action_W1_Source_W1_Items_Weapons_W1HeroWeapon_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_unreal_action_W1_Source_W1_Items_Weapons_W1HeroWeapon_h_14_INCLASS_NO_PURE_DECLS \
-	FID_unreal_action_W1_Source_W1_Items_Weapons_W1HeroWeapon_h_14_ENHANCED_CONSTRUCTORS \
+	FID_unreal_action_W1_Source_W1_Items_Weapons_W1HeroWeapon_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_unreal_action_W1_Source_W1_Items_Weapons_W1HeroWeapon_h_15_INCLASS_NO_PURE_DECLS \
+	FID_unreal_action_W1_Source_W1_Items_Weapons_W1HeroWeapon_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
