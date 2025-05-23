@@ -7,6 +7,7 @@
 class UW1HeroLinkedAnimLayer;
 class UW1GameplayAbility;
 class UInputMappingContext;
+class UW1HeroGameplayAbility;
 
 USTRUCT(BlueprintType)
 struct FW1HeroAbilitySet
@@ -17,7 +18,7 @@ struct FW1HeroAbilitySet
 	FGameplayTag InputTag;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
-	TSubclassOf<UW1GameplayAbility> AbilityToGrant;
+	TSubclassOf<UW1HeroGameplayAbility> AbilityToGrant;
 
 	bool IsValid() const;
 };

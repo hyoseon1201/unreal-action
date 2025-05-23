@@ -15,7 +15,7 @@ COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
 GAMEPLAYTAGS_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayTag();
 UPackage* Z_Construct_UPackage__Script_W1();
-W1_API UClass* Z_Construct_UClass_UW1GameplayAbility_NoRegister();
+W1_API UClass* Z_Construct_UClass_UW1HeroGameplayAbility_NoRegister();
 W1_API UClass* Z_Construct_UClass_UW1HeroLinkedAnimLayer_NoRegister();
 W1_API UScriptStruct* Z_Construct_UScriptStruct_FW1HeroAbilitySet();
 W1_API UScriptStruct* Z_Construct_UScriptStruct_FW1HeroWeaponData();
@@ -61,7 +61,7 @@ struct Z_Construct_UScriptStruct_FW1HeroAbilitySet_Statics
 	static const UECodeGen_Private::FStructParams StructParams;
 };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FW1HeroAbilitySet_Statics::NewProp_InputTag = { "InputTag", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FW1HeroAbilitySet, InputTag), Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InputTag_MetaData), NewProp_InputTag_MetaData) }; // 1298103297
-const UECodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FW1HeroAbilitySet_Statics::NewProp_AbilityToGrant = { "AbilityToGrant", nullptr, (EPropertyFlags)0x0014000000010015, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FW1HeroAbilitySet, AbilityToGrant), Z_Construct_UClass_UClass, Z_Construct_UClass_UW1GameplayAbility_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AbilityToGrant_MetaData), NewProp_AbilityToGrant_MetaData) };
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FW1HeroAbilitySet_Statics::NewProp_AbilityToGrant = { "AbilityToGrant", nullptr, (EPropertyFlags)0x0014000000010015, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FW1HeroAbilitySet, AbilityToGrant), Z_Construct_UClass_UClass, Z_Construct_UClass_UW1HeroGameplayAbility_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AbilityToGrant_MetaData), NewProp_AbilityToGrant_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FW1HeroAbilitySet_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FW1HeroAbilitySet_Statics::NewProp_InputTag,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FW1HeroAbilitySet_Statics::NewProp_AbilityToGrant,
@@ -138,8 +138,8 @@ struct Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics
 };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::NewProp_WeaponAnimLayerToLink = { "WeaponAnimLayerToLink", nullptr, (EPropertyFlags)0x0014000000010015, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FW1HeroWeaponData, WeaponAnimLayerToLink), Z_Construct_UClass_UClass, Z_Construct_UClass_UW1HeroLinkedAnimLayer_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WeaponAnimLayerToLink_MetaData), NewProp_WeaponAnimLayerToLink_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::NewProp_WeaponInputMappingContext = { "WeaponInputMappingContext", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FW1HeroWeaponData, WeaponInputMappingContext), Z_Construct_UClass_UInputMappingContext_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WeaponInputMappingContext_MetaData), NewProp_WeaponInputMappingContext_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::NewProp_DefaultWeaponAbilities_Inner = { "DefaultWeaponAbilities", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FW1HeroAbilitySet, METADATA_PARAMS(0, nullptr) }; // 4014435315
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::NewProp_DefaultWeaponAbilities = { "DefaultWeaponAbilities", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FW1HeroWeaponData, DefaultWeaponAbilities), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultWeaponAbilities_MetaData), NewProp_DefaultWeaponAbilities_MetaData) }; // 4014435315
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::NewProp_DefaultWeaponAbilities_Inner = { "DefaultWeaponAbilities", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FW1HeroAbilitySet, METADATA_PARAMS(0, nullptr) }; // 283327945
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::NewProp_DefaultWeaponAbilities = { "DefaultWeaponAbilities", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FW1HeroWeaponData, DefaultWeaponAbilities), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultWeaponAbilities_MetaData), NewProp_DefaultWeaponAbilities_MetaData) }; // 283327945
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::NewProp_WeaponAnimLayerToLink,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::NewProp_WeaponInputMappingContext,
@@ -174,11 +174,11 @@ UScriptStruct* Z_Construct_UScriptStruct_FW1HeroWeaponData()
 struct Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1Types_W1StructTypes_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FW1HeroAbilitySet::StaticStruct, Z_Construct_UScriptStruct_FW1HeroAbilitySet_Statics::NewStructOps, TEXT("W1HeroAbilitySet"), &Z_Registration_Info_UScriptStruct_W1HeroAbilitySet, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FW1HeroAbilitySet), 4014435315U) },
-		{ FW1HeroWeaponData::StaticStruct, Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::NewStructOps, TEXT("W1HeroWeaponData"), &Z_Registration_Info_UScriptStruct_W1HeroWeaponData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FW1HeroWeaponData), 2261077993U) },
+		{ FW1HeroAbilitySet::StaticStruct, Z_Construct_UScriptStruct_FW1HeroAbilitySet_Statics::NewStructOps, TEXT("W1HeroAbilitySet"), &Z_Registration_Info_UScriptStruct_W1HeroAbilitySet, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FW1HeroAbilitySet), 283327945U) },
+		{ FW1HeroWeaponData::StaticStruct, Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::NewStructOps, TEXT("W1HeroWeaponData"), &Z_Registration_Info_UScriptStruct_W1HeroWeaponData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FW1HeroWeaponData), 3327275099U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1Types_W1StructTypes_h_3005471091(TEXT("/Script/W1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1Types_W1StructTypes_h_3789857293(TEXT("/Script/W1"),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1Types_W1StructTypes_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1Types_W1StructTypes_h_Statics::ScriptStructInfo),
 	nullptr, 0);

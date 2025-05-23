@@ -155,7 +155,7 @@ struct Z_Construct_UClass_AW1HeroWeapon_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AW1HeroWeapon_Statics::NewProp_HeroWeaponData = { "HeroWeaponData", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AW1HeroWeapon, HeroWeaponData), Z_Construct_UScriptStruct_FW1HeroWeaponData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HeroWeaponData_MetaData), NewProp_HeroWeaponData_MetaData) }; // 2261077993
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AW1HeroWeapon_Statics::NewProp_HeroWeaponData = { "HeroWeaponData", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AW1HeroWeapon, HeroWeaponData), Z_Construct_UScriptStruct_FW1HeroWeaponData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HeroWeaponData_MetaData), NewProp_HeroWeaponData_MetaData) }; // 3327275099
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AW1HeroWeapon_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AW1HeroWeapon_Statics::NewProp_HeroWeaponData,
 };
@@ -201,10 +201,10 @@ AW1HeroWeapon::~AW1HeroWeapon() {}
 struct Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Items_Weapons_W1HeroWeapon_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AW1HeroWeapon, AW1HeroWeapon::StaticClass, TEXT("AW1HeroWeapon"), &Z_Registration_Info_UClass_AW1HeroWeapon, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AW1HeroWeapon), 1231298971U) },
+		{ Z_Construct_UClass_AW1HeroWeapon, AW1HeroWeapon::StaticClass, TEXT("AW1HeroWeapon"), &Z_Registration_Info_UClass_AW1HeroWeapon, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AW1HeroWeapon), 488624750U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Items_Weapons_W1HeroWeapon_h_1149568054(TEXT("/Script/W1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Items_Weapons_W1HeroWeapon_h_1459584202(TEXT("/Script/W1"),
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Items_Weapons_W1HeroWeapon_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Items_Weapons_W1HeroWeapon_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

@@ -14,14 +14,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define W1_W1StructTypes_generated_h
 
-#define FID_unreal_action_W1_Source_W1_W1Types_W1StructTypes_h_14_GENERATED_BODY \
+#define FID_unreal_action_W1_Source_W1_W1Types_W1StructTypes_h_15_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FW1HeroAbilitySet_Statics; \
 	W1_API static class UScriptStruct* StaticStruct();
 
 
 template<> W1_API UScriptStruct* StaticStruct<struct FW1HeroAbilitySet>();
 
-#define FID_unreal_action_W1_Source_W1_W1Types_W1StructTypes_h_28_GENERATED_BODY \
+#define FID_unreal_action_W1_Source_W1_W1Types_W1StructTypes_h_29_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics; \
 	W1_API static class UScriptStruct* StaticStruct();
 
