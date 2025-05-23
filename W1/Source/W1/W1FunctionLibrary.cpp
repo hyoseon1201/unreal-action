@@ -20,7 +20,7 @@ void UW1FunctionLibrary::AddGameplayTagToActorIfNone(AActor* InActor, FGameplayT
 	}
 }
 
-void UW1FunctionLibrary::RemoveGTameplayTagFromActorIfFound(AActor* InActor, FGameplayTag TagToRemove)
+void UW1FunctionLibrary::RemoveGameplayTagFromActorIfFound(AActor* InActor, FGameplayTag TagToRemove)
 {
 	UW1AbilitySystemComponent* ASC = NativeGetW1ASCFromActor(InActor);
 

@@ -48,9 +48,9 @@
 			"W1HeroWeapon.cpp.obj",
 			"W1WeaponBase.cpp.obj",
 			"W1.cpp.obj",
-			"W1GameplayTags.cpp.obj",
+			"W1FunctionLibrary.cpp.obj",
 			"W1StructTypes.cpp.obj",
-			"W1FunctionLibrary.cpp.obj"
+			"W1GameplayTags.cpp.obj"
 		]
 	}
 }

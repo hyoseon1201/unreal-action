@@ -19,7 +19,7 @@ struct FGameplayTag;
 
 #define FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execBP_DoesActorHaveTag); \
-	DECLARE_FUNCTION(execRemoveGTameplayTagFromActorIfFound); \
+	DECLARE_FUNCTION(execRemoveGameplayTagFromActorIfFound); \
 	DECLARE_FUNCTION(execAddGameplayTagToActorIfNone);
 
 
