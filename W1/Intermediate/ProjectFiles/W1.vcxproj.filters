@@ -72,6 +72,12 @@
     <Filter Include="Source\W1\AbilitySystems\Abilities">
       <UniqueIdentifier>{F242F0DE-5BC6-3B64-B880-9349200D47F5}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\W1\AbilitySystems\Abilities\W1EnemyGameplayAbility.cpp">
+      <Filter>Source\W1\AbilitySystems\Abilities</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\AbilitySystems\Abilities\W1EnemyGameplayAbility.h">
+      <Filter>Source\W1\AbilitySystems\Abilities</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\W1\AbilitySystems\Abilities\W1GameplayAbility.cpp">
       <Filter>Source\W1\AbilitySystems\Abilities</Filter>
     </ClCompile>
@@ -123,6 +129,12 @@
     <ClInclude Include="..\..\Source\W1\Characters\W1CharacterBase.h">
       <Filter>Source\W1\Characters</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\W1\Characters\W1EnemyCharacter.cpp">
+      <Filter>Source\W1\Characters</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Characters\W1EnemyCharacter.h">
+      <Filter>Source\W1\Characters</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\W1\Characters\W1HeroCharacter.cpp">
       <Filter>Source\W1\Characters</Filter>
     </ClCompile>
@@ -141,6 +153,12 @@
     <Filter Include="Source\W1\Components\Combat">
       <UniqueIdentifier>{7B6B2992-506A-329F-BE12-E8AF03888355}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\W1\Components\Combat\EnemyCombatComponent.cpp">
+      <Filter>Source\W1\Components\Combat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Components\Combat\EnemyCombatComponent.h">
+      <Filter>Source\W1\Components\Combat</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\W1\Components\Combat\HeroCombatComponent.cpp">
       <Filter>Source\W1\Components\Combat</Filter>
     </ClCompile>
@@ -174,6 +192,12 @@
     <Filter Include="Source\W1\DataAssets">
       <UniqueIdentifier>{05CC9218-C3BA-37C3-9995-35D451877012}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\W1\DataAssets\DA_EnemyStartUpData.cpp">
+      <Filter>Source\W1\DataAssets</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\DataAssets\DA_EnemyStartUpData.h">
+      <Filter>Source\W1\DataAssets</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\W1\DataAssets\DA_HeroStartUpData.cpp">
       <Filter>Source\W1\DataAssets</Filter>
     </ClCompile>

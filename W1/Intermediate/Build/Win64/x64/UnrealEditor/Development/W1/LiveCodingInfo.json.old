@@ -2,13 +2,13 @@
 	"RemapUnityFiles": 
 	{
 		"Module.W1.cpp.obj": [
+			"DA_EnemyStartUpData.gen.cpp.obj",
 			"DA_HeroStartUpData.gen.cpp.obj",
 			"DA_InputConfig.gen.cpp.obj",
 			"DA_StartUpDataBase.gen.cpp.obj",
 			"HeroCombatComponent.gen.cpp.obj",
 			"PawnCombatComponent.gen.cpp.obj",
 			"PawnExtensionComponentBase.gen.cpp.obj",
-			"W1.init.gen.cpp.obj",
 			"W1AbilitySystemComponent.gen.cpp.obj",
 			"W1AnimInstanceBase.gen.cpp.obj",
 			"W1AttributeSet.gen.cpp.obj",
@@ -37,6 +37,7 @@
 			"W1CharacterBase.cpp.obj",
 			"W1HeroCharacter.cpp.obj",
 			"HeroCombatComponent.cpp.obj",
+			"PawnCombatComponent.cpp.obj",
 			"W1InputComponent.cpp.obj",
 			"PawnExtensionComponentBase.cpp.obj",
 			"W1HeroController.cpp.obj",
@@ -49,8 +50,11 @@
 			"W1.cpp.obj",
 			"W1FunctionLibrary.cpp.obj",
 			"W1GameplayTags.cpp.obj",
-			"PawnCombatComponent.cpp.obj",
-			"W1StructTypes.cpp.obj"
+			"W1StructTypes.cpp.obj",
+			"W1.init.gen.cpp.obj",
+			"W1EnemyCharacter.gen.cpp.obj",
+			"W1EnemyCharacter.cpp.obj",
+			"DA_EnemyStartUpData.cpp.obj"
 		]
 	}
 }
