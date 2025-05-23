@@ -42,6 +42,12 @@
     <ClInclude Include="..\..\Source\W1\W1DebugHelper.h">
       <Filter>Source\W1</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\W1\W1FunctionLibrary.cpp">
+      <Filter>Source\W1</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\W1FunctionLibrary.h">
+      <Filter>Source\W1</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\W1\W1GameplayTags.cpp">
       <Filter>Source\W1</Filter>
     </ClCompile>

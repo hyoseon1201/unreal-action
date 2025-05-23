@@ -263,6 +263,10 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\W1\W1.h"/>
     <ClInclude Include="..\..\Source\W1\W1DebugHelper.h"/>
+    <ClCompile Include="..\..\Source\W1\W1FunctionLibrary.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\W1FunctionLibrary.h"/>
     <ClCompile Include="..\..\Source\W1\W1GameplayTags.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>

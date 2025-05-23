@@ -8,7 +8,6 @@
 			"HeroCombatComponent.gen.cpp.obj",
 			"PawnCombatComponent.gen.cpp.obj",
 			"PawnExtensionComponentBase.gen.cpp.obj",
-			"W1.init.gen.cpp.obj",
 			"W1AbilitySystemComponent.gen.cpp.obj",
 			"W1AnimInstanceBase.gen.cpp.obj",
 			"W1AttributeSet.gen.cpp.obj",
@@ -47,8 +46,11 @@
 			"W1HeroWeapon.cpp.obj",
 			"W1WeaponBase.cpp.obj",
 			"W1.cpp.obj",
+			"W1GameplayTags.cpp.obj",
 			"W1StructTypes.cpp.obj",
-			"W1GameplayTags.cpp.obj"
+			"W1.init.gen.cpp.obj",
+			"W1FunctionLibrary.gen.cpp.obj",
+			"W1FunctionLibrary.cpp.obj"
 		]
 	}
 }
