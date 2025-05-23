@@ -9,12 +9,19 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AW1EnemyCharacter;
+class UEnemyCombatComponent;
 #ifdef W1_W1EnemyGameplayAbility_generated_h
 #error "W1EnemyGameplayAbility.generated.h already included, missing '#pragma once' in W1EnemyGameplayAbility.h"
 #endif
 #define W1_W1EnemyGameplayAbility_generated_h
 
-#define FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1EnemyGameplayAbility_h_13_INCLASS_NO_PURE_DECLS \
+#define FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1EnemyGameplayAbility_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execGetEnemyCombatComponentFromActorInfo); \
+	DECLARE_FUNCTION(execGetEnemyCharacterFromActorInfo);
+
+
+#define FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1EnemyGameplayAbility_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUW1EnemyGameplayAbility(); \
 	friend struct Z_Construct_UClass_UW1EnemyGameplayAbility_Statics; \
@@ -23,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(UW1EnemyGameplayAbility)
 
 
-#define FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1EnemyGameplayAbility_h_13_ENHANCED_CONSTRUCTORS \
+#define FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1EnemyGameplayAbility_h_16_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UW1EnemyGameplayAbility(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -37,12 +44,13 @@ public: \
 	NO_API virtual ~UW1EnemyGameplayAbility();
 
 
-#define FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1EnemyGameplayAbility_h_10_PROLOG
-#define FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1EnemyGameplayAbility_h_13_GENERATED_BODY \
+#define FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1EnemyGameplayAbility_h_13_PROLOG
+#define FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1EnemyGameplayAbility_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1EnemyGameplayAbility_h_13_INCLASS_NO_PURE_DECLS \
-	FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1EnemyGameplayAbility_h_13_ENHANCED_CONSTRUCTORS \
+	FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1EnemyGameplayAbility_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1EnemyGameplayAbility_h_16_INCLASS_NO_PURE_DECLS \
+	FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1EnemyGameplayAbility_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

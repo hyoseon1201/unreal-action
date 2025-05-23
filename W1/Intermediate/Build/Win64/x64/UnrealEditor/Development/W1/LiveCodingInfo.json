@@ -13,7 +13,6 @@
 			"W1AttributeSet.gen.cpp.obj",
 			"W1CharacterAnimInstance.gen.cpp.obj",
 			"W1CharacterBase.gen.cpp.obj",
-			"W1EnemyGameplayAbility.gen.cpp.obj",
 			"W1FunctionLibrary.gen.cpp.obj",
 			"W1GameModeBase.gen.cpp.obj",
 			"W1GameplayAbility.gen.cpp.obj",
@@ -36,6 +35,7 @@
 			"W1CharacterAnimInstance.cpp.obj",
 			"W1CharacterBase.cpp.obj",
 			"W1HeroCharacter.cpp.obj",
+			"EnemyCombatComponent.cpp.obj",
 			"HeroCombatComponent.cpp.obj",
 			"PawnCombatComponent.cpp.obj",
 			"W1InputComponent.cpp.obj",
@@ -49,14 +49,16 @@
 			"W1WeaponBase.cpp.obj",
 			"W1.cpp.obj",
 			"W1FunctionLibrary.cpp.obj",
-			"W1GameplayTags.cpp.obj",
 			"W1StructTypes.cpp.obj",
 			"DA_EnemyStartUpData.gen.cpp.obj",
+			"EnemyCombatComponent.gen.cpp.obj",
 			"W1.init.gen.cpp.obj",
 			"W1EnemyCharacter.gen.cpp.obj",
+			"W1EnemyGameplayAbility.gen.cpp.obj",
 			"W1EnemyGameplayAbility.cpp.obj",
 			"W1EnemyCharacter.cpp.obj",
-			"DA_EnemyStartUpData.cpp.obj"
+			"DA_EnemyStartUpData.cpp.obj",
+			"W1GameplayTags.cpp.obj"
 		]
 	}
 }
