@@ -49,7 +49,6 @@
 			"W1HeroController.cpp.obj",
 			"DA_EnemyStartUpData.cpp.obj",
 			"DA_HeroStartUpData.cpp.obj",
-			"DA_StartUpDataBase.cpp.obj",
 			"DA_InputConfig.cpp.obj",
 			"W1GameModeBase.cpp.obj",
 			"W1HeroWeapon.cpp.obj",
@@ -58,7 +57,8 @@
 			"W1FunctionLibrary.cpp.obj",
 			"W1GameplayTags.cpp.obj",
 			"W1StructTypes.cpp.obj",
-			"W1AttributeSet.cpp.obj"
+			"W1AttributeSet.cpp.obj",
+			"DA_StartUpDataBase.cpp.obj"
 		]
 	}
 }

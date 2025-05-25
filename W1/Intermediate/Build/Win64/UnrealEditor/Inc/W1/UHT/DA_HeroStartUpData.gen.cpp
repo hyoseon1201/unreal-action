@@ -100,10 +100,10 @@ UDA_HeroStartUpData::~UDA_HeroStartUpData() {}
 struct Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_DataAssets_DA_HeroStartUpData_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UDA_HeroStartUpData, UDA_HeroStartUpData::StaticClass, TEXT("UDA_HeroStartUpData"), &Z_Registration_Info_UClass_UDA_HeroStartUpData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDA_HeroStartUpData), 1224574263U) },
+		{ Z_Construct_UClass_UDA_HeroStartUpData, UDA_HeroStartUpData::StaticClass, TEXT("UDA_HeroStartUpData"), &Z_Registration_Info_UClass_UDA_HeroStartUpData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDA_HeroStartUpData), 832474568U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_DataAssets_DA_HeroStartUpData_h_2939992535(TEXT("/Script/W1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_DataAssets_DA_HeroStartUpData_h_2932708599(TEXT("/Script/W1"),
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_DataAssets_DA_HeroStartUpData_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_DataAssets_DA_HeroStartUpData_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
