@@ -1,6 +1,7 @@
 
 #include "Components/Combat/PawnCombatComponent.h"
 #include "Items/Weapons/W1WeaponBase.h"
+#include "Components/BoxComponent.h"
 
 #include "W1DebugHelper.h"
 
@@ -38,4 +39,25 @@ AW1WeaponBase* UPawnCombatComponent::GetCharacterCurrentEquippedWeapon() const
 	}
 
 	return GetCharacterCarriedWeaponByTag(CurrentEquippedWeaponTag);
+}
+
+void UPawnCombatComponent::ToggleWeaponCollision(bool bShouldEnable, EToggleDamageType ToggleDamageType)
+{
+	if (ToggleDamageType == EToggleDamageType::CurrentEquippedWeapon)
+	{
+		AW1WeaponBase* WeaponToToggle = GetCharacterCurrentEquippedWeapon();
+
+		check(WeaponToToggle);
+
+		if (bShouldEnable)
+		{
+			WeaponToToggle->GetWeaponCollisionBox()->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+		}
+		else
+		{
+			WeaponToToggle->GetWeaponCollisionBox()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+		}
+	}
+
+	// TODO : Handle Body collision boxes
 }

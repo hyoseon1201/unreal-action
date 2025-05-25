@@ -10,19 +10,21 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AW1WeaponBase;
+enum class EToggleDamageType : uint8;
 struct FGameplayTag;
 #ifdef W1_PawnCombatComponent_generated_h
 #error "PawnCombatComponent.generated.h already included, missing '#pragma once' in PawnCombatComponent.h"
 #endif
 #define W1_PawnCombatComponent_generated_h
 
-#define FID_unreal_action_W1_Source_W1_Components_Combat_PawnCombatComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_unreal_action_W1_Source_W1_Components_Combat_PawnCombatComponent_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execToggleWeaponCollision); \
 	DECLARE_FUNCTION(execGetCharacterCurrentEquippedWeapon); \
 	DECLARE_FUNCTION(execGetCharacterCarriedWeaponByTag); \
 	DECLARE_FUNCTION(execRegisterSpawnedWeapon);
 
 
-#define FID_unreal_action_W1_Source_W1_Components_Combat_PawnCombatComponent_h_16_INCLASS_NO_PURE_DECLS \
+#define FID_unreal_action_W1_Source_W1_Components_Combat_PawnCombatComponent_h_24_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUPawnCombatComponent(); \
 	friend struct Z_Construct_UClass_UPawnCombatComponent_Statics; \
@@ -31,7 +33,7 @@ public: \
 	DECLARE_SERIALIZER(UPawnCombatComponent)
 
 
-#define FID_unreal_action_W1_Source_W1_Components_Combat_PawnCombatComponent_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_unreal_action_W1_Source_W1_Components_Combat_PawnCombatComponent_h_24_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UPawnCombatComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -45,13 +47,13 @@ public: \
 	NO_API virtual ~UPawnCombatComponent();
 
 
-#define FID_unreal_action_W1_Source_W1_Components_Combat_PawnCombatComponent_h_13_PROLOG
-#define FID_unreal_action_W1_Source_W1_Components_Combat_PawnCombatComponent_h_16_GENERATED_BODY \
+#define FID_unreal_action_W1_Source_W1_Components_Combat_PawnCombatComponent_h_21_PROLOG
+#define FID_unreal_action_W1_Source_W1_Components_Combat_PawnCombatComponent_h_24_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_unreal_action_W1_Source_W1_Components_Combat_PawnCombatComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_unreal_action_W1_Source_W1_Components_Combat_PawnCombatComponent_h_16_INCLASS_NO_PURE_DECLS \
-	FID_unreal_action_W1_Source_W1_Components_Combat_PawnCombatComponent_h_16_ENHANCED_CONSTRUCTORS \
+	FID_unreal_action_W1_Source_W1_Components_Combat_PawnCombatComponent_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_unreal_action_W1_Source_W1_Components_Combat_PawnCombatComponent_h_24_INCLASS_NO_PURE_DECLS \
+	FID_unreal_action_W1_Source_W1_Components_Combat_PawnCombatComponent_h_24_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -61,5 +63,14 @@ template<> W1_API UClass* StaticClass<class UPawnCombatComponent>();
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FID_unreal_action_W1_Source_W1_Components_Combat_PawnCombatComponent_h
 
+
+#define FOREACH_ENUM_ETOGGLEDAMAGETYPE(op) \
+	op(EToggleDamageType::CurrentEquippedWeapon) \
+	op(EToggleDamageType::LeftHand) \
+	op(EToggleDamageType::RightHand) 
+
+enum class EToggleDamageType : uint8;
+template<> struct TIsUEnumClass<EToggleDamageType> { enum { Value = true }; };
+template<> W1_API UEnum* StaticEnum<EToggleDamageType>();
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

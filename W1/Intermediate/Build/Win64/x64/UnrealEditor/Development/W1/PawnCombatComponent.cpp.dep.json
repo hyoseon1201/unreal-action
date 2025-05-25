@@ -15,6 +15,10 @@
             "e:\\unreal-action\\w1\\intermediate\\build\\win64\\unrealeditor\\inc\\w1\\uht\\pawncombatcomponent.generated.h",
             "e:\\unreal-action\\w1\\source\\w1\\items\\weapons\\w1weaponbase.h",
             "e:\\unreal-action\\w1\\intermediate\\build\\win64\\unrealeditor\\inc\\w1\\uht\\w1weaponbase.generated.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\components\\boxcomponent.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\boxcomponent.generated.h",
             "e:\\unreal-action\\w1\\source\\w1\\w1debughelper.h"
         ],
         "ImportedModules": [],

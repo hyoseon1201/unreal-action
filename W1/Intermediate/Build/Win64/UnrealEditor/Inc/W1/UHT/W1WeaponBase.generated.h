@@ -9,10 +9,18 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
+class UPrimitiveComponent;
+struct FHitResult;
 #ifdef W1_W1WeaponBase_generated_h
 #error "W1WeaponBase.generated.h already included, missing '#pragma once' in W1WeaponBase.h"
 #endif
 #define W1_W1WeaponBase_generated_h
+
+#define FID_unreal_action_W1_Source_W1_Items_Weapons_W1WeaponBase_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execOnCollisionBoxEndOverlap); \
+	DECLARE_FUNCTION(execOnCollisionBoxBeginOverlap);
+
 
 #define FID_unreal_action_W1_Source_W1_Items_Weapons_W1WeaponBase_h_13_INCLASS_NO_PURE_DECLS \
 private: \
@@ -39,6 +47,7 @@ public: \
 #define FID_unreal_action_W1_Source_W1_Items_Weapons_W1WeaponBase_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_unreal_action_W1_Source_W1_Items_Weapons_W1WeaponBase_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_unreal_action_W1_Source_W1_Items_Weapons_W1WeaponBase_h_13_INCLASS_NO_PURE_DECLS \
 	FID_unreal_action_W1_Source_W1_Items_Weapons_W1WeaponBase_h_13_ENHANCED_CONSTRUCTORS \
 private: \

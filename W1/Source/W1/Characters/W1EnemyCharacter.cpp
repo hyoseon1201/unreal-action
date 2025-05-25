@@ -51,8 +51,6 @@ void AW1EnemyCharacter::InitEnemyStartUpData()
 				if (UDA_StartUpDataBase* LoadedData = CharacterStartUpData.Get())
 				{
 					LoadedData->GiveToAbilitySystemComponent(W1AbilitySystemComponent);
-
-					Debug::Print(TEXT("Enemy Start Up Data Loaded"), FColor::Green);
 				}
 			}
 		)
