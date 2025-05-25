@@ -2,16 +2,11 @@
 #pragma once
 
 #include "Kismet/BlueprintFunctionLibrary.h"
+#include "W1Types/W1EnumTypes.h"
 #include "W1FunctionLibrary.generated.h"
 
 class UW1AbilitySystemComponent;
-
-UENUM()
-enum class EW1ConfirmType : uint8
-{
-	Yes,
-	No
-};
+class UPawnCombatComponent;
 
 /**
  * 
@@ -34,4 +29,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "W1|FunctionLibrary", meta = (DisplayName = "Does Actor Have Tag", ExpandEnumAsExecs = "OutConfirmType"))
 	static void BP_DoesActorHaveTag(AActor* InActor, FGameplayTag TagToCheck, EW1ConfirmType& OutConfirmType);
+
+	static UPawnCombatComponent* NativeGetPawnCombatComponentFromActor(AActor* InActor);
+
+	UFUNCTION(BlueprintCallable, Category = "W1|FunctionLibrary", meta = (DisplayName = "GetPawnCombatComponentFromActor", ExpandEnumAsExecs = "OutValidType"))
+	static UPawnCombatComponent* BP_GetPawnCombatComponentFromActor(AActor* InActor, EW1ValidType& OutValidType);
 };

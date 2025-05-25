@@ -15,61 +15,12 @@ ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UBlueprintFunctionLibrary();
 GAMEPLAYTAGS_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayTag();
 UPackage* Z_Construct_UPackage__Script_W1();
+W1_API UClass* Z_Construct_UClass_UPawnCombatComponent_NoRegister();
 W1_API UClass* Z_Construct_UClass_UW1FunctionLibrary();
 W1_API UClass* Z_Construct_UClass_UW1FunctionLibrary_NoRegister();
 W1_API UEnum* Z_Construct_UEnum_W1_EW1ConfirmType();
+W1_API UEnum* Z_Construct_UEnum_W1_EW1ValidType();
 // End Cross Module References
-
-// Begin Enum EW1ConfirmType
-static FEnumRegistrationInfo Z_Registration_Info_UEnum_EW1ConfirmType;
-static UEnum* EW1ConfirmType_StaticEnum()
-{
-	if (!Z_Registration_Info_UEnum_EW1ConfirmType.OuterSingleton)
-	{
-		Z_Registration_Info_UEnum_EW1ConfirmType.OuterSingleton = GetStaticEnum(Z_Construct_UEnum_W1_EW1ConfirmType, (UObject*)Z_Construct_UPackage__Script_W1(), TEXT("EW1ConfirmType"));
-	}
-	return Z_Registration_Info_UEnum_EW1ConfirmType.OuterSingleton;
-}
-template<> W1_API UEnum* StaticEnum<EW1ConfirmType>()
-{
-	return EW1ConfirmType_StaticEnum();
-}
-struct Z_Construct_UEnum_W1_EW1ConfirmType_Statics
-{
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
-		{ "ModuleRelativePath", "W1FunctionLibrary.h" },
-		{ "No.Name", "EW1ConfirmType::No" },
-		{ "Yes.Name", "EW1ConfirmType::Yes" },
-	};
-#endif // WITH_METADATA
-	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
-		{ "EW1ConfirmType::Yes", (int64)EW1ConfirmType::Yes },
-		{ "EW1ConfirmType::No", (int64)EW1ConfirmType::No },
-	};
-	static const UECodeGen_Private::FEnumParams EnumParams;
-};
-const UECodeGen_Private::FEnumParams Z_Construct_UEnum_W1_EW1ConfirmType_Statics::EnumParams = {
-	(UObject*(*)())Z_Construct_UPackage__Script_W1,
-	nullptr,
-	"EW1ConfirmType",
-	"EW1ConfirmType",
-	Z_Construct_UEnum_W1_EW1ConfirmType_Statics::Enumerators,
-	RF_Public|RF_Transient|RF_MarkAsNative,
-	UE_ARRAY_COUNT(Z_Construct_UEnum_W1_EW1ConfirmType_Statics::Enumerators),
-	EEnumFlags::None,
-	(uint8)UEnum::ECppForm::EnumClass,
-	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UEnum_W1_EW1ConfirmType_Statics::Enum_MetaDataParams), Z_Construct_UEnum_W1_EW1ConfirmType_Statics::Enum_MetaDataParams)
-};
-UEnum* Z_Construct_UEnum_W1_EW1ConfirmType()
-{
-	if (!Z_Registration_Info_UEnum_EW1ConfirmType.InnerSingleton)
-	{
-		UECodeGen_Private::ConstructUEnum(Z_Registration_Info_UEnum_EW1ConfirmType.InnerSingleton, Z_Construct_UEnum_W1_EW1ConfirmType_Statics::EnumParams);
-	}
-	return Z_Registration_Info_UEnum_EW1ConfirmType.InnerSingleton;
-}
-// End Enum EW1ConfirmType
 
 // Begin Class UW1FunctionLibrary Function AddGameplayTagToActorIfNone
 struct Z_Construct_UFunction_UW1FunctionLibrary_AddGameplayTagToActorIfNone_Statics
@@ -146,7 +97,7 @@ struct Z_Construct_UFunction_UW1FunctionLibrary_BP_DoesActorHaveTag_Statics
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UW1FunctionLibrary_BP_DoesActorHaveTag_Statics::NewProp_InActor = { "InActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1FunctionLibrary_eventBP_DoesActorHaveTag_Parms, InActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UW1FunctionLibrary_BP_DoesActorHaveTag_Statics::NewProp_TagToCheck = { "TagToCheck", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1FunctionLibrary_eventBP_DoesActorHaveTag_Parms, TagToCheck), Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(0, nullptr) }; // 1298103297
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UW1FunctionLibrary_BP_DoesActorHaveTag_Statics::NewProp_OutConfirmType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UW1FunctionLibrary_BP_DoesActorHaveTag_Statics::NewProp_OutConfirmType = { "OutConfirmType", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1FunctionLibrary_eventBP_DoesActorHaveTag_Parms, OutConfirmType), Z_Construct_UEnum_W1_EW1ConfirmType, METADATA_PARAMS(0, nullptr) }; // 2510130876
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UW1FunctionLibrary_BP_DoesActorHaveTag_Statics::NewProp_OutConfirmType = { "OutConfirmType", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1FunctionLibrary_eventBP_DoesActorHaveTag_Parms, OutConfirmType), Z_Construct_UEnum_W1_EW1ConfirmType, METADATA_PARAMS(0, nullptr) }; // 1163415110
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UW1FunctionLibrary_BP_DoesActorHaveTag_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1FunctionLibrary_BP_DoesActorHaveTag_Statics::NewProp_InActor,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1FunctionLibrary_BP_DoesActorHaveTag_Statics::NewProp_TagToCheck,
@@ -176,6 +127,66 @@ DEFINE_FUNCTION(UW1FunctionLibrary::execBP_DoesActorHaveTag)
 	P_NATIVE_END;
 }
 // End Class UW1FunctionLibrary Function BP_DoesActorHaveTag
+
+// Begin Class UW1FunctionLibrary Function BP_GetPawnCombatComponentFromActor
+struct Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor_Statics
+{
+	struct W1FunctionLibrary_eventBP_GetPawnCombatComponentFromActor_Parms
+	{
+		AActor* InActor;
+		EW1ValidType OutValidType;
+		UPawnCombatComponent* ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "W1|FunctionLibrary" },
+		{ "DisplayName", "GetPawnCombatComponentFromActor" },
+		{ "ExpandEnumAsExecs", "OutValidType" },
+		{ "ModuleRelativePath", "W1FunctionLibrary.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_InActor;
+	static const UECodeGen_Private::FBytePropertyParams NewProp_OutValidType_Underlying;
+	static const UECodeGen_Private::FEnumPropertyParams NewProp_OutValidType;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor_Statics::NewProp_InActor = { "InActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1FunctionLibrary_eventBP_GetPawnCombatComponentFromActor_Parms, InActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor_Statics::NewProp_OutValidType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor_Statics::NewProp_OutValidType = { "OutValidType", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1FunctionLibrary_eventBP_GetPawnCombatComponentFromActor_Parms, OutValidType), Z_Construct_UEnum_W1_EW1ValidType, METADATA_PARAMS(0, nullptr) }; // 851855648
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1FunctionLibrary_eventBP_GetPawnCombatComponentFromActor_Parms, ReturnValue), Z_Construct_UClass_UPawnCombatComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor_Statics::NewProp_InActor,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor_Statics::NewProp_OutValidType_Underlying,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor_Statics::NewProp_OutValidType,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UW1FunctionLibrary, nullptr, "BP_GetPawnCombatComponentFromActor", nullptr, nullptr, Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor_Statics::PropPointers), sizeof(Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor_Statics::W1FunctionLibrary_eventBP_GetPawnCombatComponentFromActor_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor_Statics::W1FunctionLibrary_eventBP_GetPawnCombatComponentFromActor_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UW1FunctionLibrary::execBP_GetPawnCombatComponentFromActor)
+{
+	P_GET_OBJECT(AActor,Z_Param_InActor);
+	P_GET_ENUM_REF(EW1ValidType,Z_Param_Out_OutValidType);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(UPawnCombatComponent**)Z_Param__Result=UW1FunctionLibrary::BP_GetPawnCombatComponentFromActor(Z_Param_InActor,(EW1ValidType&)(Z_Param_Out_OutValidType));
+	P_NATIVE_END;
+}
+// End Class UW1FunctionLibrary Function BP_GetPawnCombatComponentFromActor
 
 // Begin Class UW1FunctionLibrary Function RemoveGameplayTagFromActorIfFound
 struct Z_Construct_UFunction_UW1FunctionLibrary_RemoveGameplayTagFromActorIfFound_Statics
@@ -232,6 +243,7 @@ void UW1FunctionLibrary::StaticRegisterNativesUW1FunctionLibrary()
 	static const FNameNativePtrPair Funcs[] = {
 		{ "AddGameplayTagToActorIfNone", &UW1FunctionLibrary::execAddGameplayTagToActorIfNone },
 		{ "BP_DoesActorHaveTag", &UW1FunctionLibrary::execBP_DoesActorHaveTag },
+		{ "BP_GetPawnCombatComponentFromActor", &UW1FunctionLibrary::execBP_GetPawnCombatComponentFromActor },
 		{ "RemoveGameplayTagFromActorIfFound", &UW1FunctionLibrary::execRemoveGameplayTagFromActorIfFound },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -255,7 +267,8 @@ struct Z_Construct_UClass_UW1FunctionLibrary_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_AddGameplayTagToActorIfNone, "AddGameplayTagToActorIfNone" }, // 2269320346
-		{ &Z_Construct_UFunction_UW1FunctionLibrary_BP_DoesActorHaveTag, "BP_DoesActorHaveTag" }, // 1853837097
+		{ &Z_Construct_UFunction_UW1FunctionLibrary_BP_DoesActorHaveTag, "BP_DoesActorHaveTag" }, // 2172562801
+		{ &Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor, "BP_GetPawnCombatComponentFromActor" }, // 939907904
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_RemoveGameplayTagFromActorIfFound, "RemoveGameplayTagFromActorIfFound" }, // 105731849
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -304,16 +317,13 @@ UW1FunctionLibrary::~UW1FunctionLibrary() {}
 // Begin Registration
 struct Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_Statics
 {
-	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EW1ConfirmType_StaticEnum, TEXT("EW1ConfirmType"), &Z_Registration_Info_UEnum_EW1ConfirmType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2510130876U) },
-	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UW1FunctionLibrary, UW1FunctionLibrary::StaticClass, TEXT("UW1FunctionLibrary"), &Z_Registration_Info_UClass_UW1FunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UW1FunctionLibrary), 388669942U) },
+		{ Z_Construct_UClass_UW1FunctionLibrary, UW1FunctionLibrary::StaticClass, TEXT("UW1FunctionLibrary"), &Z_Registration_Info_UClass_UW1FunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UW1FunctionLibrary), 3985090864U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_206265439(TEXT("/Script/W1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_1126768275(TEXT("/Script/W1"),
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_Statics::EnumInfo));
+	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

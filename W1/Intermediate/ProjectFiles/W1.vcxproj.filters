@@ -228,6 +228,15 @@
     <ClInclude Include="..\..\Source\W1\GameModes\W1GameModeBase.h">
       <Filter>Source\W1\GameModes</Filter>
     </ClInclude>
+    <Filter Include="Source\W1\Interfaces">
+      <UniqueIdentifier>{6106F730-8789-3D15-B376-46BAEAD31369}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\W1\Interfaces\PawnCombatInterface.cpp">
+      <Filter>Source\W1\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Interfaces\PawnCombatInterface.h">
+      <Filter>Source\W1\Interfaces</Filter>
+    </ClInclude>
     <Filter Include="Source\W1\Items">
       <UniqueIdentifier>{B377E2CC-6BDD-3F6B-B463-A4B692C306BE}</UniqueIdentifier>
     </Filter>
@@ -253,6 +262,11 @@
       <Filter>Source\W1\W1Types</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\W1\W1Types\W1StructTypes.h">
+      <Filter>Source\W1\W1Types</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\W1\W1Types\W1EnumTypes.h">
       <Filter>Source\W1\W1Types</Filter>
     </ClInclude>
   </ItemGroup>

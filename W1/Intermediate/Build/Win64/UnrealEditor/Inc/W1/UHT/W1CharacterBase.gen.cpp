@@ -16,6 +16,7 @@ UPackage* Z_Construct_UPackage__Script_W1();
 W1_API UClass* Z_Construct_UClass_AW1CharacterBase();
 W1_API UClass* Z_Construct_UClass_AW1CharacterBase_NoRegister();
 W1_API UClass* Z_Construct_UClass_UDA_StartUpDataBase_NoRegister();
+W1_API UClass* Z_Construct_UClass_UPawnCombatInterface_NoRegister();
 W1_API UClass* Z_Construct_UClass_UW1AbilitySystemComponent_NoRegister();
 W1_API UClass* Z_Construct_UClass_UW1AttributeSet_NoRegister();
 // End Cross Module References
@@ -82,6 +83,7 @@ UObject* (*const Z_Construct_UClass_AW1CharacterBase_Statics::DependentSingleton
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AW1CharacterBase_Statics::DependentSingletons) < 16);
 const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AW1CharacterBase_Statics::InterfaceParams[] = {
 	{ Z_Construct_UClass_UAbilitySystemInterface_NoRegister, (int32)VTABLE_OFFSET(AW1CharacterBase, IAbilitySystemInterface), false },  // 2272790346
+	{ Z_Construct_UClass_UPawnCombatInterface_NoRegister, (int32)VTABLE_OFFSET(AW1CharacterBase, IPawnCombatInterface), false },  // 3319181939
 };
 const UECodeGen_Private::FClassParams Z_Construct_UClass_AW1CharacterBase_Statics::ClassParams = {
 	&AW1CharacterBase::StaticClass,
@@ -118,10 +120,10 @@ AW1CharacterBase::~AW1CharacterBase() {}
 struct Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Characters_W1CharacterBase_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AW1CharacterBase, AW1CharacterBase::StaticClass, TEXT("AW1CharacterBase"), &Z_Registration_Info_UClass_AW1CharacterBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AW1CharacterBase), 2704566768U) },
+		{ Z_Construct_UClass_AW1CharacterBase, AW1CharacterBase::StaticClass, TEXT("AW1CharacterBase"), &Z_Registration_Info_UClass_AW1CharacterBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AW1CharacterBase), 2415335663U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Characters_W1CharacterBase_h_3333551555(TEXT("/Script/W1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Characters_W1CharacterBase_h_2263824467(TEXT("/Script/W1"),
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Characters_W1CharacterBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Characters_W1CharacterBase_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

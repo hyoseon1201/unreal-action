@@ -2,6 +2,7 @@
 #include "W1FunctionLibrary.h"
 #include "AbilitySystemBlueprintLibrary.h"
 #include "AbilitySystems/W1AbilitySystemComponent.h"
+#include "Interfaces/PawnCombatInterface.h"
 
 UW1AbilitySystemComponent* UW1FunctionLibrary::NativeGetW1ASCFromActor(AActor* InActor)
 {
@@ -40,4 +41,25 @@ bool UW1FunctionLibrary::NativeDoesActorHaveTag(AActor* InActor, FGameplayTag Ta
 void UW1FunctionLibrary::BP_DoesActorHaveTag(AActor* InActor, FGameplayTag TagToCheck, EW1ConfirmType& OutConfirmType)
 {
 	OutConfirmType = NativeDoesActorHaveTag(InActor, TagToCheck) ? EW1ConfirmType::Yes : EW1ConfirmType::No;
+}
+
+UPawnCombatComponent* UW1FunctionLibrary::NativeGetPawnCombatComponentFromActor(AActor* InActor)
+{
+	check(InActor);
+
+	if (IPawnCombatInterface* PawnCombatInterface = Cast<IPawnCombatInterface>(InActor))
+	{
+		return PawnCombatInterface->GetPawnCombatComponent();
+	}
+
+	return nullptr;
+}
+
+UPawnCombatComponent* UW1FunctionLibrary::BP_GetPawnCombatComponentFromActor(AActor* InActor, EW1ValidType& OutValidType)
+{
+	UPawnCombatComponent* CombatComponent = NativeGetPawnCombatComponentFromActor(InActor);
+
+	OutValidType = CombatComponent ? EW1ValidType::Valid : EW1ValidType::InValid;
+
+	return CombatComponent;
 }

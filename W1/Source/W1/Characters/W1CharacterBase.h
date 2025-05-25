@@ -3,6 +3,7 @@
 
 #include "GameFramework/Character.h"
 #include "AbilitySystemInterface.h"
+#include "Interfaces/PawnCombatInterface.h"
 #include "W1CharacterBase.generated.h"
 
 class UW1AbilitySystemComponent;
@@ -10,7 +11,7 @@ class UW1AttributeSet;
 class UDA_StartUpDataBase;
 
 UCLASS()
-class W1_API AW1CharacterBase : public ACharacter, public IAbilitySystemInterface
+class W1_API AW1CharacterBase : public ACharacter, public IAbilitySystemInterface, public IPawnCombatInterface
 {
 	GENERATED_BODY()
 
@@ -21,6 +22,10 @@ public:
 	//~ Begin AbilitySystem Interface
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const;
 	//~ End AbilitySystem Interface
+
+	//~ Begin PawnCombatInterface Interface
+	virtual UPawnCombatComponent* GetPawnCombatComponent() const override;
+	//~ End PawnCombatInterface Interface
 
 protected:
 	//~ Begin APawn Interface

@@ -21,6 +21,11 @@ UAbilitySystemComponent* AW1CharacterBase::GetAbilitySystemComponent() const
 	return GetW1AbilitySystemComponent();
 }
 
+UPawnCombatComponent* AW1CharacterBase::GetPawnCombatComponent() const
+{
+	return nullptr;
+}
+
 void AW1CharacterBase::PossessedBy(AController* NewController)
 {
 	Super::PossessedBy(NewController);

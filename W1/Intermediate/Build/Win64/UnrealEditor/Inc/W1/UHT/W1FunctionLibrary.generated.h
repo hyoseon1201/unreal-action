@@ -10,20 +10,23 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AActor;
+class UPawnCombatComponent;
 enum class EW1ConfirmType : uint8;
+enum class EW1ValidType : uint8;
 struct FGameplayTag;
 #ifdef W1_W1FunctionLibrary_generated_h
 #error "W1FunctionLibrary.generated.h already included, missing '#pragma once' in W1FunctionLibrary.h"
 #endif
 #define W1_W1FunctionLibrary_generated_h
 
-#define FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execBP_GetPawnCombatComponentFromActor); \
 	DECLARE_FUNCTION(execBP_DoesActorHaveTag); \
 	DECLARE_FUNCTION(execRemoveGameplayTagFromActorIfFound); \
 	DECLARE_FUNCTION(execAddGameplayTagToActorIfNone);
 
 
-#define FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_22_INCLASS_NO_PURE_DECLS \
+#define FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUW1FunctionLibrary(); \
 	friend struct Z_Construct_UClass_UW1FunctionLibrary_Statics; \
@@ -32,7 +35,7 @@ public: \
 	DECLARE_SERIALIZER(UW1FunctionLibrary)
 
 
-#define FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_22_ENHANCED_CONSTRUCTORS \
+#define FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_17_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UW1FunctionLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -46,13 +49,13 @@ public: \
 	NO_API virtual ~UW1FunctionLibrary();
 
 
-#define FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_19_PROLOG
-#define FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_22_GENERATED_BODY \
+#define FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_14_PROLOG
+#define FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_22_INCLASS_NO_PURE_DECLS \
-	FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_22_ENHANCED_CONSTRUCTORS \
+	FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_17_INCLASS_NO_PURE_DECLS \
+	FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -62,13 +65,5 @@ template<> W1_API UClass* StaticClass<class UW1FunctionLibrary>();
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h
 
-
-#define FOREACH_ENUM_EW1CONFIRMTYPE(op) \
-	op(EW1ConfirmType::Yes) \
-	op(EW1ConfirmType::No) 
-
-enum class EW1ConfirmType : uint8;
-template<> struct TIsUEnumClass<EW1ConfirmType> { enum { Value = true }; };
-template<> W1_API UEnum* StaticEnum<EW1ConfirmType>();
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

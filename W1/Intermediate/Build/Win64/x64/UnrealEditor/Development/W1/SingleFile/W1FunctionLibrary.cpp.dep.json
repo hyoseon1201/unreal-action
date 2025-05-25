@@ -530,6 +530,7 @@
             "e:\\ue_5.4\\engine\\source\\runtime\\coreuobject\\public\\uobject\\enumproperty.h",
             "e:\\ue_5.4\\engine\\source\\runtime\\coreuobject\\public\\uobject\\fieldpathproperty.h",
             "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\blueprintfunctionlibrary.generated.h",
+            "e:\\unreal-action\\w1\\source\\w1\\w1types\\w1enumtypes.h",
             "e:\\unreal-action\\w1\\intermediate\\build\\win64\\unrealeditor\\inc\\w1\\uht\\w1functionlibrary.generated.h",
             "e:\\ue_5.4\\engine\\plugins\\runtime\\gameplayabilities\\source\\gameplayabilities\\public\\abilitysystemblueprintlibrary.h",
             "e:\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\engine\\enginetypes.h",
@@ -782,7 +783,9 @@
             "e:\\ue_5.4\\engine\\plugins\\runtime\\gameplayabilities\\intermediate\\build\\win64\\unrealeditor\\inc\\gameplayabilities\\uht\\abilitysystemcomponent.generated.h",
             "e:\\unreal-action\\w1\\source\\w1\\w1types\\w1structtypes.h",
             "e:\\unreal-action\\w1\\intermediate\\build\\win64\\unrealeditor\\inc\\w1\\uht\\w1structtypes.generated.h",
-            "e:\\unreal-action\\w1\\intermediate\\build\\win64\\unrealeditor\\inc\\w1\\uht\\w1abilitysystemcomponent.generated.h"
+            "e:\\unreal-action\\w1\\intermediate\\build\\win64\\unrealeditor\\inc\\w1\\uht\\w1abilitysystemcomponent.generated.h",
+            "e:\\unreal-action\\w1\\source\\w1\\interfaces\\pawncombatinterface.h",
+            "e:\\unreal-action\\w1\\intermediate\\build\\win64\\unrealeditor\\inc\\w1\\uht\\pawncombatinterface.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

@@ -59,6 +59,7 @@
 				"E:/unreal-action/W1/Content/EnemyCharacter/Gruntling/GameplayEffect/CT_GruntlingGaurdianStats.uasset",
 				"E:/unreal-action/W1/Content/EnemyCharacter/Gruntling/GameplayEffect/GE_GruntlingGuardian_StartUp.uasset",
 				"E:/unreal-action/W1/Content/Shared/GameplayEffect/GE_Enemy_Static.uasset",
+				"E:/unreal-action/W1/Content/Shared/AnimNotifyState/ANS_ToggleWeaponCollision.uasset",
 				"E:/unreal-action/W1/Content/EnemyCharacter/BP_Gruntling_Guardian_Weapon.uasset",
 				"E:/unreal-action/W1/Content/Shared/GameplayAbility/GA_Shared_SpawnWeapon.uasset",
 				"E:/unreal-action/W1/Content/Shared/GameplayAbility/GA_Gruntling_Guardian_SpawnWeapon.uasset",

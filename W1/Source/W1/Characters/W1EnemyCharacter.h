@@ -17,6 +17,10 @@ class W1_API AW1EnemyCharacter : public AW1CharacterBase
 public:
 	AW1EnemyCharacter();
 
+	//~ Begin PawnCombatInterface Interface
+	virtual UPawnCombatComponent* GetPawnCombatComponent() const override;
+	//~ End PawnCombatInterface Interface
+
 protected:
 	//~ Begin APawn Interface
 	virtual void PossessedBy(AController* NewController) override;
