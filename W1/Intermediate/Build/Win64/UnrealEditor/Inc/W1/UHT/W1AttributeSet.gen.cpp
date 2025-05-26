@@ -61,6 +61,10 @@ struct Z_Construct_UClass_UW1AttributeSet_Statics
 		{ "Category", "Damage" },
 		{ "ModuleRelativePath", "AbilitySystems/W1AttributeSet.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DamageTaken_MetaData[] = {
+		{ "Category", "Damage" },
+		{ "ModuleRelativePath", "AbilitySystems/W1AttributeSet.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_CurrentHealth;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_MaxHealth;
@@ -68,6 +72,7 @@ struct Z_Construct_UClass_UW1AttributeSet_Statics
 	static const UECodeGen_Private::FStructPropertyParams NewProp_MaxRage;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_AttackPower;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_DefensePower;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_DamageTaken;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -81,6 +86,7 @@ const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UW1AttributeSe
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UW1AttributeSet_Statics::NewProp_MaxRage = { "MaxRage", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UW1AttributeSet, MaxRage), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxRage_MetaData), NewProp_MaxRage_MetaData) }; // 675369593
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UW1AttributeSet_Statics::NewProp_AttackPower = { "AttackPower", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UW1AttributeSet, AttackPower), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttackPower_MetaData), NewProp_AttackPower_MetaData) }; // 675369593
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UW1AttributeSet_Statics::NewProp_DefensePower = { "DefensePower", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UW1AttributeSet, DefensePower), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefensePower_MetaData), NewProp_DefensePower_MetaData) }; // 675369593
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UW1AttributeSet_Statics::NewProp_DamageTaken = { "DamageTaken", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UW1AttributeSet, DamageTaken), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DamageTaken_MetaData), NewProp_DamageTaken_MetaData) }; // 675369593
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UW1AttributeSet_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UW1AttributeSet_Statics::NewProp_CurrentHealth,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UW1AttributeSet_Statics::NewProp_MaxHealth,
@@ -88,6 +94,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UW1Attrib
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UW1AttributeSet_Statics::NewProp_MaxRage,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UW1AttributeSet_Statics::NewProp_AttackPower,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UW1AttributeSet_Statics::NewProp_DefensePower,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UW1AttributeSet_Statics::NewProp_DamageTaken,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UW1AttributeSet_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UW1AttributeSet_Statics::DependentSingletons[])() = {
@@ -130,10 +137,10 @@ UW1AttributeSet::~UW1AttributeSet() {}
 struct Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_AbilitySystems_W1AttributeSet_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UW1AttributeSet, UW1AttributeSet::StaticClass, TEXT("UW1AttributeSet"), &Z_Registration_Info_UClass_UW1AttributeSet, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UW1AttributeSet), 2455002271U) },
+		{ Z_Construct_UClass_UW1AttributeSet, UW1AttributeSet::StaticClass, TEXT("UW1AttributeSet"), &Z_Registration_Info_UClass_UW1AttributeSet, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UW1AttributeSet), 4012997892U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_AbilitySystems_W1AttributeSet_h_3673274631(TEXT("/Script/W1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_AbilitySystems_W1AttributeSet_h_1607595474(TEXT("/Script/W1"),
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_AbilitySystems_W1AttributeSet_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_AbilitySystems_W1AttributeSet_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

@@ -12,4 +12,8 @@ class W1_API UGEExecCalc_DamageTaken : public UGameplayEffectExecutionCalculatio
 {
 	GENERATED_BODY()
 	
+public:
+	UGEExecCalc_DamageTaken();
+
+	virtual void Execute_Implementation(const FGameplayEffectCustomExecutionParameters& ExecutionParams, FGameplayEffectCustomExecutionOutput& OutExecutionOutput) const override;
 };
