@@ -17,4 +17,7 @@ class W1_API UHeroCombatComponent : public UPawnCombatComponent
 public:
 	UFUNCTION(BlueprintPure, Category = "W1|Combat")
 	AW1HeroWeapon* GetHeroCarriedWeaponByTag(FGameplayTag InWeaponTag);
+
+	virtual void OnHitTargetActor(AActor* HitActor) override;
+	virtual void OnWeaponPulledFromTargetActor(AActor* InteractedActor) override;
 };

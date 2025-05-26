@@ -25,13 +25,13 @@ void AW1WeaponBase::OnCollisionBoxBeginOverlap(UPrimitiveComponent* OverlappedCo
 {
 	APawn* WeaponOwningPawn = GetInstigator<APawn>();
 
-	checkf(WeaponOwningPawn, TEXT("Forgot to assign to instigater as the owning pawn of the weapon: %s"), *GetName());
+	checkf(WeaponOwningPawn, TEXT("Forgot to assign to instigater as the owning pawn for the weapon: %s"), *GetName());
 
 	if (APawn* HitPawn = Cast<APawn>(OtherActor))
 	{
 		if (WeaponOwningPawn != HitPawn)
 		{
-			Debug::Print(GetName() + TEXT("begin overlap with ") + HitPawn->GetName(), FColor::Green);
+			OnWeaponHitTarget.ExecuteIfBound(OtherActor);
 		}
 
 		// TODO : Implement hit check for enemy characters
@@ -42,13 +42,13 @@ void AW1WeaponBase::OnCollisionBoxEndOverlap(UPrimitiveComponent* OverlappedComp
 {
 	APawn* WeaponOwningPawn = GetInstigator<APawn>();
 
-	checkf(WeaponOwningPawn, TEXT("Forgot to assign to instigater as the owning pawn of the weapon: %s"), *GetName());
+	checkf(WeaponOwningPawn, TEXT("Forgot to assign to instigater as the owning pawn for the weapon: %s"), *GetName());
 
 	if (APawn* HitPawn = Cast<APawn>(OtherActor))
 	{
 		if (WeaponOwningPawn != HitPawn)
 		{
-			Debug::Print(GetName() + TEXT("end overlap with ") + HitPawn->GetName(), FColor::Red);
+			OnWeaponPulledFromTarget.ExecuteIfBound(OtherActor);
 		}
 
 		// TODO : Implement hit check for enemy characters
