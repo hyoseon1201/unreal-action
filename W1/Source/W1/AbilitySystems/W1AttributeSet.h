@@ -22,6 +22,8 @@ class W1_API UW1AttributeSet : public UAttributeSet
 public:
 	UW1AttributeSet();
 
+	virtual void PostGameplayEffectExecute(const struct FGameplayEffectModCallbackData& Data) override;
+
 	UPROPERTY(BlueprintReadOnly, Category = "Health")
 	FGameplayAttributeData CurrentHealth;
 	ATTRIBUTE_ACCESSORS(UW1AttributeSet, CurrentHealth)

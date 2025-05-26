@@ -44,6 +44,24 @@ FActiveGameplayEffectHandle UW1GameplayAbility::NativeApplyEffectSpecHandleToTar
 {
 	UAbilitySystemComponent* ASC = UAbilitySystemBlueprintLibrary::GetAbilitySystemComponent(TargetActor);
 	
+	if (!ASC)
+	{
+		if (TargetActor)
+		{
+			UE_LOG(LogTemp, Error, TEXT("TargetActor is not null! Name: %s, Class: %s"),
+				*TargetActor->GetName(), *TargetActor->GetClass()->GetName());
+		}
+		else
+		{
+			UE_LOG(LogTemp, Error, TEXT("TargetActor is nullptr!"));
+		}
+	}
+	else
+	{
+		UE_LOG(LogTemp, Log, TEXT("ASC is valid for TargetActor: %s (%s)"),
+			*TargetActor->GetName(), *TargetActor->GetClass()->GetName());
+	}
+
 	check(ASC && InSpecHandle.IsValid());
 	
 	return GetW1AbilitySystemComponentFromActorInfo()->ApplyGameplayEffectSpecToTarget(*InSpecHandle.Data, ASC);
