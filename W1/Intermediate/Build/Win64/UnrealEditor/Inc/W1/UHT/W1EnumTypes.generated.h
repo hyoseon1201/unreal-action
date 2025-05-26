@@ -35,4 +35,12 @@ enum class EW1ValidType : uint8;
 template<> struct TIsUEnumClass<EW1ValidType> { enum { Value = true }; };
 template<> W1_API UEnum* StaticEnum<EW1ValidType>();
 
+#define FOREACH_ENUM_EW1SUCCESSTYPE(op) \
+	op(EW1SuccessType::Successful) \
+	op(EW1SuccessType::Failed) 
+
+enum class EW1SuccessType : uint8;
+template<> struct TIsUEnumClass<EW1SuccessType> { enum { Value = true }; };
+template<> W1_API UEnum* StaticEnum<EW1SuccessType>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

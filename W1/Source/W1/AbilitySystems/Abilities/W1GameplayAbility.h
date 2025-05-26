@@ -2,6 +2,7 @@
 #pragma once
 
 #include "Abilities/GameplayAbility.h"
+#include "W1Types/W1EnumTypes.h"
 #include "W1GameplayAbility.generated.h"
 
 class UPawnCombatComponent;
@@ -36,5 +37,10 @@ protected:
 	UPawnCombatComponent* GetPawnCombatComponentFromActorInfo() const;
 
 	UFUNCTION(BlueprintPure, Category = "W1|Ability")
-	UW1AbilitySystemComponent* GetW1AbilitySystemComponent() const;
+	UW1AbilitySystemComponent* GetW1AbilitySystemComponentFromActorInfo() const;
+
+	FActiveGameplayEffectHandle NativeApplyEffectSpecHandleToTarget(AActor* TargetActor, const FGameplayEffectSpecHandle& InSpecHandle);
+
+	UFUNCTION(BlueprintCallable, Category = "W1|Ability", meta = (DisplayName = "Apply Gameplay Effect Spec Handle To Target Actor", ExpandEnumAsExecs = "OutSuccessType"))
+	FActiveGameplayEffectHandle BP_ApplyEffectSpecHandleToTarget(AActor* TargetActor, const FGameplayEffectSpecHandle& InSpecHandle, EW1SuccessType& OutSuccessType);
 };

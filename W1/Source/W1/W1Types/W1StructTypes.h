@@ -2,12 +2,13 @@
 #pragma once
 
 #include "GameplayTagContainer.h"
+#include "AbilitySystems/Abilities/W1HeroGameplayAbility.h"
+#include "ScalableFloat.h"
 #include "W1StructTypes.generated.h"
 
 class UW1HeroLinkedAnimLayer;
 class UW1GameplayAbility;
 class UInputMappingContext;
-class UW1HeroGameplayAbility;
 
 USTRUCT(BlueprintType)
 struct FW1HeroAbilitySet
@@ -36,4 +37,7 @@ struct FW1HeroWeaponData
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (TitleProperty = "InputTag"))
 	TArray<FW1HeroAbilitySet> DefaultWeaponAbilities;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+	FScalableFloat WeaponBaseDamage;
 };

@@ -12,6 +12,7 @@ void EmptyLinkFunctionForGeneratedCodeW1EnumTypes() {}
 // Begin Cross Module References
 UPackage* Z_Construct_UPackage__Script_W1();
 W1_API UEnum* Z_Construct_UEnum_W1_EW1ConfirmType();
+W1_API UEnum* Z_Construct_UEnum_W1_EW1SuccessType();
 W1_API UEnum* Z_Construct_UEnum_W1_EW1ValidType();
 // End Cross Module References
 
@@ -117,15 +118,67 @@ UEnum* Z_Construct_UEnum_W1_EW1ValidType()
 }
 // End Enum EW1ValidType
 
+// Begin Enum EW1SuccessType
+static FEnumRegistrationInfo Z_Registration_Info_UEnum_EW1SuccessType;
+static UEnum* EW1SuccessType_StaticEnum()
+{
+	if (!Z_Registration_Info_UEnum_EW1SuccessType.OuterSingleton)
+	{
+		Z_Registration_Info_UEnum_EW1SuccessType.OuterSingleton = GetStaticEnum(Z_Construct_UEnum_W1_EW1SuccessType, (UObject*)Z_Construct_UPackage__Script_W1(), TEXT("EW1SuccessType"));
+	}
+	return Z_Registration_Info_UEnum_EW1SuccessType.OuterSingleton;
+}
+template<> W1_API UEnum* StaticEnum<EW1SuccessType>()
+{
+	return EW1SuccessType_StaticEnum();
+}
+struct Z_Construct_UEnum_W1_EW1SuccessType_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+		{ "Failed.Name", "EW1SuccessType::Failed" },
+		{ "ModuleRelativePath", "W1Types/W1EnumTypes.h" },
+		{ "Successful.Name", "EW1SuccessType::Successful" },
+	};
+#endif // WITH_METADATA
+	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
+		{ "EW1SuccessType::Successful", (int64)EW1SuccessType::Successful },
+		{ "EW1SuccessType::Failed", (int64)EW1SuccessType::Failed },
+	};
+	static const UECodeGen_Private::FEnumParams EnumParams;
+};
+const UECodeGen_Private::FEnumParams Z_Construct_UEnum_W1_EW1SuccessType_Statics::EnumParams = {
+	(UObject*(*)())Z_Construct_UPackage__Script_W1,
+	nullptr,
+	"EW1SuccessType",
+	"EW1SuccessType",
+	Z_Construct_UEnum_W1_EW1SuccessType_Statics::Enumerators,
+	RF_Public|RF_Transient|RF_MarkAsNative,
+	UE_ARRAY_COUNT(Z_Construct_UEnum_W1_EW1SuccessType_Statics::Enumerators),
+	EEnumFlags::None,
+	(uint8)UEnum::ECppForm::EnumClass,
+	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UEnum_W1_EW1SuccessType_Statics::Enum_MetaDataParams), Z_Construct_UEnum_W1_EW1SuccessType_Statics::Enum_MetaDataParams)
+};
+UEnum* Z_Construct_UEnum_W1_EW1SuccessType()
+{
+	if (!Z_Registration_Info_UEnum_EW1SuccessType.InnerSingleton)
+	{
+		UECodeGen_Private::ConstructUEnum(Z_Registration_Info_UEnum_EW1SuccessType.InnerSingleton, Z_Construct_UEnum_W1_EW1SuccessType_Statics::EnumParams);
+	}
+	return Z_Registration_Info_UEnum_EW1SuccessType.InnerSingleton;
+}
+// End Enum EW1SuccessType
+
 // Begin Registration
 struct Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1Types_W1EnumTypes_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EW1ConfirmType_StaticEnum, TEXT("EW1ConfirmType"), &Z_Registration_Info_UEnum_EW1ConfirmType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1163415110U) },
 		{ EW1ValidType_StaticEnum, TEXT("EW1ValidType"), &Z_Registration_Info_UEnum_EW1ValidType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 851855648U) },
+		{ EW1SuccessType_StaticEnum, TEXT("EW1SuccessType"), &Z_Registration_Info_UEnum_EW1SuccessType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1683812422U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1Types_W1EnumTypes_h_850987525(TEXT("/Script/W1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1Types_W1EnumTypes_h_260202929(TEXT("/Script/W1"),
 	nullptr, 0,
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1Types_W1EnumTypes_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1Types_W1EnumTypes_h_Statics::EnumInfo));

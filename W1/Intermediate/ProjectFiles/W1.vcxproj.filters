@@ -90,6 +90,15 @@
     <ClInclude Include="..\..\Source\W1\AbilitySystems\Abilities\W1HeroGameplayAbility.h">
       <Filter>Source\W1\AbilitySystems\Abilities</Filter>
     </ClInclude>
+    <Filter Include="Source\W1\AbilitySystems\GEExecCalc">
+      <UniqueIdentifier>{AF64517D-C938-36ED-8429-DD5171BA2F94}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\W1\AbilitySystems\GEExecCalc\GEExecCalc_DamageTaken.cpp">
+      <Filter>Source\W1\AbilitySystems\GEExecCalc</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\AbilitySystems\GEExecCalc\GEExecCalc_DamageTaken.h">
+      <Filter>Source\W1\AbilitySystems\GEExecCalc</Filter>
+    </ClInclude>
     <Filter Include="Source\W1\AnimInstances">
       <UniqueIdentifier>{ECA4739C-EE81-3D85-9607-48E3E8DFB66B}</UniqueIdentifier>
     </Filter>
@@ -258,15 +267,13 @@
     <Filter Include="Source\W1\W1Types">
       <UniqueIdentifier>{980504CD-F772-3D45-87C9-9AEFF824B573}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\W1\W1Types\W1EnumTypes.h">
+      <Filter>Source\W1\W1Types</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\W1\W1Types\W1StructTypes.cpp">
       <Filter>Source\W1\W1Types</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\W1\W1Types\W1StructTypes.h">
-      <Filter>Source\W1\W1Types</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Source\W1\W1Types\W1EnumTypes.h">
       <Filter>Source\W1\W1Types</Filter>
     </ClInclude>
   </ItemGroup>

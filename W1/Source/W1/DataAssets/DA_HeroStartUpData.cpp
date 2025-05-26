@@ -14,7 +14,7 @@ void UDA_HeroStartUpData::GiveToAbilitySystemComponent(UW1AbilitySystemComponent
 			continue;
 		}
 
-		FGameplayAbilitySpec AbilitySpec(AbilitySet.AbilityToGrant);
+		FGameplayAbilitySpec AbilitySpec(static_cast<TSubclassOf<UGameplayAbility>>(AbilitySet.AbilityToGrant));
 		AbilitySpec.SourceObject = InASCToGive->GetAvatarActor();
 		AbilitySpec.Level = ApplyLevel;
 		AbilitySpec.DynamicAbilityTags.AddTag(AbilitySet.InputTag);

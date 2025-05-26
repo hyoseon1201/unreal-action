@@ -26,9 +26,14 @@ namespace W1GameplayTags
 
 	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Status_JumpToFinisher);
 
+	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_SetByCaller_AttackType_Light);
+	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_SetByCaller_AttackType_Heavy);
+
 	//Enemy Tags
 	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Enemy_Weapon);
 
 	//Shared Tags
 	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Shared_Event_MeleeHit);
+
+	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Shared_SetByCaller_BaseDamage);
 }

@@ -11,13 +11,17 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AW1HeroCharacter;
 class AW1HeroController;
+class UGameplayEffect;
 class UHeroCombatComponent;
+struct FGameplayEffectSpecHandle;
+struct FGameplayTag;
 #ifdef W1_W1HeroGameplayAbility_generated_h
 #error "W1HeroGameplayAbility.generated.h already included, missing '#pragma once' in W1HeroGameplayAbility.h"
 #endif
 #define W1_W1HeroGameplayAbility_generated_h
 
 #define FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1HeroGameplayAbility_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execMakeHeroDamageEffectSpecHandle); \
 	DECLARE_FUNCTION(execGetHeroCombatComponentFromActorInfo); \
 	DECLARE_FUNCTION(execGetHeroControllerFromActorInfo); \
 	DECLARE_FUNCTION(execGetHeroCharacterFromActorInfo);

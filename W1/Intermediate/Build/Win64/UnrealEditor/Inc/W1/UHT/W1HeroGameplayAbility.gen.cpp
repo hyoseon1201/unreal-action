@@ -6,10 +6,16 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "W1/AbilitySystems/Abilities/W1HeroGameplayAbility.h"
+#include "GameplayAbilities/Public/GameplayEffectTypes.h"
+#include "Runtime/GameplayTags/Classes/GameplayTagContainer.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeW1HeroGameplayAbility() {}
 
 // Begin Cross Module References
+COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UGameplayEffect_NoRegister();
+GAMEPLAYABILITIES_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayEffectSpecHandle();
+GAMEPLAYTAGS_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayTag();
 UPackage* Z_Construct_UPackage__Script_W1();
 W1_API UClass* Z_Construct_UClass_AW1HeroCharacter_NoRegister();
 W1_API UClass* Z_Construct_UClass_AW1HeroController_NoRegister();
@@ -148,6 +154,68 @@ DEFINE_FUNCTION(UW1HeroGameplayAbility::execGetHeroControllerFromActorInfo)
 }
 // End Class UW1HeroGameplayAbility Function GetHeroControllerFromActorInfo
 
+// Begin Class UW1HeroGameplayAbility Function MakeHeroDamageEffectSpecHandle
+struct Z_Construct_UFunction_UW1HeroGameplayAbility_MakeHeroDamageEffectSpecHandle_Statics
+{
+	struct W1HeroGameplayAbility_eventMakeHeroDamageEffectSpecHandle_Parms
+	{
+		TSubclassOf<UGameplayEffect> EffectClass;
+		float InWeaponBaseDamage;
+		FGameplayTag InCurrentAttackTypeTag;
+		int32 InCurrentComboCount;
+		FGameplayEffectSpecHandle ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "W1|Ability" },
+		{ "ModuleRelativePath", "AbilitySystems/Abilities/W1HeroGameplayAbility.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FClassPropertyParams NewProp_EffectClass;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_InWeaponBaseDamage;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_InCurrentAttackTypeTag;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_InCurrentComboCount;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UW1HeroGameplayAbility_MakeHeroDamageEffectSpecHandle_Statics::NewProp_EffectClass = { "EffectClass", nullptr, (EPropertyFlags)0x0014000000000080, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1HeroGameplayAbility_eventMakeHeroDamageEffectSpecHandle_Parms, EffectClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UGameplayEffect_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UW1HeroGameplayAbility_MakeHeroDamageEffectSpecHandle_Statics::NewProp_InWeaponBaseDamage = { "InWeaponBaseDamage", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1HeroGameplayAbility_eventMakeHeroDamageEffectSpecHandle_Parms, InWeaponBaseDamage), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UW1HeroGameplayAbility_MakeHeroDamageEffectSpecHandle_Statics::NewProp_InCurrentAttackTypeTag = { "InCurrentAttackTypeTag", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1HeroGameplayAbility_eventMakeHeroDamageEffectSpecHandle_Parms, InCurrentAttackTypeTag), Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(0, nullptr) }; // 1298103297
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UW1HeroGameplayAbility_MakeHeroDamageEffectSpecHandle_Statics::NewProp_InCurrentComboCount = { "InCurrentComboCount", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1HeroGameplayAbility_eventMakeHeroDamageEffectSpecHandle_Parms, InCurrentComboCount), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UW1HeroGameplayAbility_MakeHeroDamageEffectSpecHandle_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1HeroGameplayAbility_eventMakeHeroDamageEffectSpecHandle_Parms, ReturnValue), Z_Construct_UScriptStruct_FGameplayEffectSpecHandle, METADATA_PARAMS(0, nullptr) }; // 3383902265
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UW1HeroGameplayAbility_MakeHeroDamageEffectSpecHandle_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1HeroGameplayAbility_MakeHeroDamageEffectSpecHandle_Statics::NewProp_EffectClass,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1HeroGameplayAbility_MakeHeroDamageEffectSpecHandle_Statics::NewProp_InWeaponBaseDamage,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1HeroGameplayAbility_MakeHeroDamageEffectSpecHandle_Statics::NewProp_InCurrentAttackTypeTag,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1HeroGameplayAbility_MakeHeroDamageEffectSpecHandle_Statics::NewProp_InCurrentComboCount,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1HeroGameplayAbility_MakeHeroDamageEffectSpecHandle_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UW1HeroGameplayAbility_MakeHeroDamageEffectSpecHandle_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UW1HeroGameplayAbility_MakeHeroDamageEffectSpecHandle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UW1HeroGameplayAbility, nullptr, "MakeHeroDamageEffectSpecHandle", nullptr, nullptr, Z_Construct_UFunction_UW1HeroGameplayAbility_MakeHeroDamageEffectSpecHandle_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UW1HeroGameplayAbility_MakeHeroDamageEffectSpecHandle_Statics::PropPointers), sizeof(Z_Construct_UFunction_UW1HeroGameplayAbility_MakeHeroDamageEffectSpecHandle_Statics::W1HeroGameplayAbility_eventMakeHeroDamageEffectSpecHandle_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UW1HeroGameplayAbility_MakeHeroDamageEffectSpecHandle_Statics::Function_MetaDataParams), Z_Construct_UFunction_UW1HeroGameplayAbility_MakeHeroDamageEffectSpecHandle_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UW1HeroGameplayAbility_MakeHeroDamageEffectSpecHandle_Statics::W1HeroGameplayAbility_eventMakeHeroDamageEffectSpecHandle_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UW1HeroGameplayAbility_MakeHeroDamageEffectSpecHandle()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UW1HeroGameplayAbility_MakeHeroDamageEffectSpecHandle_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UW1HeroGameplayAbility::execMakeHeroDamageEffectSpecHandle)
+{
+	P_GET_OBJECT(UClass,Z_Param_EffectClass);
+	P_GET_PROPERTY(FFloatProperty,Z_Param_InWeaponBaseDamage);
+	P_GET_STRUCT(FGameplayTag,Z_Param_InCurrentAttackTypeTag);
+	P_GET_PROPERTY(FIntProperty,Z_Param_InCurrentComboCount);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(FGameplayEffectSpecHandle*)Z_Param__Result=P_THIS->MakeHeroDamageEffectSpecHandle(Z_Param_EffectClass,Z_Param_InWeaponBaseDamage,Z_Param_InCurrentAttackTypeTag,Z_Param_InCurrentComboCount);
+	P_NATIVE_END;
+}
+// End Class UW1HeroGameplayAbility Function MakeHeroDamageEffectSpecHandle
+
 // Begin Class UW1HeroGameplayAbility
 void UW1HeroGameplayAbility::StaticRegisterNativesUW1HeroGameplayAbility()
 {
@@ -156,6 +224,7 @@ void UW1HeroGameplayAbility::StaticRegisterNativesUW1HeroGameplayAbility()
 		{ "GetHeroCharacterFromActorInfo", &UW1HeroGameplayAbility::execGetHeroCharacterFromActorInfo },
 		{ "GetHeroCombatComponentFromActorInfo", &UW1HeroGameplayAbility::execGetHeroCombatComponentFromActorInfo },
 		{ "GetHeroControllerFromActorInfo", &UW1HeroGameplayAbility::execGetHeroControllerFromActorInfo },
+		{ "MakeHeroDamageEffectSpecHandle", &UW1HeroGameplayAbility::execMakeHeroDamageEffectSpecHandle },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -180,6 +249,7 @@ struct Z_Construct_UClass_UW1HeroGameplayAbility_Statics
 		{ &Z_Construct_UFunction_UW1HeroGameplayAbility_GetHeroCharacterFromActorInfo, "GetHeroCharacterFromActorInfo" }, // 2178710105
 		{ &Z_Construct_UFunction_UW1HeroGameplayAbility_GetHeroCombatComponentFromActorInfo, "GetHeroCombatComponentFromActorInfo" }, // 520287460
 		{ &Z_Construct_UFunction_UW1HeroGameplayAbility_GetHeroControllerFromActorInfo, "GetHeroControllerFromActorInfo" }, // 3121922219
+		{ &Z_Construct_UFunction_UW1HeroGameplayAbility_MakeHeroDamageEffectSpecHandle, "MakeHeroDamageEffectSpecHandle" }, // 3193931424
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -228,10 +298,10 @@ UW1HeroGameplayAbility::~UW1HeroGameplayAbility() {}
 struct Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1HeroGameplayAbility_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UW1HeroGameplayAbility, UW1HeroGameplayAbility::StaticClass, TEXT("UW1HeroGameplayAbility"), &Z_Registration_Info_UClass_UW1HeroGameplayAbility, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UW1HeroGameplayAbility), 4286250047U) },
+		{ Z_Construct_UClass_UW1HeroGameplayAbility, UW1HeroGameplayAbility::StaticClass, TEXT("UW1HeroGameplayAbility"), &Z_Registration_Info_UClass_UW1HeroGameplayAbility, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UW1HeroGameplayAbility), 1648679854U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1HeroGameplayAbility_h_466945721(TEXT("/Script/W1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1HeroGameplayAbility_h_4068599150(TEXT("/Script/W1"),
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1HeroGameplayAbility_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1HeroGameplayAbility_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

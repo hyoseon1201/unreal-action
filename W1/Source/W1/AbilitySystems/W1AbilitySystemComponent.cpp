@@ -39,7 +39,7 @@ void UW1AbilitySystemComponent::GrantHeroWeaponAbilities(const TArray<FW1HeroAbi
 			continue;
 		}
 		
-		FGameplayAbilitySpec AbilitySpec(AbilitySet.AbilityToGrant);
+		FGameplayAbilitySpec AbilitySpec(static_cast<TSubclassOf<UGameplayAbility>>(AbilitySet.AbilityToGrant));
 		AbilitySpec.SourceObject = GetAvatarActor();
 		AbilitySpec.Level = ApplyLevel;
 		AbilitySpec.DynamicAbilityTags.AddTag(AbilitySet.InputTag);

@@ -17,6 +17,8 @@ struct FGameplayTag;
 #define W1_HeroCombatComponent_generated_h
 
 #define FID_unreal_action_W1_Source_W1_Components_Combat_HeroCombatComponent_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execGetHeroCurrentEquippWeaponDamageAtLevel); \
+	DECLARE_FUNCTION(execGetHeroCurrentEquippedWeapon); \
 	DECLARE_FUNCTION(execGetHeroCarriedWeaponByTag);
 
 
