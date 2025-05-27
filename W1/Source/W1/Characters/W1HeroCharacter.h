@@ -3,6 +3,7 @@
 
 #include "Characters/W1CharacterBase.h"
 #include "GameplayTagContainer.h"
+#include "Components/Combat/PawnCombatComponent.h"
 #include "W1HeroCharacter.generated.h"
 
 class USpringArmComponent;
@@ -30,6 +31,7 @@ public:
 
 	//~ Begin IPawnUIInterface Interface
 	virtual UPawnUIComponent* GetPawnUIComponent() const override;
+	virtual UHeroUIComponent* GetHeroUIComponent() const override;
 	//~ End IPawnUIInterface Interface
 
 protected:
