@@ -15,6 +15,7 @@ W1_API UClass* Z_Construct_UClass_AW1CharacterBase();
 W1_API UClass* Z_Construct_UClass_AW1EnemyCharacter();
 W1_API UClass* Z_Construct_UClass_AW1EnemyCharacter_NoRegister();
 W1_API UClass* Z_Construct_UClass_UEnemyCombatComponent_NoRegister();
+W1_API UClass* Z_Construct_UClass_UEnemyUIComponent_NoRegister();
 // End Cross Module References
 
 // Begin Class AW1EnemyCharacter
@@ -45,8 +46,14 @@ struct Z_Construct_UClass_AW1EnemyCharacter_Statics
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Characters/W1EnemyCharacter.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EnemyUIComponent_MetaData[] = {
+		{ "Category", "UI" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Characters/W1EnemyCharacter.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_EnemyCombatComponent;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_EnemyUIComponent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -55,8 +62,10 @@ struct Z_Construct_UClass_AW1EnemyCharacter_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AW1EnemyCharacter_Statics::NewProp_EnemyCombatComponent = { "EnemyCombatComponent", nullptr, (EPropertyFlags)0x00200800000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AW1EnemyCharacter, EnemyCombatComponent), Z_Construct_UClass_UEnemyCombatComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EnemyCombatComponent_MetaData), NewProp_EnemyCombatComponent_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AW1EnemyCharacter_Statics::NewProp_EnemyUIComponent = { "EnemyUIComponent", nullptr, (EPropertyFlags)0x00200800000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AW1EnemyCharacter, EnemyUIComponent), Z_Construct_UClass_UEnemyUIComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EnemyUIComponent_MetaData), NewProp_EnemyUIComponent_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AW1EnemyCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AW1EnemyCharacter_Statics::NewProp_EnemyCombatComponent,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AW1EnemyCharacter_Statics::NewProp_EnemyUIComponent,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AW1EnemyCharacter_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AW1EnemyCharacter_Statics::DependentSingletons[])() = {
@@ -99,10 +108,10 @@ AW1EnemyCharacter::~AW1EnemyCharacter() {}
 struct Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Characters_W1EnemyCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AW1EnemyCharacter, AW1EnemyCharacter::StaticClass, TEXT("AW1EnemyCharacter"), &Z_Registration_Info_UClass_AW1EnemyCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AW1EnemyCharacter), 2741347534U) },
+		{ Z_Construct_UClass_AW1EnemyCharacter, AW1EnemyCharacter::StaticClass, TEXT("AW1EnemyCharacter"), &Z_Registration_Info_UClass_AW1EnemyCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AW1EnemyCharacter), 2284420004U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Characters_W1EnemyCharacter_h_1288404275(TEXT("/Script/W1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Characters_W1EnemyCharacter_h_1216156143(TEXT("/Script/W1"),
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Characters_W1EnemyCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Characters_W1EnemyCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

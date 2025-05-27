@@ -256,6 +256,7 @@
     <None Include="..\..\Config\DefaultEditor.ini"/>
     <None Include="..\..\Config\DefaultEngine.ini"/>
     <None Include="..\..\Config\DefaultGame.ini"/>
+    <None Include="..\..\Config\DefaultGameplayTags.ini"/>
     <None Include="..\..\Config\DefaultInput.ini"/>
     <None Include="..\..\Source\W1\W1.Build.cs"/>
     <ClCompile Include="..\..\Source\W1\W1.cpp">
@@ -343,6 +344,18 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\W1\Components\Input\W1InputComponent.h"/>
+    <ClCompile Include="..\..\Source\W1\Components\UI\EnemyUIComponent.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Components\UI\EnemyUIComponent.h"/>
+    <ClCompile Include="..\..\Source\W1\Components\UI\HeroUIComponent.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Components\UI\HeroUIComponent.h"/>
+    <ClCompile Include="..\..\Source\W1\Components\UI\PawnUIComponent.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Components\UI\PawnUIComponent.h"/>
     <ClCompile Include="..\..\Source\W1\Controllers\W1HeroController.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -371,6 +384,10 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\W1\Interfaces\PawnCombatInterface.h"/>
+    <ClCompile Include="..\..\Source\W1\Interfaces\PawnUIInterface.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Interfaces\PawnUIInterface.h"/>
     <ClCompile Include="..\..\Source\W1\Items\Weapons\W1HeroWeapon.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>

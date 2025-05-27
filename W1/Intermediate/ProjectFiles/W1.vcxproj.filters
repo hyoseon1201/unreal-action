@@ -24,6 +24,9 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultGameplayTags.ini">
+      <Filter>Config</Filter>
+    </None>
     <None Include="..\..\Config\DefaultInput.ini">
       <Filter>Config</Filter>
     </None>
@@ -189,6 +192,27 @@
     <ClInclude Include="..\..\Source\W1\Components\Input\W1InputComponent.h">
       <Filter>Source\W1\Components\Input</Filter>
     </ClInclude>
+    <Filter Include="Source\W1\Components\UI">
+      <UniqueIdentifier>{0789D871-A88B-31E9-A60A-5BFDD4E199CC}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\W1\Components\UI\EnemyUIComponent.cpp">
+      <Filter>Source\W1\Components\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Components\UI\EnemyUIComponent.h">
+      <Filter>Source\W1\Components\UI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\W1\Components\UI\HeroUIComponent.cpp">
+      <Filter>Source\W1\Components\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Components\UI\HeroUIComponent.h">
+      <Filter>Source\W1\Components\UI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\W1\Components\UI\PawnUIComponent.cpp">
+      <Filter>Source\W1\Components\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Components\UI\PawnUIComponent.h">
+      <Filter>Source\W1\Components\UI</Filter>
+    </ClInclude>
     <Filter Include="Source\W1\Controllers">
       <UniqueIdentifier>{FD44A824-E318-3F0C-9A14-F5954997E0A7}</UniqueIdentifier>
     </Filter>
@@ -244,6 +268,12 @@
       <Filter>Source\W1\Interfaces</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\W1\Interfaces\PawnCombatInterface.h">
+      <Filter>Source\W1\Interfaces</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\W1\Interfaces\PawnUIInterface.cpp">
+      <Filter>Source\W1\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Interfaces\PawnUIInterface.h">
       <Filter>Source\W1\Interfaces</Filter>
     </ClInclude>
     <Filter Include="Source\W1\Items">

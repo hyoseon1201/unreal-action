@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define W1_W1EnemyCharacter_generated_h
 
-#define FID_unreal_action_W1_Source_W1_Characters_W1EnemyCharacter_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_unreal_action_W1_Source_W1_Characters_W1EnemyCharacter_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAW1EnemyCharacter(); \
 	friend struct Z_Construct_UClass_AW1EnemyCharacter_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(AW1EnemyCharacter)
 
 
-#define FID_unreal_action_W1_Source_W1_Characters_W1EnemyCharacter_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_unreal_action_W1_Source_W1_Characters_W1EnemyCharacter_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	AW1EnemyCharacter(AW1EnemyCharacter&&); \
@@ -35,12 +35,12 @@ public: \
 	NO_API virtual ~AW1EnemyCharacter();
 
 
-#define FID_unreal_action_W1_Source_W1_Characters_W1EnemyCharacter_h_12_PROLOG
-#define FID_unreal_action_W1_Source_W1_Characters_W1EnemyCharacter_h_15_GENERATED_BODY \
+#define FID_unreal_action_W1_Source_W1_Characters_W1EnemyCharacter_h_13_PROLOG
+#define FID_unreal_action_W1_Source_W1_Characters_W1EnemyCharacter_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_unreal_action_W1_Source_W1_Characters_W1EnemyCharacter_h_15_INCLASS_NO_PURE_DECLS \
-	FID_unreal_action_W1_Source_W1_Characters_W1EnemyCharacter_h_15_ENHANCED_CONSTRUCTORS \
+	FID_unreal_action_W1_Source_W1_Characters_W1EnemyCharacter_h_16_INCLASS_NO_PURE_DECLS \
+	FID_unreal_action_W1_Source_W1_Characters_W1EnemyCharacter_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
