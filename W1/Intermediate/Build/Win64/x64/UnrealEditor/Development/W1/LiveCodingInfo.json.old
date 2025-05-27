@@ -38,7 +38,6 @@
 			"W1HeroGameplayAbility.cpp.obj",
 			"GEExecCalc_DamageTaken.cpp.obj",
 			"W1AbilitySystemComponent.cpp.obj",
-			"W1AttributeSet.cpp.obj",
 			"W1HeroAnimInstance.cpp.obj",
 			"W1HeroLinkedAnimLayer.cpp.obj",
 			"W1AnimInstanceBase.cpp.obj",
@@ -47,6 +46,7 @@
 			"W1EnemyCharacter.cpp.obj",
 			"W1HeroCharacter.cpp.obj",
 			"EnemyCombatComponent.cpp.obj",
+			"HeroCombatComponent.cpp.obj",
 			"PawnCombatComponent.cpp.obj",
 			"W1InputComponent.cpp.obj",
 			"PawnExtensionComponentBase.cpp.obj",
@@ -62,7 +62,7 @@
 			"W1.cpp.obj",
 			"W1FunctionLibrary.cpp.obj",
 			"W1StructTypes.cpp.obj",
-			"HeroCombatComponent.cpp.obj",
+			"W1AttributeSet.cpp.obj",
 			"W1GameplayTags.cpp.obj"
 		]
 	}

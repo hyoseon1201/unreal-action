@@ -39,9 +39,12 @@ namespace W1GameplayTags
 
 	//Shared Tags
 	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Shared_Ability_HitReact);
+	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Shared_Ability_Death);
 
 	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Shared_Event_MeleeHit);
 	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Shared_Event_HitReact);
 
 	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Shared_SetByCaller_BaseDamage);
+
+	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Shared_Status_Dead);
 }

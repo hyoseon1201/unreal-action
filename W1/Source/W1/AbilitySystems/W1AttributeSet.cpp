@@ -1,6 +1,8 @@
 
 #include "AbilitySystems/W1AttributeSet.h"
 #include "GameplayEffectExtension.h"
+#include "W1FunctionLibrary.h"
+#include "W1GameplayTags.h"
 
 #include "W1DebugHelper.h"
 
@@ -44,10 +46,9 @@ void UW1AttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCallback
 		Debug::Print(DebugString, FColor::Green);
 		// TODO : Notify the UI
 
-		// TODO : Handle Character Death
 		if (NewCurrentHealth == 0.f)
 		{
-
+			UW1FunctionLibrary::AddGameplayTagToActorIfNone(Data.Target.GetAvatarActor(), W1GameplayTags::Shared_Status_Dead);
 		}
 	}
 }
