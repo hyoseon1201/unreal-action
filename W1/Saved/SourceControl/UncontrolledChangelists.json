@@ -12,7 +12,20 @@
 				"E:/unreal-action/W1/Content/PlayerCharacter/HeroWeapon/CT_HeroWeaponStats.uasset",
 				"E:/unreal-action/W1/Content/PlayerCharacter/HeroWeapon/BP_HeroAxe.uasset",
 				"E:/unreal-action/W1/Content/PlayerCharacter/GameplayAbility/HeavyAttack/GA_Hero_HeavyAttackMaster.uasset",
-				"E:/unreal-action/W1/Content/EnemyCharacter/BP_EnemyCharacterBase.uasset"
+				"E:/unreal-action/W1/Content/EnemyCharacter/BP_EnemyCharacterBase.uasset",
+				"E:/unreal-action/W1/Content/Shared/GameplayAbility/GA_Enemy_HitReact_Base.uasset",
+				"E:/unreal-action/W1/Content/Shared/GameplayAbility/GA_Gruntling_Guardian_HitReact.uasset",
+				"E:/unreal-action/W1/Content/EnemyCharacter/Gruntling/GameplayAbility/GA_Gruntling_Guardian_HitReact.uasset",
+				"E:/unreal-action/W1/Content/Assets/Enemies/Gruntling/Enemy_Gruntling_Guardian/Enemy_Gruntling_Guardian_Animation/AM_ExoGame_Gruntling_React_Light_Front_Alt.uasset",
+				"E:/unreal-action/W1/Content/Assets/Enemies/Gruntling/Enemy_Gruntling_Guardian/Enemy_Gruntling_Guardian_Animation/AM_ExoGame_Gruntling_React_Light_Front.uasset",
+				"E:/unreal-action/W1/Content/EnemyCharacter/Gruntling/AM_ExoGame_Gruntling_React_Light_Front.uasset",
+				"E:/unreal-action/W1/Content/EnemyCharacter/Gruntling/AM_ExoGame_Gruntling_React_Light_Front_Alt.uasset",
+				"E:/unreal-action/W1/Content/EnemyCharacter/Gruntling/Montages/AM_ExoGame_Gruntling_React_Light_Front.uasset",
+				"E:/unreal-action/W1/Content/EnemyCharacter/Gruntling/Montages/AM_ExoGame_Gruntling_React_Light_Front_Alt.uasset",
+				"E:/unreal-action/W1/Content/EnemyCharacter/Gruntling/DA_Gruntling_Guardian.uasset",
+				"E:/unreal-action/W1/Content/Assets/Enemies/Gruntling/Enemy_Gruntling_Guardian/Materials/CharM_Gruntling_Guardian.uasset",
+				"E:/unreal-action/W1/Content/Assets/Enemies/Gruntling/Enemy_Gruntling_Guardian/Materials/MI_Guardian.uasset",
+				"E:/unreal-action/W1/Content/Assets/Enemies/Gruntling/Enemy_Gruntling_Guardian/SK_Gruntling_Guardian.uasset"
 			]
 		}
 	]
