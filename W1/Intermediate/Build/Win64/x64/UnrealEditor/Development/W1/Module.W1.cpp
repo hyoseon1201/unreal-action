@@ -44,6 +44,7 @@
 #include "E:/unreal-action/W1/Source/W1/Characters/W1EnemyCharacter.cpp"
 #include "E:/unreal-action/W1/Source/W1/Characters/W1HeroCharacter.cpp"
 #include "E:/unreal-action/W1/Source/W1/Components/Combat/EnemyCombatComponent.cpp"
+#include "E:/unreal-action/W1/Source/W1/Components/Combat/HeroCombatComponent.cpp"
 #include "E:/unreal-action/W1/Source/W1/Components/Combat/PawnCombatComponent.cpp"
 #include "E:/unreal-action/W1/Source/W1/Components/Input/W1InputComponent.cpp"
 #include "E:/unreal-action/W1/Source/W1/Components/PawnExtensionComponentBase.cpp"
@@ -58,4 +59,5 @@
 #include "E:/unreal-action/W1/Source/W1/Items/Weapons/W1WeaponBase.cpp"
 #include "E:/unreal-action/W1/Source/W1/W1.cpp"
 #include "E:/unreal-action/W1/Source/W1/W1FunctionLibrary.cpp"
+#include "E:/unreal-action/W1/Source/W1/W1GameplayTags.cpp"
 #include "E:/unreal-action/W1/Source/W1/W1Types/W1StructTypes.cpp"
