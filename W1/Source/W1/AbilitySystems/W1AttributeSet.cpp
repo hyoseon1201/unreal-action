@@ -68,7 +68,7 @@ void UW1AttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCallback
 
 		PawnUIComponent->OnCurrentHealthChanged.Broadcast(GetCurrentHealth() / GetMaxHealth());
 
-		if (NewCurrentHealth == 0.f)
+		if (GetCurrentHealth() == 0.f)
 		{
 			UW1FunctionLibrary::AddGameplayTagToActorIfNone(Data.Target.GetAvatarActor(), W1GameplayTags::Shared_Status_Dead);
 		}

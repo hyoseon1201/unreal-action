@@ -306,5 +306,14 @@
     <ClInclude Include="..\..\Source\W1\W1Types\W1StructTypes.h">
       <Filter>Source\W1\W1Types</Filter>
     </ClInclude>
+    <Filter Include="Source\W1\Widgets">
+      <UniqueIdentifier>{876E5389-6881-3B6A-AD85-D2473846C873}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\W1\Widgets\W1WidgetBase.cpp">
+      <Filter>Source\W1\Widgets</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Widgets\W1WidgetBase.h">
+      <Filter>Source\W1\Widgets</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

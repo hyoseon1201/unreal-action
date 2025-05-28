@@ -1,0 +1,43 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\unreal-action\\w1\\intermediate\\build\\win64\\unrealeditor\\inc\\w1\\uht\\w1widgetbase.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\unreal-action\\w1\\intermediate\\build\\win64\\x64\\w1editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "e:\\unreal-action\\w1\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\w1\\definitions.w1.h",
+            "e:\\unreal-action\\w1\\source\\w1\\widgets\\w1widgetbase.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\umg\\public\\blueprint\\userwidget.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\umg\\public\\blueprint\\widgetchild.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\widgetchild.generated.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\coreuobject\\public\\uobject\\objectsavecontext.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\coreuobject\\public\\uobject\\cookenums.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\coreuobject\\public\\uobject\\objectsaveoverride.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\umg\\public\\components\\slatewrappertypes.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\slatewrappertypes.generated.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\umg\\public\\components\\widget.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\fieldnotification\\public\\fieldnotificationdeclaration.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\fieldnotification\\public\\ifieldnotificationclassdescriptor.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\fieldnotification\\public\\inotifyfieldvaluechanged.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\fieldnotification\\uht\\inotifyfieldvaluechanged.generated.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\umg\\public\\components\\visual.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\visual.generated.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\umg\\public\\slate\\widgettransform.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\widgettransform.generated.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\umg\\public\\blueprint\\widgetnavigation.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\slatecore\\public\\types\\navigationmetadata.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\widgetnavigation.generated.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\widget.generated.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\umg\\public\\components\\namedslotinterface.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\namedslotinterface.generated.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\slate\\public\\widgets\\layout\\anchors.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\slate\\uht\\anchors.generated.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\umg\\public\\animation\\widgetanimationevents.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\widgetanimationevents.generated.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\userwidget.generated.h",
+            "e:\\unreal-action\\w1\\intermediate\\build\\win64\\unrealeditor\\inc\\w1\\uht\\w1widgetbase.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

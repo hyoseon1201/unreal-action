@@ -797,6 +797,8 @@
             "e:\\unreal-action\\w1\\source\\w1\\components\\pawnextensioncomponentbase.h",
             "e:\\unreal-action\\w1\\intermediate\\build\\win64\\unrealeditor\\inc\\w1\\uht\\pawnextensioncomponentbase.generated.h",
             "e:\\unreal-action\\w1\\intermediate\\build\\win64\\unrealeditor\\inc\\w1\\uht\\pawnuicomponent.generated.h",
+            "e:\\unreal-action\\w1\\source\\w1\\components\\ui\\herouicomponent.h",
+            "e:\\unreal-action\\w1\\intermediate\\build\\win64\\unrealeditor\\inc\\w1\\uht\\herouicomponent.generated.h",
             "e:\\unreal-action\\w1\\source\\w1\\w1debughelper.h"
         ],
         "ImportedModules": [],

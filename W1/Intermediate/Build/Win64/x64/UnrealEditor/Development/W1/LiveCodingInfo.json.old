@@ -7,11 +7,14 @@
 			"DA_InputConfig.gen.cpp.obj",
 			"DA_StartUpDataBase.gen.cpp.obj",
 			"EnemyCombatComponent.gen.cpp.obj",
+			"EnemyUIComponent.gen.cpp.obj",
 			"GEExecCalc_DamageTaken.gen.cpp.obj",
 			"HeroCombatComponent.gen.cpp.obj",
+			"HeroUIComponent.gen.cpp.obj",
 			"PawnCombatComponent.gen.cpp.obj",
 			"PawnCombatInterface.gen.cpp.obj",
 			"PawnExtensionComponentBase.gen.cpp.obj",
+			"PawnUIComponent.gen.cpp.obj",
 			"PawnUIInterface.gen.cpp.obj",
 			"W1AbilitySystemComponent.gen.cpp.obj",
 			"W1AnimInstanceBase.gen.cpp.obj",
@@ -51,6 +54,8 @@
 			"W1InputComponent.cpp.obj",
 			"PawnExtensionComponentBase.cpp.obj",
 			"EnemyUIComponent.cpp.obj",
+			"HeroUIComponent.cpp.obj",
+			"PawnUIComponent.cpp.obj",
 			"W1HeroController.cpp.obj",
 			"DA_EnemyStartUpData.cpp.obj",
 			"DA_HeroStartUpData.cpp.obj",
@@ -64,14 +69,11 @@
 			"W1FunctionLibrary.cpp.obj",
 			"W1GameplayTags.cpp.obj",
 			"W1StructTypes.cpp.obj",
-			"EnemyUIComponent.gen.cpp.obj",
-			"HeroUIComponent.gen.cpp.obj",
-			"PawnUIComponent.gen.cpp.obj",
 			"W1.init.gen.cpp.obj",
+			"W1WidgetBase.gen.cpp.obj",
 			"W1AttributeSet.cpp.obj",
-			"HeroUIComponent.cpp.obj",
-			"PawnUIComponent.cpp.obj",
-			"PawnUIInterface.cpp.obj"
+			"PawnUIInterface.cpp.obj",
+			"W1WidgetBase.cpp.obj"
 		]
 	}
 }
