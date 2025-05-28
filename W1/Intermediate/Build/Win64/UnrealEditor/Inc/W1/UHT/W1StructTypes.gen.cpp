@@ -13,6 +13,7 @@ void EmptyLinkFunctionForGeneratedCodeW1StructTypes() {}
 
 // Begin Cross Module References
 COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+ENGINE_API UClass* Z_Construct_UClass_UTexture2D_NoRegister();
 ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
 GAMEPLAYABILITIES_API UScriptStruct* Z_Construct_UScriptStruct_FScalableFloat();
 GAMEPLAYTAGS_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayTag();
@@ -130,12 +131,17 @@ struct Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics
 		{ "Category", "W1HeroWeaponData" },
 		{ "ModuleRelativePath", "W1Types/W1StructTypes.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SoftWeaponIconTexture_MetaData[] = {
+		{ "Category", "W1HeroWeaponData" },
+		{ "ModuleRelativePath", "W1Types/W1StructTypes.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_WeaponAnimLayerToLink;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_WeaponInputMappingContext;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_DefaultWeaponAbilities_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_DefaultWeaponAbilities;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_WeaponBaseDamage;
+	static const UECodeGen_Private::FSoftObjectPropertyParams NewProp_SoftWeaponIconTexture;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static void* NewStructOps()
 	{
@@ -148,12 +154,14 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FW1Hero
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::NewProp_DefaultWeaponAbilities_Inner = { "DefaultWeaponAbilities", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FW1HeroAbilitySet, METADATA_PARAMS(0, nullptr) }; // 283327945
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::NewProp_DefaultWeaponAbilities = { "DefaultWeaponAbilities", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FW1HeroWeaponData, DefaultWeaponAbilities), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultWeaponAbilities_MetaData), NewProp_DefaultWeaponAbilities_MetaData) }; // 283327945
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::NewProp_WeaponBaseDamage = { "WeaponBaseDamage", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FW1HeroWeaponData, WeaponBaseDamage), Z_Construct_UScriptStruct_FScalableFloat, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WeaponBaseDamage_MetaData), NewProp_WeaponBaseDamage_MetaData) }; // 703790095
+const UECodeGen_Private::FSoftObjectPropertyParams Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::NewProp_SoftWeaponIconTexture = { "SoftWeaponIconTexture", nullptr, (EPropertyFlags)0x0014000000010015, UECodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FW1HeroWeaponData, SoftWeaponIconTexture), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SoftWeaponIconTexture_MetaData), NewProp_SoftWeaponIconTexture_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::NewProp_WeaponAnimLayerToLink,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::NewProp_WeaponInputMappingContext,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::NewProp_DefaultWeaponAbilities_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::NewProp_DefaultWeaponAbilities,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::NewProp_WeaponBaseDamage,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::NewProp_SoftWeaponIconTexture,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::PropPointers) < 2048);
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::StructParams = {
@@ -184,10 +192,10 @@ struct Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1Types_W1StructType
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
 		{ FW1HeroAbilitySet::StaticStruct, Z_Construct_UScriptStruct_FW1HeroAbilitySet_Statics::NewStructOps, TEXT("W1HeroAbilitySet"), &Z_Registration_Info_UScriptStruct_W1HeroAbilitySet, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FW1HeroAbilitySet), 283327945U) },
-		{ FW1HeroWeaponData::StaticStruct, Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::NewStructOps, TEXT("W1HeroWeaponData"), &Z_Registration_Info_UScriptStruct_W1HeroWeaponData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FW1HeroWeaponData), 937674827U) },
+		{ FW1HeroWeaponData::StaticStruct, Z_Construct_UScriptStruct_FW1HeroWeaponData_Statics::NewStructOps, TEXT("W1HeroWeaponData"), &Z_Registration_Info_UScriptStruct_W1HeroWeaponData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FW1HeroWeaponData), 88595468U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1Types_W1StructTypes_h_776867690(TEXT("/Script/W1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1Types_W1StructTypes_h_364584724(TEXT("/Script/W1"),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1Types_W1StructTypes_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1Types_W1StructTypes_h_Statics::ScriptStructInfo),
 	nullptr, 0);

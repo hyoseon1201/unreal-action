@@ -7,6 +7,7 @@
 #include "UObject/GeneratedCppIncludes.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeW1_init() {}
+	W1_API UFunction* Z_Construct_UDelegateFunction_W1_OnEquippedWeaponChangedDelegate__DelegateSignature();
 	W1_API UFunction* Z_Construct_UDelegateFunction_W1_OnPercentChangedDelegate__DelegateSignature();
 	static FPackageRegistrationInfo Z_Registration_Info_UPackage__Script_W1;
 	FORCENOINLINE UPackage* Z_Construct_UPackage__Script_W1()
@@ -14,6 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeW1_init() {}
 		if (!Z_Registration_Info_UPackage__Script_W1.OuterSingleton)
 		{
 			static UObject* (*const SingletonFuncArray[])() = {
+				(UObject* (*)())Z_Construct_UDelegateFunction_W1_OnEquippedWeaponChangedDelegate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_W1_OnPercentChangedDelegate__DelegateSignature,
 			};
 			static const UECodeGen_Private::FPackageParams PackageParams = {
@@ -21,13 +23,13 @@ void EmptyLinkFunctionForGeneratedCodeW1_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x6D520F12,
-				0x550243BD,
+				0xFBBE9F30,
+				0xDBB5F870,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_W1.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_W1.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_W1(Z_Construct_UPackage__Script_W1, TEXT("/Script/W1"), Z_Registration_Info_UPackage__Script_W1, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x6D520F12, 0x550243BD));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_W1(Z_Construct_UPackage__Script_W1, TEXT("/Script/W1"), Z_Registration_Info_UPackage__Script_W1, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xFBBE9F30, 0xDBB5F870));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
