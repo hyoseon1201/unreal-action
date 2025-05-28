@@ -216,6 +216,12 @@
     <Filter Include="Source\W1\Controllers">
       <UniqueIdentifier>{FD44A824-E318-3F0C-9A14-F5954997E0A7}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\W1\Controllers\W1AIController.cpp">
+      <Filter>Source\W1\Controllers</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Controllers\W1AIController.h">
+      <Filter>Source\W1\Controllers</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\W1\Controllers\W1HeroController.cpp">
       <Filter>Source\W1\Controllers</Filter>
     </ClCompile>
