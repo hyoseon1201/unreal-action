@@ -17,7 +17,7 @@ public:
 	AW1HeroController();
 
 	// Begin IGenericTeamAgentInInterface Interface
-	virtual FGenericTeamId GetGenericTeamId() const;
+	virtual FGenericTeamId GetGenericTeamId() const override;
 	// End IGenericTeamAgentInInterface Interface
 
 private:

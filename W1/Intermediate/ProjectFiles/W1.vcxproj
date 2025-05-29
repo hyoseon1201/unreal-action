@@ -296,6 +296,10 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\W1\AbilitySystems\GEExecCalc\GEExecCalc_DamageTaken.h"/>
+    <ClCompile Include="..\..\Source\W1\AI\BTService_OrientToTargetActor.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\AI\BTService_OrientToTargetActor.h"/>
     <ClCompile Include="..\..\Source\W1\AnimInstances\W1AnimInstanceBase.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>

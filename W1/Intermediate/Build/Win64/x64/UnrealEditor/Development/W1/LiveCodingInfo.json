@@ -2,6 +2,7 @@
 	"RemapUnityFiles": 
 	{
 		"Module.W1.cpp.obj": [
+			"BTService_OrientToTargetActor.gen.cpp.obj",
 			"DA_EnemyStartUpData.gen.cpp.obj",
 			"DA_HeroStartUpData.gen.cpp.obj",
 			"DA_InputConfig.gen.cpp.obj",
@@ -29,6 +30,7 @@
 			"W1GameplayAbility.gen.cpp.obj",
 			"W1HeroAnimInstance.gen.cpp.obj",
 			"W1HeroCharacter.gen.cpp.obj",
+			"W1HeroController.gen.cpp.obj",
 			"W1HeroGameplayAbility.gen.cpp.obj",
 			"W1HeroLinkedAnimLayer.gen.cpp.obj",
 			"W1HeroWeapon.gen.cpp.obj",
@@ -73,7 +75,7 @@
 			"W1WidgetBase.cpp.obj",
 			"W1.init.gen.cpp.obj",
 			"W1AIController.gen.cpp.obj",
-			"W1HeroController.gen.cpp.obj",
+			"BTService_OrientToTargetActor.cpp.obj",
 			"W1AIController.cpp.obj",
 			"W1HeroController.cpp.obj"
 		]

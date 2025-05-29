@@ -102,6 +102,15 @@
     <ClInclude Include="..\..\Source\W1\AbilitySystems\GEExecCalc\GEExecCalc_DamageTaken.h">
       <Filter>Source\W1\AbilitySystems\GEExecCalc</Filter>
     </ClInclude>
+    <Filter Include="Source\W1\AI">
+      <UniqueIdentifier>{C820EA9A-D9C9-3F3C-A6BA-1170DE35C2DC}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\W1\AI\BTService_OrientToTargetActor.cpp">
+      <Filter>Source\W1\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\AI\BTService_OrientToTargetActor.h">
+      <Filter>Source\W1\AI</Filter>
+    </ClInclude>
     <Filter Include="Source\W1\AnimInstances">
       <UniqueIdentifier>{ECA4739C-EE81-3D85-9607-48E3E8DFB66B}</UniqueIdentifier>
     </Filter>

@@ -103,9 +103,29 @@ struct Z_Construct_UClass_AW1AIController_Statics
 		{ "Category", "W1AIController" },
 		{ "ModuleRelativePath", "Controllers/W1AIController.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bEnableDetourCrowdAvoidance_MetaData[] = {
+		{ "Category", "Detour Crowd Avoidance Config" },
+		{ "ModuleRelativePath", "Controllers/W1AIController.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DetourCrowdAvoidanceQuality_MetaData[] = {
+		{ "Category", "Detour Crowd Avoidance Config" },
+		{ "EditCondition", "bEnableDetourCrowdAvoidance" },
+		{ "ModuleRelativePath", "Controllers/W1AIController.h" },
+		{ "UIMax", "4" },
+		{ "UIMin", "1" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CollisionQueryRange_MetaData[] = {
+		{ "Category", "Detour Crowd Avoidance Config" },
+		{ "EditCondition", "bEnableDetourCrowdAvoidance" },
+		{ "ModuleRelativePath", "Controllers/W1AIController.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_EnemyPerceptionComponent;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_AISenseConfig_Sight;
+	static void NewProp_bEnableDetourCrowdAvoidance_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_bEnableDetourCrowdAvoidance;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_DetourCrowdAvoidanceQuality;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_CollisionQueryRange;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -119,9 +139,19 @@ struct Z_Construct_UClass_AW1AIController_Statics
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AW1AIController_Statics::NewProp_EnemyPerceptionComponent = { "EnemyPerceptionComponent", nullptr, (EPropertyFlags)0x00200800000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AW1AIController, EnemyPerceptionComponent), Z_Construct_UClass_UAIPerceptionComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EnemyPerceptionComponent_MetaData), NewProp_EnemyPerceptionComponent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AW1AIController_Statics::NewProp_AISenseConfig_Sight = { "AISenseConfig_Sight", nullptr, (EPropertyFlags)0x0020080000020015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AW1AIController, AISenseConfig_Sight), Z_Construct_UClass_UAISenseConfig_Sight_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AISenseConfig_Sight_MetaData), NewProp_AISenseConfig_Sight_MetaData) };
+void Z_Construct_UClass_AW1AIController_Statics::NewProp_bEnableDetourCrowdAvoidance_SetBit(void* Obj)
+{
+	((AW1AIController*)Obj)->bEnableDetourCrowdAvoidance = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AW1AIController_Statics::NewProp_bEnableDetourCrowdAvoidance = { "bEnableDetourCrowdAvoidance", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AW1AIController), &Z_Construct_UClass_AW1AIController_Statics::NewProp_bEnableDetourCrowdAvoidance_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bEnableDetourCrowdAvoidance_MetaData), NewProp_bEnableDetourCrowdAvoidance_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_AW1AIController_Statics::NewProp_DetourCrowdAvoidanceQuality = { "DetourCrowdAvoidanceQuality", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AW1AIController, DetourCrowdAvoidanceQuality), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DetourCrowdAvoidanceQuality_MetaData), NewProp_DetourCrowdAvoidanceQuality_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AW1AIController_Statics::NewProp_CollisionQueryRange = { "CollisionQueryRange", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AW1AIController, CollisionQueryRange), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CollisionQueryRange_MetaData), NewProp_CollisionQueryRange_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AW1AIController_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AW1AIController_Statics::NewProp_EnemyPerceptionComponent,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AW1AIController_Statics::NewProp_AISenseConfig_Sight,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AW1AIController_Statics::NewProp_bEnableDetourCrowdAvoidance,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AW1AIController_Statics::NewProp_DetourCrowdAvoidanceQuality,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AW1AIController_Statics::NewProp_CollisionQueryRange,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AW1AIController_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AW1AIController_Statics::DependentSingletons[])() = {
@@ -164,10 +194,10 @@ AW1AIController::~AW1AIController() {}
 struct Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Controllers_W1AIController_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AW1AIController, AW1AIController::StaticClass, TEXT("AW1AIController"), &Z_Registration_Info_UClass_AW1AIController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AW1AIController), 1887079405U) },
+		{ Z_Construct_UClass_AW1AIController, AW1AIController::StaticClass, TEXT("AW1AIController"), &Z_Registration_Info_UClass_AW1AIController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AW1AIController), 2771258712U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Controllers_W1AIController_h_3831789918(TEXT("/Script/W1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Controllers_W1AIController_h_1181587075(TEXT("/Script/W1"),
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Controllers_W1AIController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Controllers_W1AIController_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

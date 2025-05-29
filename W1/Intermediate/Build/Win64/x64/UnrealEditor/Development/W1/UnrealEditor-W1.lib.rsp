@@ -8,10 +8,10 @@
 /NODEFAULTLIB
 "E:\unreal-action\W1\Intermediate\Build\Win64\x64\W1Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
 "E:\unreal-action\W1\Intermediate\Build\Win64\x64\UnrealEditor\Development\W1\Module.W1.cpp.obj"
+"E:\unreal-action\W1\Intermediate\Build\Win64\x64\UnrealEditor\Development\W1\BTService_OrientToTargetActor.cpp.obj"
 "E:\unreal-action\W1\Intermediate\Build\Win64\x64\UnrealEditor\Development\W1\W1AIController.cpp.obj"
 "E:\unreal-action\W1\Intermediate\Build\Win64\x64\UnrealEditor\Development\W1\W1HeroController.cpp.obj"
 "E:\unreal-action\W1\Intermediate\Build\Win64\x64\UnrealEditor\Development\W1\W1.init.gen.cpp.obj"
 "E:\unreal-action\W1\Intermediate\Build\Win64\x64\UnrealEditor\Development\W1\W1AIController.gen.cpp.obj"
-"E:\unreal-action\W1\Intermediate\Build\Win64\x64\UnrealEditor\Development\W1\W1HeroController.gen.cpp.obj"
 "E:\unreal-action\W1\Intermediate\Build\Win64\x64\UnrealEditor\Development\W1\Default.rc2.res"
 /OUT:"E:\unreal-action\W1\Intermediate\Build\Win64\x64\UnrealEditor\Development\W1\UnrealEditor-W1.lib"
