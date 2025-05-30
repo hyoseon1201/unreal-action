@@ -24,8 +24,6 @@ public: \
 
 
 #define FID_unreal_action_W1_Source_W1_AI_BTService_OrientToTargetActor_h_13_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UBTService_OrientToTargetActor(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	UBTService_OrientToTargetActor(UBTService_OrientToTargetActor&&); \
@@ -33,7 +31,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UBTService_OrientToTargetActor); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UBTService_OrientToTargetActor); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UBTService_OrientToTargetActor) \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UBTService_OrientToTargetActor) \
 	NO_API virtual ~UBTService_OrientToTargetActor();
 
 
