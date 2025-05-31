@@ -12,4 +12,6 @@ class W1_API UEnemyCombatComponent : public UPawnCombatComponent
 {
 	GENERATED_BODY()
 	
+public:
+	virtual void OnHitTargetActor(AActor* HitActor) override;
 };

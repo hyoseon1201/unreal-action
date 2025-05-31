@@ -12,6 +12,7 @@ void EmptyLinkFunctionForGeneratedCodeW1FunctionLibrary() {}
 
 // Begin Cross Module References
 ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+ENGINE_API UClass* Z_Construct_UClass_APawn_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UBlueprintFunctionLibrary();
 GAMEPLAYTAGS_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayTag();
 UPackage* Z_Construct_UPackage__Script_W1();
@@ -188,6 +189,63 @@ DEFINE_FUNCTION(UW1FunctionLibrary::execBP_GetPawnCombatComponentFromActor)
 }
 // End Class UW1FunctionLibrary Function BP_GetPawnCombatComponentFromActor
 
+// Begin Class UW1FunctionLibrary Function IsTargetPawnHostile
+struct Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile_Statics
+{
+	struct W1FunctionLibrary_eventIsTargetPawnHostile_Parms
+	{
+		APawn* QueryPawn;
+		APawn* TargetPawn;
+		bool ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "W1|FunctionLibrary" },
+		{ "ModuleRelativePath", "W1FunctionLibrary.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_QueryPawn;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetPawn;
+	static void NewProp_ReturnValue_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile_Statics::NewProp_QueryPawn = { "QueryPawn", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1FunctionLibrary_eventIsTargetPawnHostile_Parms, QueryPawn), Z_Construct_UClass_APawn_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile_Statics::NewProp_TargetPawn = { "TargetPawn", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1FunctionLibrary_eventIsTargetPawnHostile_Parms, TargetPawn), Z_Construct_UClass_APawn_NoRegister, METADATA_PARAMS(0, nullptr) };
+void Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+{
+	((W1FunctionLibrary_eventIsTargetPawnHostile_Parms*)Obj)->ReturnValue = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(W1FunctionLibrary_eventIsTargetPawnHostile_Parms), &Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile_Statics::NewProp_QueryPawn,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile_Statics::NewProp_TargetPawn,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UW1FunctionLibrary, nullptr, "IsTargetPawnHostile", nullptr, nullptr, Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile_Statics::PropPointers), sizeof(Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile_Statics::W1FunctionLibrary_eventIsTargetPawnHostile_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile_Statics::Function_MetaDataParams), Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile_Statics::W1FunctionLibrary_eventIsTargetPawnHostile_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UW1FunctionLibrary::execIsTargetPawnHostile)
+{
+	P_GET_OBJECT(APawn,Z_Param_QueryPawn);
+	P_GET_OBJECT(APawn,Z_Param_TargetPawn);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(bool*)Z_Param__Result=UW1FunctionLibrary::IsTargetPawnHostile(Z_Param_QueryPawn,Z_Param_TargetPawn);
+	P_NATIVE_END;
+}
+// End Class UW1FunctionLibrary Function IsTargetPawnHostile
+
 // Begin Class UW1FunctionLibrary Function RemoveGameplayTagFromActorIfFound
 struct Z_Construct_UFunction_UW1FunctionLibrary_RemoveGameplayTagFromActorIfFound_Statics
 {
@@ -244,6 +302,7 @@ void UW1FunctionLibrary::StaticRegisterNativesUW1FunctionLibrary()
 		{ "AddGameplayTagToActorIfNone", &UW1FunctionLibrary::execAddGameplayTagToActorIfNone },
 		{ "BP_DoesActorHaveTag", &UW1FunctionLibrary::execBP_DoesActorHaveTag },
 		{ "BP_GetPawnCombatComponentFromActor", &UW1FunctionLibrary::execBP_GetPawnCombatComponentFromActor },
+		{ "IsTargetPawnHostile", &UW1FunctionLibrary::execIsTargetPawnHostile },
 		{ "RemoveGameplayTagFromActorIfFound", &UW1FunctionLibrary::execRemoveGameplayTagFromActorIfFound },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -269,6 +328,7 @@ struct Z_Construct_UClass_UW1FunctionLibrary_Statics
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_AddGameplayTagToActorIfNone, "AddGameplayTagToActorIfNone" }, // 2269320346
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_BP_DoesActorHaveTag, "BP_DoesActorHaveTag" }, // 2172562801
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor, "BP_GetPawnCombatComponentFromActor" }, // 939907904
+		{ &Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile, "IsTargetPawnHostile" }, // 3746625938
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_RemoveGameplayTagFromActorIfFound, "RemoveGameplayTagFromActorIfFound" }, // 105731849
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -318,10 +378,10 @@ UW1FunctionLibrary::~UW1FunctionLibrary() {}
 struct Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UW1FunctionLibrary, UW1FunctionLibrary::StaticClass, TEXT("UW1FunctionLibrary"), &Z_Registration_Info_UClass_UW1FunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UW1FunctionLibrary), 3985090864U) },
+		{ Z_Construct_UClass_UW1FunctionLibrary, UW1FunctionLibrary::StaticClass, TEXT("UW1FunctionLibrary"), &Z_Registration_Info_UClass_UW1FunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UW1FunctionLibrary), 3065768956U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_1126768275(TEXT("/Script/W1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_2137694638(TEXT("/Script/W1"),
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

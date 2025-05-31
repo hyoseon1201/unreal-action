@@ -3,6 +3,7 @@
 #include "AbilitySystemBlueprintLibrary.h"
 #include "AbilitySystems/W1AbilitySystemComponent.h"
 #include "Interfaces/PawnCombatInterface.h"
+#include "GenericTeamAgentInterface.h"
 
 UW1AbilitySystemComponent* UW1FunctionLibrary::NativeGetW1ASCFromActor(AActor* InActor)
 {
@@ -62,4 +63,19 @@ UPawnCombatComponent* UW1FunctionLibrary::BP_GetPawnCombatComponentFromActor(AAc
 	OutValidType = CombatComponent ? EW1ValidType::Valid : EW1ValidType::InValid;
 
 	return CombatComponent;
+}
+
+bool UW1FunctionLibrary::IsTargetPawnHostile(APawn* QueryPawn, APawn* TargetPawn)
+{
+	check(QueryPawn && TargetPawn);
+
+	IGenericTeamAgentInterface* QueryTeamAgent = Cast<IGenericTeamAgentInterface>(QueryPawn->GetController());
+	IGenericTeamAgentInterface* TargetTeamAgent = Cast<IGenericTeamAgentInterface>(TargetPawn->GetController());
+
+	if (QueryTeamAgent && TargetTeamAgent)
+	{
+		return QueryTeamAgent->GetGenericTeamId() != TargetTeamAgent->GetGenericTeamId();
+	}
+
+	return false;
 }

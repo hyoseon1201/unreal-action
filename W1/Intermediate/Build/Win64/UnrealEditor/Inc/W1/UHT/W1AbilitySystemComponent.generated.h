@@ -10,6 +10,7 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct FGameplayAbilitySpecHandle;
+struct FGameplayTag;
 struct FW1HeroAbilitySet;
 #ifdef W1_W1AbilitySystemComponent_generated_h
 #error "W1AbilitySystemComponent.generated.h already included, missing '#pragma once' in W1AbilitySystemComponent.h"
@@ -17,6 +18,7 @@ struct FW1HeroAbilitySet;
 #define W1_W1AbilitySystemComponent_generated_h
 
 #define FID_unreal_action_W1_Source_W1_AbilitySystems_W1AbilitySystemComponent_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execTryActivateAbilityByTag); \
 	DECLARE_FUNCTION(execRemovedGrantedHeroWeaponAbilities); \
 	DECLARE_FUNCTION(execGrantHeroWeaponAbilities);
 

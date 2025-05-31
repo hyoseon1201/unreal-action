@@ -1,6 +1,7 @@
 
 #include "Items/Weapons/W1WeaponBase.h"
 #include "Components/BoxComponent.h"
+#include "W1FunctionLibrary.h"
 
 #include "W1DebugHelper.h"
 
@@ -29,12 +30,10 @@ void AW1WeaponBase::OnCollisionBoxBeginOverlap(UPrimitiveComponent* OverlappedCo
 
 	if (APawn* HitPawn = Cast<APawn>(OtherActor))
 	{
-		if (WeaponOwningPawn != HitPawn)
+		if (UW1FunctionLibrary::IsTargetPawnHostile(WeaponOwningPawn, HitPawn))
 		{
 			OnWeaponHitTarget.ExecuteIfBound(OtherActor);
 		}
-
-		// TODO : Implement hit check for enemy characters
 	}
 }
 
@@ -46,12 +45,10 @@ void AW1WeaponBase::OnCollisionBoxEndOverlap(UPrimitiveComponent* OverlappedComp
 
 	if (APawn* HitPawn = Cast<APawn>(OtherActor))
 	{
-		if (WeaponOwningPawn != HitPawn)
+		if (UW1FunctionLibrary::IsTargetPawnHostile(WeaponOwningPawn, HitPawn))
 		{
-			OnWeaponPulledFromTarget.ExecuteIfBound(OtherActor);
+			OnWeaponHitTarget.ExecuteIfBound(OtherActor);
 		}
-
-		// TODO : Implement hit check for enemy characters
 	}
 }
 
