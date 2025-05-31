@@ -2,6 +2,7 @@
 #include "AnimInstances/W1CharacterAnimInstance.h"
 #include "Characters/W1CharacterBase.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "KismetAnimationLibrary.h"
 
 void UW1CharacterAnimInstance::NativeInitializeAnimation()
 {
@@ -23,4 +24,6 @@ void UW1CharacterAnimInstance::NativeThreadSafeUpdateAnimation(float DeltaSecond
 	GroundSpeed = OwningCharacter->GetVelocity().Size2D();
 
 	bHasAcceleration = OwningMovementComponent->GetCurrentAcceleration().SizeSquared2D() > 0.f;
+
+	LocomotionDirection = UKismetAnimationLibrary::CalculateDirection(OwningCharacter->GetVelocity(), OwningCharacter->GetActorRotation());
 }

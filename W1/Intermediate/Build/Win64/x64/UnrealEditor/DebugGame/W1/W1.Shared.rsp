@@ -296,6 +296,8 @@
 /I "E:\unreal-action\W1\Intermediate\Build\Win64\UnrealEditor\Inc\W1\UHT"
 /I "E:\unreal-action\W1\Source\W1"
 /I "E:\unreal-action\W1\Source"
+/I "..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimGraphRuntime\UHT"
+/I "Runtime\AnimGraphRuntime\Public"
 /external:W0
 /external:I "ThirdParty\LibTiff\Source\Win64"
 /external:I "ThirdParty\LibTiff\Source"
