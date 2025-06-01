@@ -11,12 +11,16 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AW1EnemyCharacter;
 class UEnemyCombatComponent;
+class UGameplayEffect;
+struct FGameplayEffectSpecHandle;
+struct FScalableFloat;
 #ifdef W1_W1EnemyGameplayAbility_generated_h
 #error "W1EnemyGameplayAbility.generated.h already included, missing '#pragma once' in W1EnemyGameplayAbility.h"
 #endif
 #define W1_W1EnemyGameplayAbility_generated_h
 
 #define FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_W1EnemyGameplayAbility_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execMakeEnemyDamageEffectSpecHandle); \
 	DECLARE_FUNCTION(execGetEnemyCombatComponentFromActorInfo); \
 	DECLARE_FUNCTION(execGetEnemyCharacterFromActorInfo);
 
