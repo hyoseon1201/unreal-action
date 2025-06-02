@@ -22,7 +22,8 @@ public class W1 : ModuleRules
 			"EnhancedInput",
 			"GameplayTags",
 			"GameplayTasks",
-            "AnimGraphRuntime"
+            "AnimGraphRuntime",
+            "MotionWarping"
         });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });

@@ -10,6 +10,7 @@
 class UW1AbilitySystemComponent;
 class UW1AttributeSet;
 class UDA_StartUpDataBase;
+class UMotionWarpingComponent;
 
 UCLASS()
 class W1_API AW1CharacterBase : public ACharacter, public IAbilitySystemInterface, public IPawnCombatInterface, public IPawnUIInterface
@@ -41,6 +42,9 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AbilitySystem")
 	UW1AttributeSet* W1AttributeSet;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "MotionWarping")
+	UMotionWarpingComponent* MotionWarpingComponent;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "CharacterData")
 	TSoftObjectPtr<UDA_StartUpDataBase> CharacterStartUpData;

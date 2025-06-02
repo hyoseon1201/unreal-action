@@ -12,6 +12,7 @@ void EmptyLinkFunctionForGeneratedCodeW1CharacterBase() {}
 // Begin Cross Module References
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UAbilitySystemInterface_NoRegister();
+MOTIONWARPING_API UClass* Z_Construct_UClass_UMotionWarpingComponent_NoRegister();
 UPackage* Z_Construct_UPackage__Script_W1();
 W1_API UClass* Z_Construct_UClass_AW1CharacterBase();
 W1_API UClass* Z_Construct_UClass_AW1CharacterBase_NoRegister();
@@ -52,6 +53,11 @@ struct Z_Construct_UClass_AW1CharacterBase_Statics
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Characters/W1CharacterBase.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MotionWarpingComponent_MetaData[] = {
+		{ "Category", "MotionWarping" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Characters/W1CharacterBase.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CharacterStartUpData_MetaData[] = {
 		{ "Category", "CharacterData" },
 		{ "ModuleRelativePath", "Characters/W1CharacterBase.h" },
@@ -59,6 +65,7 @@ struct Z_Construct_UClass_AW1CharacterBase_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_W1AbilitySystemComponent;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_W1AttributeSet;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_MotionWarpingComponent;
 	static const UECodeGen_Private::FSoftObjectPropertyParams NewProp_CharacterStartUpData;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
@@ -70,10 +77,12 @@ struct Z_Construct_UClass_AW1CharacterBase_Statics
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AW1CharacterBase_Statics::NewProp_W1AbilitySystemComponent = { "W1AbilitySystemComponent", nullptr, (EPropertyFlags)0x00200800000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AW1CharacterBase, W1AbilitySystemComponent), Z_Construct_UClass_UW1AbilitySystemComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_W1AbilitySystemComponent_MetaData), NewProp_W1AbilitySystemComponent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AW1CharacterBase_Statics::NewProp_W1AttributeSet = { "W1AttributeSet", nullptr, (EPropertyFlags)0x00200800000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AW1CharacterBase, W1AttributeSet), Z_Construct_UClass_UW1AttributeSet_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_W1AttributeSet_MetaData), NewProp_W1AttributeSet_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AW1CharacterBase_Statics::NewProp_MotionWarpingComponent = { "MotionWarpingComponent", nullptr, (EPropertyFlags)0x00200800000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AW1CharacterBase, MotionWarpingComponent), Z_Construct_UClass_UMotionWarpingComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MotionWarpingComponent_MetaData), NewProp_MotionWarpingComponent_MetaData) };
 const UECodeGen_Private::FSoftObjectPropertyParams Z_Construct_UClass_AW1CharacterBase_Statics::NewProp_CharacterStartUpData = { "CharacterStartUpData", nullptr, (EPropertyFlags)0x0024080000010015, UECodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AW1CharacterBase, CharacterStartUpData), Z_Construct_UClass_UDA_StartUpDataBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CharacterStartUpData_MetaData), NewProp_CharacterStartUpData_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AW1CharacterBase_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AW1CharacterBase_Statics::NewProp_W1AbilitySystemComponent,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AW1CharacterBase_Statics::NewProp_W1AttributeSet,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AW1CharacterBase_Statics::NewProp_MotionWarpingComponent,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AW1CharacterBase_Statics::NewProp_CharacterStartUpData,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AW1CharacterBase_Statics::PropPointers) < 2048);
@@ -122,10 +131,10 @@ AW1CharacterBase::~AW1CharacterBase() {}
 struct Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Characters_W1CharacterBase_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AW1CharacterBase, AW1CharacterBase::StaticClass, TEXT("AW1CharacterBase"), &Z_Registration_Info_UClass_AW1CharacterBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AW1CharacterBase), 1072965161U) },
+		{ Z_Construct_UClass_AW1CharacterBase, AW1CharacterBase::StaticClass, TEXT("AW1CharacterBase"), &Z_Registration_Info_UClass_AW1CharacterBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AW1CharacterBase), 2210523121U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Characters_W1CharacterBase_h_1042883696(TEXT("/Script/W1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Characters_W1CharacterBase_h_1613112652(TEXT("/Script/W1"),
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Characters_W1CharacterBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_Characters_W1CharacterBase_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
