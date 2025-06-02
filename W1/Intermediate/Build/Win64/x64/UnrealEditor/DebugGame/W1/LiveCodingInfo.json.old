@@ -40,6 +40,7 @@
 			"W1StructTypes.gen.cpp.obj",
 			"W1WeaponBase.gen.cpp.obj",
 			"W1WidgetBase.gen.cpp.obj",
+			"W1EnemyGameplayAbility.cpp.obj",
 			"W1GameplayAbility.cpp.obj",
 			"W1HeroGameplayAbility.cpp.obj",
 			"GEExecCalc_DamageTaken.cpp.obj",
@@ -53,6 +54,7 @@
 			"W1CharacterBase.cpp.obj",
 			"W1EnemyCharacter.cpp.obj",
 			"W1HeroCharacter.cpp.obj",
+			"EnemyCombatComponent.cpp.obj",
 			"HeroCombatComponent.cpp.obj",
 			"PawnCombatComponent.cpp.obj",
 			"W1InputComponent.cpp.obj",
@@ -75,9 +77,7 @@
 			"W1FunctionLibrary.cpp.obj",
 			"W1GameplayTags.cpp.obj",
 			"W1StructTypes.cpp.obj",
-			"W1WidgetBase.cpp.obj",
-			"W1EnemyGameplayAbility.cpp.obj",
-			"EnemyCombatComponent.cpp.obj"
+			"W1WidgetBase.cpp.obj"
 		]
 	}
 }
