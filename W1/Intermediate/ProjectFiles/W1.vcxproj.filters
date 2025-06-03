@@ -111,6 +111,12 @@
     <ClInclude Include="..\..\Source\W1\AI\BTService_OrientToTargetActor.h">
       <Filter>Source\W1\AI</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\W1\AI\BTTask_RotateToFaceTarget.cpp">
+      <Filter>Source\W1\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\AI\BTTask_RotateToFaceTarget.h">
+      <Filter>Source\W1\AI</Filter>
+    </ClInclude>
     <Filter Include="Source\W1\AnimInstances">
       <UniqueIdentifier>{ECA4739C-EE81-3D85-9607-48E3E8DFB66B}</UniqueIdentifier>
     </Filter>
