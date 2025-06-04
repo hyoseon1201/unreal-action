@@ -1,5 +1,7 @@
 
 #include "AI/BTTask_RotateToFaceTarget.h"
+#include "BehaviorTree/BlackboardComponent.h"
+#include "AIController.h"
 
 UBTTask_RotateToFaceTarget::UBTTask_RotateToFaceTarget()
 {
@@ -36,4 +38,41 @@ FString UBTTask_RotateToFaceTarget::GetStaticDescription() const
 	const FString KeyDescription = InTargetToFaceKey.SelectedKeyName.ToString();
 
 	return FString::Printf(TEXT("Smoothly ratates to face %s Key until the angle precision %s is reched"), *KeyDescription, *FString::SanitizeFloat(AnglePrecision));
+}
+
+EBTNodeResult::Type UBTTask_RotateToFaceTarget::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
+{
+	UObject* ActorObject = OwnerComp.GetBlackboardComponent()->GetValueAsObject(InTargetToFaceKey.SelectedKeyName);
+	AActor* TargetActor = Cast<AActor>(ActorObject);
+
+	APawn* OwningPawn = OwnerComp.GetAIOwner()->GetPawn();
+
+	FRotateToFaceTargetTeskMemory* Memory = CastInstanceNodeMemory<FRotateToFaceTargetTeskMemory>(NodeMemory);
+
+	check(Memory);
+
+	Memory->OwningPawn = OwningPawn;
+	Memory->TargetActor = TargetActor;
+
+	if (!Memory->IsValid())
+	{
+		return EBTNodeResult::Failed;
+	}
+
+	if (HasReachedAnglePercision(OwningPawn, TargetActor))
+	{
+		Memory->Reset();
+		return EBTNodeResult::Succeeded;
+	}
+
+	return EBTNodeResult::InProgress;
+}
+
+void UBTTask_RotateToFaceTarget::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds)
+{
+}
+
+bool UBTTask_RotateToFaceTarget::HasReachedAnglePercision(APawn* PueryPawn, AActor* TargetActor) const
+{
+	return false;
 }

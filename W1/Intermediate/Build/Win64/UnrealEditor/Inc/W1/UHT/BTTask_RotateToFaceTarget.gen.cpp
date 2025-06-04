@@ -39,13 +39,7 @@ struct Z_Construct_UClass_UBTTask_RotateToFaceTarget_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AnglePrecision_MetaData[] = {
 		{ "Category", "Face Target" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "// ~End UBTNode Interface\n" },
-#endif
 		{ "ModuleRelativePath", "AI/BTTask_RotateToFaceTarget.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "~End UBTNode Interface" },
-#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RotationInterSpeed_MetaData[] = {
 		{ "Category", "Face Target" },
@@ -115,10 +109,10 @@ UBTTask_RotateToFaceTarget::~UBTTask_RotateToFaceTarget() {}
 struct Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_AI_BTTask_RotateToFaceTarget_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UBTTask_RotateToFaceTarget, UBTTask_RotateToFaceTarget::StaticClass, TEXT("UBTTask_RotateToFaceTarget"), &Z_Registration_Info_UClass_UBTTask_RotateToFaceTarget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBTTask_RotateToFaceTarget), 3618021830U) },
+		{ Z_Construct_UClass_UBTTask_RotateToFaceTarget, UBTTask_RotateToFaceTarget::StaticClass, TEXT("UBTTask_RotateToFaceTarget"), &Z_Registration_Info_UClass_UBTTask_RotateToFaceTarget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBTTask_RotateToFaceTarget), 4208739932U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_AI_BTTask_RotateToFaceTarget_h_475889534(TEXT("/Script/W1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_AI_BTTask_RotateToFaceTarget_h_326365347(TEXT("/Script/W1"),
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_AI_BTTask_RotateToFaceTarget_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_AI_BTTask_RotateToFaceTarget_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

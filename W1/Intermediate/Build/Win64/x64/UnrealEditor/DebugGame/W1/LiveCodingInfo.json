@@ -3,7 +3,6 @@
 	{
 		"Module.W1.cpp.obj": [
 			"BTService_OrientToTargetActor.gen.cpp.obj",
-			"BTTask_RotateToFaceTarget.gen.cpp.obj",
 			"DA_EnemyStartUpData.gen.cpp.obj",
 			"DA_HeroStartUpData.gen.cpp.obj",
 			"DA_InputConfig.gen.cpp.obj",
@@ -18,7 +17,6 @@
 			"PawnExtensionComponentBase.gen.cpp.obj",
 			"PawnUIComponent.gen.cpp.obj",
 			"PawnUIInterface.gen.cpp.obj",
-			"W1.init.gen.cpp.obj",
 			"W1AbilitySystemComponent.gen.cpp.obj",
 			"W1AIController.gen.cpp.obj",
 			"W1AnimInstanceBase.gen.cpp.obj",
@@ -79,6 +77,8 @@
 			"W1GameplayTags.cpp.obj",
 			"W1StructTypes.cpp.obj",
 			"W1WidgetBase.cpp.obj",
+			"BTTask_RotateToFaceTarget.gen.cpp.obj",
+			"W1.init.gen.cpp.obj",
 			"BTTask_RotateToFaceTarget.cpp.obj"
 		]
 	}
