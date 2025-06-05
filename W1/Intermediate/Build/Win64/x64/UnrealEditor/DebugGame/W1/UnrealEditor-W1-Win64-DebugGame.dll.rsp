@@ -37,7 +37,7 @@
 /FUNCTIONPADMIN:6
 "E:\unreal-action\W1\Intermediate\Build\Win64\x64\W1Editor\DebugGame\UnrealEd\SharedPCH.UnrealEd.Project.NonOptimized.ValApi.Cpp20.h.obj"
 "E:\unreal-action\W1\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\W1\Module.W1.cpp.obj"
-"E:\unreal-action\W1\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\W1\BTTask_RotateToFaceTarget.cpp.obj"
+"E:\unreal-action\W1\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\W1\W1GameplayTags.cpp.obj"
 "E:\unreal-action\W1\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\W1\Default.rc2.res"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Engine\UnrealEditor-Engine.lib"
 "..\Plugins\EnhancedInput\Intermediate\Build\Win64\x64\UnrealEditor\Development\EnhancedInput\UnrealEditor-EnhancedInput.lib"

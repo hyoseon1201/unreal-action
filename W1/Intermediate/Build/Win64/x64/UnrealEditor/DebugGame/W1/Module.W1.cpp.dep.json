@@ -294,6 +294,7 @@
             "e:\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.h",
             "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\kismetmathlibrary.generated.h",
             "e:\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.inl",
+            "e:\\unreal-action\\w1\\source\\w1\\ai\\bttask_rotatetofacetarget.cpp",
             "e:\\unreal-action\\w1\\source\\w1\\animinstances\\hero\\w1heroaniminstance.cpp",
             "e:\\unreal-action\\w1\\source\\w1\\animinstances\\hero\\w1herolinkedanimlayer.cpp",
             "e:\\unreal-action\\w1\\source\\w1\\animinstances\\w1animinstancebase.cpp",
@@ -411,7 +412,6 @@
             "e:\\unreal-action\\w1\\source\\w1\\w1.cpp",
             "e:\\unreal-action\\w1\\source\\w1\\w1.h",
             "e:\\unreal-action\\w1\\source\\w1\\w1functionlibrary.cpp",
-            "e:\\unreal-action\\w1\\source\\w1\\w1gameplaytags.cpp",
             "e:\\unreal-action\\w1\\source\\w1\\w1types\\w1structtypes.cpp",
             "e:\\unreal-action\\w1\\source\\w1\\widgets\\w1widgetbase.cpp"
         ],

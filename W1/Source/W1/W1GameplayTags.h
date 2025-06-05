@@ -38,6 +38,7 @@ namespace W1GameplayTags
 	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Enemy_Weapon);
 
 	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Enemy_Status_Strafing);
+	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Enemy_Status_UnderAttack);
 
 	//Shared Tags
 	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Shared_Ability_HitReact);
