@@ -2,6 +2,7 @@
 #include "AI/BTTask_RotateToFaceTarget.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "AIController.h"
+#include "Kismet/KismetMathLibrary.h"
 
 UBTTask_RotateToFaceTarget::UBTTask_RotateToFaceTarget()
 {
@@ -70,9 +71,34 @@ EBTNodeResult::Type UBTTask_RotateToFaceTarget::ExecuteTask(UBehaviorTreeCompone
 
 void UBTTask_RotateToFaceTarget::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds)
 {
+	FRotateToFaceTargetTeskMemory* Memory = CastInstanceNodeMemory<FRotateToFaceTargetTeskMemory>(NodeMemory);
+
+	if (!Memory->IsValid())
+	{
+		FinishLatentTask(OwnerComp, EBTNodeResult::Failed);
+	}
+
+	if (HasReachedAnglePercision(Memory->OwningPawn.Get(), Memory->TargetActor.Get()))
+	{
+		Memory->Reset();
+		FinishLatentTask(OwnerComp, EBTNodeResult::Succeeded);
+	}
+	else
+	{
+		const FRotator LookAtRot = UKismetMathLibrary::FindLookAtRotation(Memory->OwningPawn->GetActorLocation(), Memory->TargetActor->GetActorLocation());
+		const FRotator TargetRot = FMath::RInterpTo(Memory->OwningPawn->GetActorRotation(), LookAtRot, DeltaSeconds, RotationInterSpeed);
+
+		Memory->OwningPawn->SetActorRotation(TargetRot);
+	}
 }
 
-bool UBTTask_RotateToFaceTarget::HasReachedAnglePercision(APawn* PueryPawn, AActor* TargetActor) const
+bool UBTTask_RotateToFaceTarget::HasReachedAnglePercision(APawn* QueryPawn, AActor* TargetActor) const
 {
-	return false;
+	const FVector OwnerForward = QueryPawn->GetActorForwardVector();
+	const FVector OwnerToTargetNormalized = (TargetActor->GetActorLocation() - QueryPawn->GetActorLocation()).GetSafeNormal();
+
+	const float DotResult = FVector::DotProduct(OwnerForward, OwnerToTargetNormalized);
+	const float AngleDiff = UKismetMathLibrary::DegAcos(DotResult);
+
+	return AngleDiff <= AnglePrecision;
 }

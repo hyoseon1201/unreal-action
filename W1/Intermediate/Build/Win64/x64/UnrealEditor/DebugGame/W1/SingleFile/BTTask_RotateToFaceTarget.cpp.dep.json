@@ -773,7 +773,19 @@
             "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\aimodule\\uht\\genericteamagentinterface.generated.h",
             "e:\\ue_5.4\\engine\\source\\runtime\\engine\\public\\visuallogger\\visualloggerdebugsnapshotinterface.h",
             "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\visualloggerdebugsnapshotinterface.generated.h",
-            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\aimodule\\uht\\aicontroller.generated.h"
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\aimodule\\uht\\aicontroller.generated.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\kismet\\blueprintfunctionlibrary.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\blueprintfunctionlibrary.generated.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\core\\public\\misc\\qualifiedframetime.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\core\\public\\misc\\framerate.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\core\\public\\misc\\expressionparsertypes.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\core\\public\\templates\\valueorerror.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\core\\public\\misc\\expressionparsertypes.inl",
+            "e:\\ue_5.4\\engine\\source\\runtime\\core\\public\\misc\\frametime.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\core\\public\\misc\\timecode.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\kismetmathlibrary.generated.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.inl"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
