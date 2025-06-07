@@ -74,6 +74,5 @@
 #include "E:/unreal-action/W1/Source/W1/Items/Weapons/W1WeaponBase.cpp"
 #include "E:/unreal-action/W1/Source/W1/W1.cpp"
 #include "E:/unreal-action/W1/Source/W1/W1FunctionLibrary.cpp"
-#include "E:/unreal-action/W1/Source/W1/W1GameplayTags.cpp"
 #include "E:/unreal-action/W1/Source/W1/W1Types/W1StructTypes.cpp"
 #include "E:/unreal-action/W1/Source/W1/Widgets/W1WidgetBase.cpp"
