@@ -6,6 +6,7 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "W1/W1FunctionLibrary.h"
+#include "GameplayAbilities/Public/ScalableFloat.h"
 #include "Runtime/GameplayTags/Classes/GameplayTagContainer.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeW1FunctionLibrary() {}
@@ -14,6 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeW1FunctionLibrary() {}
 ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_APawn_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UBlueprintFunctionLibrary();
+GAMEPLAYABILITIES_API UScriptStruct* Z_Construct_UScriptStruct_FScalableFloat();
 GAMEPLAYTAGS_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayTag();
 UPackage* Z_Construct_UPackage__Script_W1();
 W1_API UClass* Z_Construct_UClass_UPawnCombatComponent_NoRegister();
@@ -189,6 +191,63 @@ DEFINE_FUNCTION(UW1FunctionLibrary::execBP_GetPawnCombatComponentFromActor)
 }
 // End Class UW1FunctionLibrary Function BP_GetPawnCombatComponentFromActor
 
+// Begin Class UW1FunctionLibrary Function GetScalableFloatValueAtLevel
+struct Z_Construct_UFunction_UW1FunctionLibrary_GetScalableFloatValueAtLevel_Statics
+{
+	struct W1FunctionLibrary_eventGetScalableFloatValueAtLevel_Parms
+	{
+		FScalableFloat InScalableFloat;
+		float InLevel;
+		float ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "W1|FunctionLibrary" },
+		{ "CompactNodeTitle", "Get Value At Level" },
+		{ "CPP_Default_InLevel", "1.000000" },
+		{ "ModuleRelativePath", "W1FunctionLibrary.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InScalableFloat_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_InScalableFloat;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_InLevel;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UW1FunctionLibrary_GetScalableFloatValueAtLevel_Statics::NewProp_InScalableFloat = { "InScalableFloat", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1FunctionLibrary_eventGetScalableFloatValueAtLevel_Parms, InScalableFloat), Z_Construct_UScriptStruct_FScalableFloat, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InScalableFloat_MetaData), NewProp_InScalableFloat_MetaData) }; // 703790095
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UW1FunctionLibrary_GetScalableFloatValueAtLevel_Statics::NewProp_InLevel = { "InLevel", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1FunctionLibrary_eventGetScalableFloatValueAtLevel_Parms, InLevel), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UW1FunctionLibrary_GetScalableFloatValueAtLevel_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1FunctionLibrary_eventGetScalableFloatValueAtLevel_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UW1FunctionLibrary_GetScalableFloatValueAtLevel_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1FunctionLibrary_GetScalableFloatValueAtLevel_Statics::NewProp_InScalableFloat,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1FunctionLibrary_GetScalableFloatValueAtLevel_Statics::NewProp_InLevel,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1FunctionLibrary_GetScalableFloatValueAtLevel_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UW1FunctionLibrary_GetScalableFloatValueAtLevel_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UW1FunctionLibrary_GetScalableFloatValueAtLevel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UW1FunctionLibrary, nullptr, "GetScalableFloatValueAtLevel", nullptr, nullptr, Z_Construct_UFunction_UW1FunctionLibrary_GetScalableFloatValueAtLevel_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UW1FunctionLibrary_GetScalableFloatValueAtLevel_Statics::PropPointers), sizeof(Z_Construct_UFunction_UW1FunctionLibrary_GetScalableFloatValueAtLevel_Statics::W1FunctionLibrary_eventGetScalableFloatValueAtLevel_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UW1FunctionLibrary_GetScalableFloatValueAtLevel_Statics::Function_MetaDataParams), Z_Construct_UFunction_UW1FunctionLibrary_GetScalableFloatValueAtLevel_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UW1FunctionLibrary_GetScalableFloatValueAtLevel_Statics::W1FunctionLibrary_eventGetScalableFloatValueAtLevel_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UW1FunctionLibrary_GetScalableFloatValueAtLevel()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UW1FunctionLibrary_GetScalableFloatValueAtLevel_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UW1FunctionLibrary::execGetScalableFloatValueAtLevel)
+{
+	P_GET_STRUCT_REF(FScalableFloat,Z_Param_Out_InScalableFloat);
+	P_GET_PROPERTY(FFloatProperty,Z_Param_InLevel);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(float*)Z_Param__Result=UW1FunctionLibrary::GetScalableFloatValueAtLevel(Z_Param_Out_InScalableFloat,Z_Param_InLevel);
+	P_NATIVE_END;
+}
+// End Class UW1FunctionLibrary Function GetScalableFloatValueAtLevel
+
 // Begin Class UW1FunctionLibrary Function IsTargetPawnHostile
 struct Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile_Statics
 {
@@ -302,6 +361,7 @@ void UW1FunctionLibrary::StaticRegisterNativesUW1FunctionLibrary()
 		{ "AddGameplayTagToActorIfNone", &UW1FunctionLibrary::execAddGameplayTagToActorIfNone },
 		{ "BP_DoesActorHaveTag", &UW1FunctionLibrary::execBP_DoesActorHaveTag },
 		{ "BP_GetPawnCombatComponentFromActor", &UW1FunctionLibrary::execBP_GetPawnCombatComponentFromActor },
+		{ "GetScalableFloatValueAtLevel", &UW1FunctionLibrary::execGetScalableFloatValueAtLevel },
 		{ "IsTargetPawnHostile", &UW1FunctionLibrary::execIsTargetPawnHostile },
 		{ "RemoveGameplayTagFromActorIfFound", &UW1FunctionLibrary::execRemoveGameplayTagFromActorIfFound },
 	};
@@ -328,6 +388,7 @@ struct Z_Construct_UClass_UW1FunctionLibrary_Statics
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_AddGameplayTagToActorIfNone, "AddGameplayTagToActorIfNone" }, // 2269320346
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_BP_DoesActorHaveTag, "BP_DoesActorHaveTag" }, // 2172562801
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor, "BP_GetPawnCombatComponentFromActor" }, // 939907904
+		{ &Z_Construct_UFunction_UW1FunctionLibrary_GetScalableFloatValueAtLevel, "GetScalableFloatValueAtLevel" }, // 3031419996
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile, "IsTargetPawnHostile" }, // 3746625938
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_RemoveGameplayTagFromActorIfFound, "RemoveGameplayTagFromActorIfFound" }, // 105731849
 	};
@@ -378,10 +439,10 @@ UW1FunctionLibrary::~UW1FunctionLibrary() {}
 struct Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UW1FunctionLibrary, UW1FunctionLibrary::StaticClass, TEXT("UW1FunctionLibrary"), &Z_Registration_Info_UClass_UW1FunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UW1FunctionLibrary), 3065768956U) },
+		{ Z_Construct_UClass_UW1FunctionLibrary, UW1FunctionLibrary::StaticClass, TEXT("UW1FunctionLibrary"), &Z_Registration_Info_UClass_UW1FunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UW1FunctionLibrary), 2223568504U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_2137694638(TEXT("/Script/W1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_1416021528(TEXT("/Script/W1"),
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

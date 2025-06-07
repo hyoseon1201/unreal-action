@@ -7,6 +7,7 @@
 
 class UW1AbilitySystemComponent;
 class UPawnCombatComponent;
+struct FScalableFloat;
 
 /**
  * 
@@ -37,4 +38,7 @@ public:
 
 	UFUNCTION(BlueprintPure, Category = "W1|FunctionLibrary")
 	static bool IsTargetPawnHostile(APawn* QueryPawn, APawn* TargetPawn);
+
+	UFUNCTION(BlueprintPure, Category = "W1|FunctionLibrary", meta = (CompactNodeTitle = "Get Value At Level"))
+	static float GetScalableFloatValueAtLevel(const FScalableFloat& InScalableFloat, float InLevel = 1.f);
 };

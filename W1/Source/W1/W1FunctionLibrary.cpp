@@ -79,3 +79,8 @@ bool UW1FunctionLibrary::IsTargetPawnHostile(APawn* QueryPawn, APawn* TargetPawn
 
 	return false;
 }
+
+float UW1FunctionLibrary::GetScalableFloatValueAtLevel(const FScalableFloat& InScalableFloat, float InLevel)
+{
+	return InScalableFloat.GetValueAtLevel(InLevel);
+}
