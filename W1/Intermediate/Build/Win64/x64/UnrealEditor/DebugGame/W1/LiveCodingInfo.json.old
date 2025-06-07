@@ -18,6 +18,7 @@
 			"PawnExtensionComponentBase.gen.cpp.obj",
 			"PawnUIComponent.gen.cpp.obj",
 			"PawnUIInterface.gen.cpp.obj",
+			"W1.init.gen.cpp.obj",
 			"W1AbilitySystemComponent.gen.cpp.obj",
 			"W1AIController.gen.cpp.obj",
 			"W1AnimInstanceBase.gen.cpp.obj",
@@ -27,6 +28,7 @@
 			"W1EnemyCharacter.gen.cpp.obj",
 			"W1EnemyGameplayAbility.gen.cpp.obj",
 			"W1EnumTypes.gen.cpp.obj",
+			"W1FunctionLibrary.gen.cpp.obj",
 			"W1GameModeBase.gen.cpp.obj",
 			"W1GameplayAbility.gen.cpp.obj",
 			"W1HeroAnimInstance.gen.cpp.obj",
@@ -77,8 +79,6 @@
 			"W1GameplayTags.cpp.obj",
 			"W1StructTypes.cpp.obj",
 			"W1WidgetBase.cpp.obj",
-			"W1.init.gen.cpp.obj",
-			"W1FunctionLibrary.gen.cpp.obj",
 			"W1FunctionLibrary.cpp.obj"
 		]
 	}

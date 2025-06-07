@@ -22,6 +22,7 @@ struct FScalableFloat;
 #define W1_W1FunctionLibrary_generated_h
 
 #define FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execComputeHitReactDirectionTag); \
 	DECLARE_FUNCTION(execGetScalableFloatValueAtLevel); \
 	DECLARE_FUNCTION(execIsTargetPawnHostile); \
 	DECLARE_FUNCTION(execBP_GetPawnCombatComponentFromActor); \

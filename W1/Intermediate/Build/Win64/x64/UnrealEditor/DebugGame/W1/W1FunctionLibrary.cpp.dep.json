@@ -76,7 +76,10 @@
             "e:\\unreal-action\\w1\\source\\w1\\interfaces\\pawncombatinterface.h",
             "e:\\unreal-action\\w1\\intermediate\\build\\win64\\unrealeditor\\inc\\w1\\uht\\pawncombatinterface.generated.h",
             "e:\\ue_5.4\\engine\\source\\runtime\\aimodule\\classes\\genericteamagentinterface.h",
-            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\aimodule\\uht\\genericteamagentinterface.generated.h"
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\aimodule\\uht\\genericteamagentinterface.generated.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\kismetmathlibrary.generated.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.inl"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

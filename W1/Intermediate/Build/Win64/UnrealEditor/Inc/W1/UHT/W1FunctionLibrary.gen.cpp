@@ -191,6 +191,63 @@ DEFINE_FUNCTION(UW1FunctionLibrary::execBP_GetPawnCombatComponentFromActor)
 }
 // End Class UW1FunctionLibrary Function BP_GetPawnCombatComponentFromActor
 
+// Begin Class UW1FunctionLibrary Function ComputeHitReactDirectionTag
+struct Z_Construct_UFunction_UW1FunctionLibrary_ComputeHitReactDirectionTag_Statics
+{
+	struct W1FunctionLibrary_eventComputeHitReactDirectionTag_Parms
+	{
+		AActor* InAttacker;
+		AActor* InVictim;
+		float OutAngleDifference;
+		FGameplayTag ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "W1|FunctionLibrary" },
+		{ "ModuleRelativePath", "W1FunctionLibrary.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_InAttacker;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_InVictim;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_OutAngleDifference;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UW1FunctionLibrary_ComputeHitReactDirectionTag_Statics::NewProp_InAttacker = { "InAttacker", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1FunctionLibrary_eventComputeHitReactDirectionTag_Parms, InAttacker), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UW1FunctionLibrary_ComputeHitReactDirectionTag_Statics::NewProp_InVictim = { "InVictim", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1FunctionLibrary_eventComputeHitReactDirectionTag_Parms, InVictim), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UW1FunctionLibrary_ComputeHitReactDirectionTag_Statics::NewProp_OutAngleDifference = { "OutAngleDifference", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1FunctionLibrary_eventComputeHitReactDirectionTag_Parms, OutAngleDifference), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UW1FunctionLibrary_ComputeHitReactDirectionTag_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1FunctionLibrary_eventComputeHitReactDirectionTag_Parms, ReturnValue), Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(0, nullptr) }; // 1298103297
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UW1FunctionLibrary_ComputeHitReactDirectionTag_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1FunctionLibrary_ComputeHitReactDirectionTag_Statics::NewProp_InAttacker,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1FunctionLibrary_ComputeHitReactDirectionTag_Statics::NewProp_InVictim,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1FunctionLibrary_ComputeHitReactDirectionTag_Statics::NewProp_OutAngleDifference,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1FunctionLibrary_ComputeHitReactDirectionTag_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UW1FunctionLibrary_ComputeHitReactDirectionTag_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UW1FunctionLibrary_ComputeHitReactDirectionTag_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UW1FunctionLibrary, nullptr, "ComputeHitReactDirectionTag", nullptr, nullptr, Z_Construct_UFunction_UW1FunctionLibrary_ComputeHitReactDirectionTag_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UW1FunctionLibrary_ComputeHitReactDirectionTag_Statics::PropPointers), sizeof(Z_Construct_UFunction_UW1FunctionLibrary_ComputeHitReactDirectionTag_Statics::W1FunctionLibrary_eventComputeHitReactDirectionTag_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UW1FunctionLibrary_ComputeHitReactDirectionTag_Statics::Function_MetaDataParams), Z_Construct_UFunction_UW1FunctionLibrary_ComputeHitReactDirectionTag_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UW1FunctionLibrary_ComputeHitReactDirectionTag_Statics::W1FunctionLibrary_eventComputeHitReactDirectionTag_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UW1FunctionLibrary_ComputeHitReactDirectionTag()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UW1FunctionLibrary_ComputeHitReactDirectionTag_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UW1FunctionLibrary::execComputeHitReactDirectionTag)
+{
+	P_GET_OBJECT(AActor,Z_Param_InAttacker);
+	P_GET_OBJECT(AActor,Z_Param_InVictim);
+	P_GET_PROPERTY_REF(FFloatProperty,Z_Param_Out_OutAngleDifference);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(FGameplayTag*)Z_Param__Result=UW1FunctionLibrary::ComputeHitReactDirectionTag(Z_Param_InAttacker,Z_Param_InVictim,Z_Param_Out_OutAngleDifference);
+	P_NATIVE_END;
+}
+// End Class UW1FunctionLibrary Function ComputeHitReactDirectionTag
+
 // Begin Class UW1FunctionLibrary Function GetScalableFloatValueAtLevel
 struct Z_Construct_UFunction_UW1FunctionLibrary_GetScalableFloatValueAtLevel_Statics
 {
@@ -361,6 +418,7 @@ void UW1FunctionLibrary::StaticRegisterNativesUW1FunctionLibrary()
 		{ "AddGameplayTagToActorIfNone", &UW1FunctionLibrary::execAddGameplayTagToActorIfNone },
 		{ "BP_DoesActorHaveTag", &UW1FunctionLibrary::execBP_DoesActorHaveTag },
 		{ "BP_GetPawnCombatComponentFromActor", &UW1FunctionLibrary::execBP_GetPawnCombatComponentFromActor },
+		{ "ComputeHitReactDirectionTag", &UW1FunctionLibrary::execComputeHitReactDirectionTag },
 		{ "GetScalableFloatValueAtLevel", &UW1FunctionLibrary::execGetScalableFloatValueAtLevel },
 		{ "IsTargetPawnHostile", &UW1FunctionLibrary::execIsTargetPawnHostile },
 		{ "RemoveGameplayTagFromActorIfFound", &UW1FunctionLibrary::execRemoveGameplayTagFromActorIfFound },
@@ -388,6 +446,7 @@ struct Z_Construct_UClass_UW1FunctionLibrary_Statics
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_AddGameplayTagToActorIfNone, "AddGameplayTagToActorIfNone" }, // 2269320346
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_BP_DoesActorHaveTag, "BP_DoesActorHaveTag" }, // 2172562801
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor, "BP_GetPawnCombatComponentFromActor" }, // 939907904
+		{ &Z_Construct_UFunction_UW1FunctionLibrary_ComputeHitReactDirectionTag, "ComputeHitReactDirectionTag" }, // 886069136
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_GetScalableFloatValueAtLevel, "GetScalableFloatValueAtLevel" }, // 3031419996
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile, "IsTargetPawnHostile" }, // 3746625938
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_RemoveGameplayTagFromActorIfFound, "RemoveGameplayTagFromActorIfFound" }, // 105731849
@@ -439,10 +498,10 @@ UW1FunctionLibrary::~UW1FunctionLibrary() {}
 struct Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UW1FunctionLibrary, UW1FunctionLibrary::StaticClass, TEXT("UW1FunctionLibrary"), &Z_Registration_Info_UClass_UW1FunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UW1FunctionLibrary), 2223568504U) },
+		{ Z_Construct_UClass_UW1FunctionLibrary, UW1FunctionLibrary::StaticClass, TEXT("UW1FunctionLibrary"), &Z_Registration_Info_UClass_UW1FunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UW1FunctionLibrary), 1323551186U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_1416021528(TEXT("/Script/W1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_2322274811(TEXT("/Script/W1"),
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
