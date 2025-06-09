@@ -364,6 +364,7 @@
             "e:\\ue_5.4\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\playermappablekeyslot.generated.h",
             "e:\\ue_5.4\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\enhancedinputsubsysteminterface.generated.h",
             "e:\\ue_5.4\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\enhancedinputsubsystems.generated.h",
+            "e:\\unreal-action\\w1\\source\\w1\\components\\combat\\enemycombatcomponent.cpp",
             "e:\\unreal-action\\w1\\source\\w1\\components\\combat\\herocombatcomponent.cpp",
             "e:\\unreal-action\\w1\\source\\w1\\components\\combat\\pawncombatcomponent.cpp",
             "e:\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\components\\boxcomponent.h",
@@ -410,6 +411,8 @@
             "e:\\unreal-action\\w1\\source\\w1\\items\\weapons\\w1weaponbase.cpp",
             "e:\\unreal-action\\w1\\source\\w1\\w1.cpp",
             "e:\\unreal-action\\w1\\source\\w1\\w1.h",
+            "e:\\unreal-action\\w1\\source\\w1\\w1functionlibrary.cpp",
+            "e:\\unreal-action\\w1\\source\\w1\\w1gameplaytags.cpp",
             "e:\\unreal-action\\w1\\source\\w1\\w1types\\w1structtypes.cpp",
             "e:\\unreal-action\\w1\\source\\w1\\widgets\\w1widgetbase.cpp"
         ],
