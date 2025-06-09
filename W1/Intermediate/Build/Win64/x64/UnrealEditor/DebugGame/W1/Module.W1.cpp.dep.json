@@ -275,7 +275,6 @@
             "e:\\unreal-action\\w1\\source\\w1\\abilitysystems\\abilities\\w1herogameplayability.cpp",
             "e:\\unreal-action\\w1\\source\\w1\\abilitysystems\\geexeccalc\\geexeccalc_damagetaken.cpp",
             "e:\\unreal-action\\w1\\source\\w1\\w1debughelper.h",
-            "e:\\unreal-action\\w1\\source\\w1\\abilitysystems\\w1abilitysystemcomponent.cpp",
             "e:\\unreal-action\\w1\\source\\w1\\abilitysystems\\w1attributeset.cpp",
             "e:\\ue_5.4\\engine\\plugins\\runtime\\gameplayabilities\\source\\gameplayabilities\\public\\gameplayeffectextension.h",
             "e:\\unreal-action\\w1\\source\\w1\\ai\\btservice_orienttotargetactor.cpp",
@@ -412,7 +411,6 @@
             "e:\\unreal-action\\w1\\source\\w1\\w1.cpp",
             "e:\\unreal-action\\w1\\source\\w1\\w1.h",
             "e:\\unreal-action\\w1\\source\\w1\\w1functionlibrary.cpp",
-            "e:\\unreal-action\\w1\\source\\w1\\w1gameplaytags.cpp",
             "e:\\unreal-action\\w1\\source\\w1\\w1types\\w1structtypes.cpp",
             "e:\\unreal-action\\w1\\source\\w1\\widgets\\w1widgetbase.cpp"
         ],

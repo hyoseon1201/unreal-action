@@ -1,6 +1,7 @@
 
 #include "AbilitySystems/W1AbilitySystemComponent.h"
 #include "AbilitySystems/Abilities/W1GameplayAbility.h"
+#include "W1GameplayTags.h"
 
 void UW1AbilitySystemComponent::OnAbilityInputPressed(const FGameplayTag& InInputTag)
 {
@@ -23,6 +24,19 @@ void UW1AbilitySystemComponent::OnAbilityInputPressed(const FGameplayTag& InInpu
 
 void UW1AbilitySystemComponent::OnAbilityInputReleased(const FGameplayTag& InInputTag)
 {
+	if (!InInputTag.IsValid() || !InInputTag.MatchesTag(W1GameplayTags::InputTag_MustBeHeld))
+	{
+		return;
+	}
+
+	TArray<FGameplayAbilitySpec> AbilitySpecsCopy = GetActivatableAbilities();
+	for (const FGameplayAbilitySpec& AbilitySpec : AbilitySpecsCopy)
+	{
+		if (AbilitySpec.DynamicAbilityTags.HasTagExact(InInputTag) && AbilitySpec.IsActive())
+		{
+			CancelAbilityHandle(AbilitySpec.Handle);
+		}
+	}
 }
 
 void UW1AbilitySystemComponent::GrantHeroWeaponAbilities(const TArray<FW1HeroAbilitySet>& InDefaultWeaponAbilities, int32 ApplyLevel, TArray<FGameplayAbilitySpecHandle>& OutGrantedAbilitySpecHandles)
