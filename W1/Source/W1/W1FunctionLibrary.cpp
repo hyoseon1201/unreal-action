@@ -7,6 +7,8 @@
 #include "Kismet/KismetMathLibrary.h"
 #include "W1GameplayTags.h"
 
+#include "W1DebugHelper.h"
+
 UW1AbilitySystemComponent* UW1FunctionLibrary::NativeGetW1ASCFromActor(AActor* InActor)
 {
 	check(InActor);
@@ -122,4 +124,17 @@ FGameplayTag UW1FunctionLibrary::ComputeHitReactDirectionTag(AActor* InAttacker,
 	}
 
 	return W1GameplayTags::Shared_Status_HitReact_Front;
+}
+
+bool UW1FunctionLibrary::IsValidBlock(AActor* InAttacker, AActor* InDefender)
+{
+	check(InAttacker && InDefender);
+
+	const float DotResult = FVector::DotProduct(InAttacker->GetActorForwardVector(), InDefender->GetActorForwardVector());
+
+	const FString DebugString = FString::Printf(TEXT("Dot result : %f %s"), DotResult, DotResult < -0.1f ? TEXT("Valid Block") : TEXT("Invalid Block"));
+
+	Debug::Print(DebugString, DotResult < -0.1f ? FColor::Green : FColor::Red);
+
+	return DotResult < -0.1f ? true : false;
 }

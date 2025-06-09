@@ -2,6 +2,7 @@
 #include "Components/Combat/EnemyCombatComponent.h"
 #include "AbilitySystemBlueprintLibrary.h"
 #include "W1GameplayTags.h"
+#include "W1FunctionLibrary.h"
 
 #include "W1DebugHelper.h"
 
@@ -17,12 +18,12 @@ void UEnemyCombatComponent::OnHitTargetActor(AActor* HitActor)
 	// TODO : Implement block check
 	bool bIsValidBlock = false;
 
-	const bool bIsPlayerBlocking = false;
+	const bool bIsPlayerBlocking = UW1FunctionLibrary::NativeDoesActorHaveTag(HitActor, W1GameplayTags::Player_Status_Blocking);
 	const bool bIsMyAttackUnblockable = false;
 
 	if (bIsPlayerBlocking && !bIsMyAttackUnblockable)
 	{
-		// TODO : check if the block is valid
+		bIsValidBlock = UW1FunctionLibrary::IsValidBlock(GetOwningPawn(), HitActor);
 	}
 
 	FGameplayEventData EventData;

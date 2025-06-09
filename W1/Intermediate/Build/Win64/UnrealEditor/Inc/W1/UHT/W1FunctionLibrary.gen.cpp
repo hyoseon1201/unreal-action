@@ -362,6 +362,63 @@ DEFINE_FUNCTION(UW1FunctionLibrary::execIsTargetPawnHostile)
 }
 // End Class UW1FunctionLibrary Function IsTargetPawnHostile
 
+// Begin Class UW1FunctionLibrary Function IsValidBlock
+struct Z_Construct_UFunction_UW1FunctionLibrary_IsValidBlock_Statics
+{
+	struct W1FunctionLibrary_eventIsValidBlock_Parms
+	{
+		AActor* InAttacker;
+		AActor* InDefender;
+		bool ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "W1|FunctionLibrary" },
+		{ "ModuleRelativePath", "W1FunctionLibrary.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_InAttacker;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_InDefender;
+	static void NewProp_ReturnValue_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UW1FunctionLibrary_IsValidBlock_Statics::NewProp_InAttacker = { "InAttacker", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1FunctionLibrary_eventIsValidBlock_Parms, InAttacker), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UW1FunctionLibrary_IsValidBlock_Statics::NewProp_InDefender = { "InDefender", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1FunctionLibrary_eventIsValidBlock_Parms, InDefender), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+void Z_Construct_UFunction_UW1FunctionLibrary_IsValidBlock_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+{
+	((W1FunctionLibrary_eventIsValidBlock_Parms*)Obj)->ReturnValue = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UW1FunctionLibrary_IsValidBlock_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(W1FunctionLibrary_eventIsValidBlock_Parms), &Z_Construct_UFunction_UW1FunctionLibrary_IsValidBlock_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UW1FunctionLibrary_IsValidBlock_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1FunctionLibrary_IsValidBlock_Statics::NewProp_InAttacker,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1FunctionLibrary_IsValidBlock_Statics::NewProp_InDefender,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1FunctionLibrary_IsValidBlock_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UW1FunctionLibrary_IsValidBlock_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UW1FunctionLibrary_IsValidBlock_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UW1FunctionLibrary, nullptr, "IsValidBlock", nullptr, nullptr, Z_Construct_UFunction_UW1FunctionLibrary_IsValidBlock_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UW1FunctionLibrary_IsValidBlock_Statics::PropPointers), sizeof(Z_Construct_UFunction_UW1FunctionLibrary_IsValidBlock_Statics::W1FunctionLibrary_eventIsValidBlock_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UW1FunctionLibrary_IsValidBlock_Statics::Function_MetaDataParams), Z_Construct_UFunction_UW1FunctionLibrary_IsValidBlock_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UW1FunctionLibrary_IsValidBlock_Statics::W1FunctionLibrary_eventIsValidBlock_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UW1FunctionLibrary_IsValidBlock()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UW1FunctionLibrary_IsValidBlock_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UW1FunctionLibrary::execIsValidBlock)
+{
+	P_GET_OBJECT(AActor,Z_Param_InAttacker);
+	P_GET_OBJECT(AActor,Z_Param_InDefender);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(bool*)Z_Param__Result=UW1FunctionLibrary::IsValidBlock(Z_Param_InAttacker,Z_Param_InDefender);
+	P_NATIVE_END;
+}
+// End Class UW1FunctionLibrary Function IsValidBlock
+
 // Begin Class UW1FunctionLibrary Function RemoveGameplayTagFromActorIfFound
 struct Z_Construct_UFunction_UW1FunctionLibrary_RemoveGameplayTagFromActorIfFound_Statics
 {
@@ -421,6 +478,7 @@ void UW1FunctionLibrary::StaticRegisterNativesUW1FunctionLibrary()
 		{ "ComputeHitReactDirectionTag", &UW1FunctionLibrary::execComputeHitReactDirectionTag },
 		{ "GetScalableFloatValueAtLevel", &UW1FunctionLibrary::execGetScalableFloatValueAtLevel },
 		{ "IsTargetPawnHostile", &UW1FunctionLibrary::execIsTargetPawnHostile },
+		{ "IsValidBlock", &UW1FunctionLibrary::execIsValidBlock },
 		{ "RemoveGameplayTagFromActorIfFound", &UW1FunctionLibrary::execRemoveGameplayTagFromActorIfFound },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -449,6 +507,7 @@ struct Z_Construct_UClass_UW1FunctionLibrary_Statics
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_ComputeHitReactDirectionTag, "ComputeHitReactDirectionTag" }, // 886069136
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_GetScalableFloatValueAtLevel, "GetScalableFloatValueAtLevel" }, // 3031419996
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_IsTargetPawnHostile, "IsTargetPawnHostile" }, // 3746625938
+		{ &Z_Construct_UFunction_UW1FunctionLibrary_IsValidBlock, "IsValidBlock" }, // 1487582951
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_RemoveGameplayTagFromActorIfFound, "RemoveGameplayTagFromActorIfFound" }, // 105731849
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -498,10 +557,10 @@ UW1FunctionLibrary::~UW1FunctionLibrary() {}
 struct Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UW1FunctionLibrary, UW1FunctionLibrary::StaticClass, TEXT("UW1FunctionLibrary"), &Z_Registration_Info_UClass_UW1FunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UW1FunctionLibrary), 1323551186U) },
+		{ Z_Construct_UClass_UW1FunctionLibrary, UW1FunctionLibrary::StaticClass, TEXT("UW1FunctionLibrary"), &Z_Registration_Info_UClass_UW1FunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UW1FunctionLibrary), 1925689868U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_2322274811(TEXT("/Script/W1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_912547705(TEXT("/Script/W1"),
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

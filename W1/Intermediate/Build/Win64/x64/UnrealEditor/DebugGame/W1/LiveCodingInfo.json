@@ -18,7 +18,6 @@
 			"PawnExtensionComponentBase.gen.cpp.obj",
 			"PawnUIComponent.gen.cpp.obj",
 			"PawnUIInterface.gen.cpp.obj",
-			"W1.init.gen.cpp.obj",
 			"W1AbilitySystemComponent.gen.cpp.obj",
 			"W1AIController.gen.cpp.obj",
 			"W1AnimInstanceBase.gen.cpp.obj",
@@ -28,7 +27,6 @@
 			"W1EnemyCharacter.gen.cpp.obj",
 			"W1EnemyGameplayAbility.gen.cpp.obj",
 			"W1EnumTypes.gen.cpp.obj",
-			"W1FunctionLibrary.gen.cpp.obj",
 			"W1GameModeBase.gen.cpp.obj",
 			"W1GameplayAbility.gen.cpp.obj",
 			"W1HeroAnimInstance.gen.cpp.obj",
@@ -56,7 +54,6 @@
 			"W1CharacterBase.cpp.obj",
 			"W1EnemyCharacter.cpp.obj",
 			"W1HeroCharacter.cpp.obj",
-			"EnemyCombatComponent.cpp.obj",
 			"HeroCombatComponent.cpp.obj",
 			"PawnCombatComponent.cpp.obj",
 			"W1InputComponent.cpp.obj",
@@ -76,10 +73,13 @@
 			"W1HeroWeapon.cpp.obj",
 			"W1WeaponBase.cpp.obj",
 			"W1.cpp.obj",
-			"W1FunctionLibrary.cpp.obj",
 			"W1GameplayTags.cpp.obj",
 			"W1StructTypes.cpp.obj",
-			"W1WidgetBase.cpp.obj"
+			"W1WidgetBase.cpp.obj",
+			"W1.init.gen.cpp.obj",
+			"W1FunctionLibrary.gen.cpp.obj",
+			"EnemyCombatComponent.cpp.obj",
+			"W1FunctionLibrary.cpp.obj"
 		]
 	}
 }
