@@ -45,6 +45,7 @@
 			"W1GameplayAbility.cpp.obj",
 			"W1HeroGameplayAbility.cpp.obj",
 			"GEExecCalc_DamageTaken.cpp.obj",
+			"W1AbilitySystemComponent.cpp.obj",
 			"W1AttributeSet.cpp.obj",
 			"BTService_OrientToTargetActor.cpp.obj",
 			"BTTask_RotateToFaceTarget.cpp.obj",
@@ -76,10 +77,9 @@
 			"W1WeaponBase.cpp.obj",
 			"W1.cpp.obj",
 			"W1FunctionLibrary.cpp.obj",
+			"W1GameplayTags.cpp.obj",
 			"W1StructTypes.cpp.obj",
-			"W1WidgetBase.cpp.obj",
-			"W1AbilitySystemComponent.cpp.obj",
-			"W1GameplayTags.cpp.obj"
+			"W1WidgetBase.cpp.obj"
 		]
 	}
 }
