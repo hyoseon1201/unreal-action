@@ -15,7 +15,6 @@ void UEnemyCombatComponent::OnHitTargetActor(AActor* HitActor)
 
 	OverlappedActors.AddUnique(HitActor);
 
-	// TODO : Implement block check
 	bool bIsValidBlock = false;
 
 	const bool bIsPlayerBlocking = UW1FunctionLibrary::NativeDoesActorHaveTag(HitActor, W1GameplayTags::Player_Status_Blocking);
@@ -32,7 +31,7 @@ void UEnemyCombatComponent::OnHitTargetActor(AActor* HitActor)
 
 	if (bIsValidBlock)
 	{
-		// TODO : Handle successful block
+		UAbilitySystemBlueprintLibrary::SendGameplayEventToActor(HitActor, W1GameplayTags::Player_Event_SuccessfulBlock, EventData);
 	}
 	else
 	{

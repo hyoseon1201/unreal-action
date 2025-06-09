@@ -132,9 +132,9 @@ bool UW1FunctionLibrary::IsValidBlock(AActor* InAttacker, AActor* InDefender)
 
 	const float DotResult = FVector::DotProduct(InAttacker->GetActorForwardVector(), InDefender->GetActorForwardVector());
 
-	const FString DebugString = FString::Printf(TEXT("Dot result : %f %s"), DotResult, DotResult < -0.1f ? TEXT("Valid Block") : TEXT("Invalid Block"));
+	//const FString DebugString = FString::Printf(TEXT("Dot result : %f %s"), DotResult, DotResult < -0.1f ? TEXT("Valid Block") : TEXT("Invalid Block"));
 
-	Debug::Print(DebugString, DotResult < -0.1f ? FColor::Green : FColor::Red);
+	//Debug::Print(DebugString, DotResult < -0.1f ? FColor::Green : FColor::Red);
 
 	return DotResult < -0.1f ? true : false;
 }
