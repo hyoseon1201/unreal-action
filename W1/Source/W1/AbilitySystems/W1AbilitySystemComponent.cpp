@@ -18,7 +18,21 @@ void UW1AbilitySystemComponent::OnAbilityInputPressed(const FGameplayTag& InInpu
 			continue;
 		}
 
-		TryActivateAbility(AbilitySpec.Handle);
+		if (InInputTag.MatchesTag(W1GameplayTags::InputTag_Toggleable))
+		{
+			if (AbilitySpec.IsActive())
+			{
+				CancelAbilityHandle(AbilitySpec.Handle);
+			}
+			else
+			{
+				TryActivateAbility(AbilitySpec.Handle);
+			}
+		}
+		else
+		{
+			TryActivateAbility(AbilitySpec.Handle);
+		}
 	}
 }
 

@@ -75,6 +75,12 @@
     <Filter Include="Source\W1\AbilitySystems\Abilities">
       <UniqueIdentifier>{F242F0DE-5BC6-3B64-B880-9349200D47F5}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\W1\AbilitySystems\Abilities\HeroGameplayAbility_TargetLock.cpp">
+      <Filter>Source\W1\AbilitySystems\Abilities</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\AbilitySystems\Abilities\HeroGameplayAbility_TargetLock.h">
+      <Filter>Source\W1\AbilitySystems\Abilities</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\W1\AbilitySystems\Abilities\W1EnemyGameplayAbility.cpp">
       <Filter>Source\W1\AbilitySystems\Abilities</Filter>
     </ClCompile>

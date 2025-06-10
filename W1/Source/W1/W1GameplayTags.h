@@ -17,6 +17,9 @@ namespace W1GameplayTags
 	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_MustBeHeld);
 	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_MustBeHeld_Block);
 
+	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Toggleable);
+	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Toggleable_TargetLock);
+
 	//Player Tags
 	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_Equip_Axe);
 	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_Unequip_Axe);
@@ -25,6 +28,7 @@ namespace W1GameplayTags
 	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_HitPause);
 	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_Roll);
 	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_Block);
+	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_TargetLock);
 
 	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Weapon_Axe);
 
@@ -36,6 +40,7 @@ namespace W1GameplayTags
 	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Status_JumpToFinisher);
 	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Status_Rolling);
 	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Status_Blocking);
+	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Status_TargetLock);
 
 	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_SetByCaller_AttackType_Light);
 	W1_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_SetByCaller_AttackType_Heavy);
