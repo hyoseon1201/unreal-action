@@ -12,6 +12,7 @@
 #include "DataAssets/DA_HeroStartUpData.h"
 #include "Components/Combat/HeroCombatComponent.h"
 #include "Components/UI/HeroUIComponent.h"
+#include "AbilitySystemBlueprintLibrary.h"
 
 #include "W1DebugHelper.h"
 
@@ -133,10 +134,13 @@ void AW1HeroCharacter::Input_Look(const FInputActionValue& InputActionValue)
 
 void AW1HeroCharacter::Input_SwithTargetTriggered(const FInputActionValue& InputActionValue)
 {
+	SwitchDirection = InputActionValue.Get<FVector2D>();
 }
 
 void AW1HeroCharacter::Input_SwithTargetCompleted(const FInputActionValue& InputActionValue)
 {
+	FGameplayEventData Data;
+	UAbilitySystemBlueprintLibrary::SendGameplayEventToActor(this, SwitchDirection.X > 0.f ? W1GameplayTags::Player_Event_SwitchTarget_Right : W1GameplayTags::Player_Event_SwitchTarget_Left, Data);
 }
 
 void AW1HeroCharacter::Input_AbilityInputPressed(FGameplayTag InInputTag)
