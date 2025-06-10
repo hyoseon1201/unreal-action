@@ -296,6 +296,10 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\W1\AbilitySystems\Abilities\W1HeroGameplayAbility.h"/>
+    <ClCompile Include="..\..\Source\W1\AbilitySystems\AbilityTasks\AbilityTask_ExecuteTaskOnTick.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\AbilitySystems\AbilityTasks\AbilityTask_ExecuteTaskOnTick.h"/>
     <ClCompile Include="..\..\Source\W1\AbilitySystems\GEExecCalc\GEExecCalc_DamageTaken.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>

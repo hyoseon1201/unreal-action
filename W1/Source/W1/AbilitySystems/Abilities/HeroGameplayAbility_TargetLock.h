@@ -4,6 +4,8 @@
 #include "AbilitySystems/Abilities/W1HeroGameplayAbility.h"
 #include "HeroGameplayAbility_TargetLock.generated.h"
 
+class UW1WidgetBase;
+
 /**
  * 
  */
@@ -22,6 +24,8 @@ private:
 	void TryLockOnTarget();
 	void GetAvailableActorsToLock();
 	AActor* GetNearestTargetFromAvailableActors(const TArray<AActor*>& InAvailableActors);
+	void DrawTargetLockWidget();
+	void SetTargetLockWidgetPosition();
 
 	void CancelTargetLockAbility();
 	void CleanUp();
@@ -38,9 +42,18 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "Target Lock")
 	bool bShowPersistentDebugShape = false;
 
+	UPROPERTY(EditDefaultsOnly, Category = "Target Lock")
+	TSubclassOf<UW1WidgetBase> TargetLockWidgetClass;
+
 	UPROPERTY()
 	TArray<AActor*> AvailableActorsToLock;
 
 	UPROPERTY()
 	AActor* CurrentLockedActor;
+
+	UPROPERTY()
+	UW1WidgetBase* DrawnTargetLockWidget;
+
+	UPROPERTY()
+	FVector2D TargetLockWidgetSize = FVector2D::ZeroVector;
 };

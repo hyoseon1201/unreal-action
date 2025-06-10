@@ -99,6 +99,15 @@
     <ClInclude Include="..\..\Source\W1\AbilitySystems\Abilities\W1HeroGameplayAbility.h">
       <Filter>Source\W1\AbilitySystems\Abilities</Filter>
     </ClInclude>
+    <Filter Include="Source\W1\AbilitySystems\AbilityTasks">
+      <UniqueIdentifier>{C1E40AF9-C7D7-32AC-824A-2FAE196D8922}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\W1\AbilitySystems\AbilityTasks\AbilityTask_ExecuteTaskOnTick.cpp">
+      <Filter>Source\W1\AbilitySystems\AbilityTasks</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\AbilitySystems\AbilityTasks\AbilityTask_ExecuteTaskOnTick.h">
+      <Filter>Source\W1\AbilitySystems\AbilityTasks</Filter>
+    </ClInclude>
     <Filter Include="Source\W1\AbilitySystems\GEExecCalc">
       <UniqueIdentifier>{AF64517D-C938-36ED-8429-DD5171BA2F94}</UniqueIdentifier>
     </Filter>
