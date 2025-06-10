@@ -1059,6 +1059,11 @@
             "e:\\ue_5.4\\engine\\source\\runtime\\gameplaytags\\public\\nativegameplaytags.h",
             "e:\\ue_5.4\\engine\\source\\runtime\\gameplaytags\\classes\\gameplaytagsmanager.h",
             "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\gameplaytags\\uht\\gameplaytagsmanager.generated.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\core\\public\\misc\\qualifiedframetime.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\core\\public\\misc\\timecode.h",
+            "e:\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\kismetmathlibrary.generated.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.inl",
             "e:\\unreal-action\\w1\\source\\w1\\w1debughelper.h"
         ],
         "ImportedModules": [],

@@ -11,6 +11,7 @@
 #include "Components/SizeBox.h"
 #include "W1FunctionLibrary.h"
 #include "W1GameplayTags.h"
+#include "Kismet/KismetMathLibrary.h"
 
 #include "W1DebugHelper.h"
 
@@ -39,6 +40,22 @@ void UHeroGameplayAbility_TargetLock::OnTargetLockTick(float DeltaTime)
 	}
 
 	SetTargetLockWidgetPosition();
+
+	const bool bShouldOverrideRotation = 
+		!UW1FunctionLibrary::NativeDoesActorHaveTag(GetHeroCharacterFromActorInfo(), W1GameplayTags::Player_Status_Rolling)
+		&&
+		!UW1FunctionLibrary::NativeDoesActorHaveTag(GetHeroCharacterFromActorInfo(), W1GameplayTags::Player_Status_Blocking);
+
+	if (bShouldOverrideRotation)
+	{
+		const FRotator LookAtRot = UKismetMathLibrary::FindLookAtRotation(GetHeroCharacterFromActorInfo()->GetActorLocation(), CurrentLockedActor->GetActorLocation());
+		
+		const FRotator CurrentControlRot = GetHeroControllerFromActorInfo()->GetControlRotation();
+		const FRotator TargetRot = FMath::RInterpTo(CurrentControlRot, LookAtRot, DeltaTime, TargetLockRotationInterSpeed);
+
+		GetHeroControllerFromActorInfo()->SetControlRotation(FRotator(TargetRot.Pitch, TargetRot.Yaw, 0.f));
+		GetHeroCharacterFromActorInfo()->SetActorRotation(FRotator(0.f, TargetRot.Yaw, 0.f));
+	}
 }
 
 void UHeroGameplayAbility_TargetLock::TryLockOnTarget()
