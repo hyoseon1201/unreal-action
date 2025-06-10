@@ -2,6 +2,7 @@
 	"RemapUnityFiles": 
 	{
 		"Module.W1.cpp.obj": [
+			"AbilityTask_ExecuteTaskOnTick.gen.cpp.obj",
 			"BTService_OrientToTargetActor.gen.cpp.obj",
 			"BTTask_RotateToFaceTarget.gen.cpp.obj",
 			"DA_EnemyStartUpData.gen.cpp.obj",
@@ -43,6 +44,7 @@
 			"W1EnemyGameplayAbility.cpp.obj",
 			"W1GameplayAbility.cpp.obj",
 			"W1HeroGameplayAbility.cpp.obj",
+			"AbilityTask_ExecuteTaskOnTick.cpp.obj",
 			"GEExecCalc_DamageTaken.cpp.obj",
 			"W1AbilitySystemComponent.cpp.obj",
 			"W1AttributeSet.cpp.obj",
@@ -79,11 +81,9 @@
 			"W1GameplayTags.cpp.obj",
 			"W1StructTypes.cpp.obj",
 			"W1WidgetBase.cpp.obj",
-			"AbilityTask_ExecuteTaskOnTick.gen.cpp.obj",
 			"HeroGameplayAbility_TargetLock.gen.cpp.obj",
 			"W1.init.gen.cpp.obj",
-			"HeroGameplayAbility_TargetLock.cpp.obj",
-			"AbilityTask_ExecuteTaskOnTick.cpp.obj"
+			"HeroGameplayAbility_TargetLock.cpp.obj"
 		]
 	}
 }

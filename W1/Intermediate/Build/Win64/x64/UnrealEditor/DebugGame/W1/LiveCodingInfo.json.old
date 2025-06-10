@@ -13,12 +13,14 @@
 			"EnemyUIComponent.gen.cpp.obj",
 			"GEExecCalc_DamageTaken.gen.cpp.obj",
 			"HeroCombatComponent.gen.cpp.obj",
+			"HeroGameplayAbility_TargetLock.gen.cpp.obj",
 			"HeroUIComponent.gen.cpp.obj",
 			"PawnCombatComponent.gen.cpp.obj",
 			"PawnCombatInterface.gen.cpp.obj",
 			"PawnExtensionComponentBase.gen.cpp.obj",
 			"PawnUIComponent.gen.cpp.obj",
 			"PawnUIInterface.gen.cpp.obj",
+			"W1.init.gen.cpp.obj",
 			"W1AbilitySystemComponent.gen.cpp.obj",
 			"W1AIController.gen.cpp.obj",
 			"W1AnimInstanceBase.gen.cpp.obj",
@@ -44,6 +46,7 @@
 			"W1EnemyGameplayAbility.cpp.obj",
 			"W1GameplayAbility.cpp.obj",
 			"W1HeroGameplayAbility.cpp.obj",
+			"AbilityTask_ExecuteTaskOnTick.cpp.obj",
 			"GEExecCalc_DamageTaken.cpp.obj",
 			"W1AbilitySystemComponent.cpp.obj",
 			"W1AttributeSet.cpp.obj",
@@ -80,10 +83,7 @@
 			"W1GameplayTags.cpp.obj",
 			"W1StructTypes.cpp.obj",
 			"W1WidgetBase.cpp.obj",
-			"HeroGameplayAbility_TargetLock.gen.cpp.obj",
-			"W1.init.gen.cpp.obj",
-			"HeroGameplayAbility_TargetLock.cpp.obj",
-			"AbilityTask_ExecuteTaskOnTick.cpp.obj"
+			"HeroGameplayAbility_TargetLock.cpp.obj"
 		]
 	}
 }

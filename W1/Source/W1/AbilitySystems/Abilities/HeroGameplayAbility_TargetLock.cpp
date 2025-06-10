@@ -9,6 +9,8 @@
 #include "Blueprint/WidgetLayoutLibrary.h"
 #include "Blueprint/WidgetTree.h"
 #include "Components/SizeBox.h"
+#include "W1FunctionLibrary.h"
+#include "W1GameplayTags.h"
 
 #include "W1DebugHelper.h"
 
@@ -24,6 +26,19 @@ void UHeroGameplayAbility_TargetLock::EndAbility(const FGameplayAbilitySpecHandl
 	CleanUp();
 
 	Super::EndAbility(Handle, ActorInfo, ActivationInfo, bReplicateEndAbility, bWasCancelled);
+}
+
+void UHeroGameplayAbility_TargetLock::OnTargetLockTick(float DeltaTime)
+{
+	if (!CurrentLockedActor || 
+		UW1FunctionLibrary::NativeDoesActorHaveTag(CurrentLockedActor, W1GameplayTags::Shared_Status_Dead) ||
+		UW1FunctionLibrary::NativeDoesActorHaveTag(GetHeroCharacterFromActorInfo(), W1GameplayTags::Shared_Status_Dead))
+	{
+		CancelTargetLockAbility();
+		return;
+	}
+
+	SetTargetLockWidgetPosition();
 }
 
 void UHeroGameplayAbility_TargetLock::TryLockOnTarget()
@@ -145,4 +160,8 @@ void UHeroGameplayAbility_TargetLock::CleanUp()
 	{
 		DrawnTargetLockWidget->RemoveFromParent();
 	}
+
+	DrawnTargetLockWidget = nullptr;
+
+	TargetLockWidgetSize = FVector2D::ZeroVector;
 }

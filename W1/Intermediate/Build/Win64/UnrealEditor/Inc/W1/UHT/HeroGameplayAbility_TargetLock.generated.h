@@ -14,6 +14,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define W1_HeroGameplayAbility_TargetLock_generated_h
 
+#define FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_HeroGameplayAbility_TargetLock_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execOnTargetLockTick);
+
+
 #define FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_HeroGameplayAbility_TargetLock_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUHeroGameplayAbility_TargetLock(); \
@@ -41,6 +45,7 @@ public: \
 #define FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_HeroGameplayAbility_TargetLock_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_HeroGameplayAbility_TargetLock_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_HeroGameplayAbility_TargetLock_h_15_INCLASS_NO_PURE_DECLS \
 	FID_unreal_action_W1_Source_W1_AbilitySystems_Abilities_HeroGameplayAbility_TargetLock_h_15_ENHANCED_CONSTRUCTORS \
 private: \
