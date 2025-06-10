@@ -121,6 +121,8 @@
 				"E:/unreal-action/W1/Content/PlayerCharacter/AnimBP/BlendSpace/BS_DirectionalLocomotion_Axe.uasset",
 				"E:/unreal-action/W1/Content/PlayerCharacter/AnimBP/MasterAnimLayer_Hero.uasset",
 				"E:/unreal-action/W1/Content/PlayerCharacter/AnimBP/AnimLayer/AnimLayer_HeroAxe.uasset",
+				"E:/unreal-action/W1/Content/PlayerCharacter/Input/Actions/IA_SwitchTarget.uasset",
+				"E:/unreal-action/W1/Content/PlayerCharacter/Input/IMC_TargetLock.uasset",
 				"E:/unreal-action/W1/Content/__ExternalActors__/Maps/FeatureDevMap/F/57/HXIUC7U7TU869LEQZIGBM1.uasset",
 				"E:/unreal-action/W1/Content/__ExternalActors__/Maps/FeatureDevMap/3/MX/B6T476LXZZ7R0YOD1C16Y4.uasset",
 				"E:/unreal-action/W1/Content/Assets/HeroCharacter/Animations/Axe/AM_Hero_StandingBlock_Idle.uasset",

@@ -78,12 +78,12 @@
 			"W1WeaponBase.cpp.obj",
 			"W1.cpp.obj",
 			"W1FunctionLibrary.cpp.obj",
-			"W1GameplayTags.cpp.obj",
 			"W1StructTypes.cpp.obj",
 			"W1WidgetBase.cpp.obj",
 			"HeroGameplayAbility_TargetLock.gen.cpp.obj",
 			"W1.init.gen.cpp.obj",
-			"HeroGameplayAbility_TargetLock.cpp.obj"
+			"HeroGameplayAbility_TargetLock.cpp.obj",
+			"W1GameplayTags.cpp.obj"
 		]
 	}
 }
