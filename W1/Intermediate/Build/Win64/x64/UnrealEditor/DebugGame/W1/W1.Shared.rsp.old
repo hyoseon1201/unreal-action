@@ -298,6 +298,9 @@
 /I "E:\unreal-action\W1\Source"
 /I "..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimGraphRuntime\UHT"
 /I "Runtime\AnimGraphRuntime\Public"
+/I "..\Plugins\Animation\MotionWarping\Intermediate\Build\Win64\UnrealEditor\Inc\MotionWarping\UHT"
+/I "..\Plugins\Animation\MotionWarping\Source"
+/I "..\Plugins\Animation\MotionWarping\Source\MotionWarping\Public"
 /external:W0
 /external:I "ThirdParty\LibTiff\Source\Win64"
 /external:I "ThirdParty\LibTiff\Source"

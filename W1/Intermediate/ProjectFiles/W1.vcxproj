@@ -408,6 +408,10 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\W1\Interfaces\PawnUIInterface.h"/>
+    <ClCompile Include="..\..\Source\W1\Items\W1ProjectileBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Items\W1ProjectileBase.h"/>
     <ClCompile Include="..\..\Source\W1\Items\Weapons\W1HeroWeapon.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>

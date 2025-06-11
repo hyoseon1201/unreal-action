@@ -315,6 +315,12 @@
     <Filter Include="Source\W1\Items">
       <UniqueIdentifier>{B377E2CC-6BDD-3F6B-B463-A4B692C306BE}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\W1\Items\W1ProjectileBase.cpp">
+      <Filter>Source\W1\Items</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\Items\W1ProjectileBase.h">
+      <Filter>Source\W1\Items</Filter>
+    </ClInclude>
     <Filter Include="Source\W1\Items\Weapons">
       <UniqueIdentifier>{81A8DCB3-0567-30C0-8E9F-9F0CBC1811FB}</UniqueIdentifier>
     </Filter>

@@ -23,7 +23,8 @@ public class W1 : ModuleRules
 			"GameplayTags",
 			"GameplayTasks",
             "AnimGraphRuntime",
-            "MotionWarping"
+            "MotionWarping",
+            "Niagara"
         });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
