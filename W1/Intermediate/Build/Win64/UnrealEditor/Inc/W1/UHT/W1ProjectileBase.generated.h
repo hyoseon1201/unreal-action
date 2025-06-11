@@ -9,11 +9,20 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
+class UPrimitiveComponent;
+struct FHitResult;
 #ifdef W1_W1ProjectileBase_generated_h
 #error "W1ProjectileBase.generated.h already included, missing '#pragma once' in W1ProjectileBase.h"
 #endif
 #define W1_W1ProjectileBase_generated_h
 
+#define FID_unreal_action_W1_Source_W1_Items_W1ProjectileBase_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execOnProjectileBeginOverlap); \
+	DECLARE_FUNCTION(execOnProjectileHit);
+
+
+#define FID_unreal_action_W1_Source_W1_Items_W1ProjectileBase_h_21_CALLBACK_WRAPPERS
 #define FID_unreal_action_W1_Source_W1_Items_W1ProjectileBase_h_21_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAW1ProjectileBase(); \
@@ -39,6 +48,8 @@ public: \
 #define FID_unreal_action_W1_Source_W1_Items_W1ProjectileBase_h_21_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_unreal_action_W1_Source_W1_Items_W1ProjectileBase_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_unreal_action_W1_Source_W1_Items_W1ProjectileBase_h_21_CALLBACK_WRAPPERS \
 	FID_unreal_action_W1_Source_W1_Items_W1ProjectileBase_h_21_INCLASS_NO_PURE_DECLS \
 	FID_unreal_action_W1_Source_W1_Items_W1ProjectileBase_h_21_ENHANCED_CONSTRUCTORS \
 private: \
