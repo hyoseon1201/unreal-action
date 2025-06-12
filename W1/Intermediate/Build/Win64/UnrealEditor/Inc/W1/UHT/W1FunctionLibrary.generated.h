@@ -14,6 +14,7 @@ class APawn;
 class UPawnCombatComponent;
 enum class EW1ConfirmType : uint8;
 enum class EW1ValidType : uint8;
+struct FGameplayEffectSpecHandle;
 struct FGameplayTag;
 struct FScalableFloat;
 #ifdef W1_W1FunctionLibrary_generated_h
@@ -22,6 +23,7 @@ struct FScalableFloat;
 #define W1_W1FunctionLibrary_generated_h
 
 #define FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execApplyGameplayEffectSpecHandleToTargetActor); \
 	DECLARE_FUNCTION(execIsValidBlock); \
 	DECLARE_FUNCTION(execComputeHitReactDirectionTag); \
 	DECLARE_FUNCTION(execGetScalableFloatValueAtLevel); \

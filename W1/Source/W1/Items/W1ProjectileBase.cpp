@@ -75,7 +75,7 @@ void AW1ProjectileBase::OnProjectileHit(UPrimitiveComponent* HitComponent, AActo
 	}
 	else
 	{
-		// Apply Handle Damage
+		HandleApplyProjectileDamage(HitPawn, Data);
 	}
 
 	Destroy();
@@ -83,4 +83,15 @@ void AW1ProjectileBase::OnProjectileHit(UPrimitiveComponent* HitComponent, AActo
 
 void AW1ProjectileBase::OnProjectileBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
+}
+
+void AW1ProjectileBase::HandleApplyProjectileDamage(APawn* InHitPawn, const FGameplayEventData& InPayload)
+{
+	checkf(ProjectileDamageEffectSpecHandle.IsValid(), TEXT("Forgot to assign a valid spec handle to the projectile : %s"), *GetActorNameOrLabel());
+	const bool bWasApplied = UW1FunctionLibrary::ApplyGameplayEffectSpecHandleToTargetActor(GetInstigator(), InHitPawn, ProjectileDamageEffectSpecHandle);
+
+	if (bWasApplied)
+	{
+		UAbilitySystemBlueprintLibrary::SendGameplayEventToActor(InHitPawn, W1GameplayTags::Shared_Event_HitReact, InPayload);
+	}
 }

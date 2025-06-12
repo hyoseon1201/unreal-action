@@ -6,6 +6,7 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "W1/W1FunctionLibrary.h"
+#include "GameplayAbilities/Public/GameplayEffectTypes.h"
 #include "GameplayAbilities/Public/ScalableFloat.h"
 #include "Runtime/GameplayTags/Classes/GameplayTagContainer.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
@@ -15,6 +16,7 @@ void EmptyLinkFunctionForGeneratedCodeW1FunctionLibrary() {}
 ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_APawn_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UBlueprintFunctionLibrary();
+GAMEPLAYABILITIES_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayEffectSpecHandle();
 GAMEPLAYABILITIES_API UScriptStruct* Z_Construct_UScriptStruct_FScalableFloat();
 GAMEPLAYTAGS_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayTag();
 UPackage* Z_Construct_UPackage__Script_W1();
@@ -72,6 +74,71 @@ DEFINE_FUNCTION(UW1FunctionLibrary::execAddGameplayTagToActorIfNone)
 	P_NATIVE_END;
 }
 // End Class UW1FunctionLibrary Function AddGameplayTagToActorIfNone
+
+// Begin Class UW1FunctionLibrary Function ApplyGameplayEffectSpecHandleToTargetActor
+struct Z_Construct_UFunction_UW1FunctionLibrary_ApplyGameplayEffectSpecHandleToTargetActor_Statics
+{
+	struct W1FunctionLibrary_eventApplyGameplayEffectSpecHandleToTargetActor_Parms
+	{
+		AActor* InInstigator;
+		AActor* InTargetActor;
+		FGameplayEffectSpecHandle InSpecHandle;
+		bool ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "W1|FunctionLibrary" },
+		{ "ModuleRelativePath", "W1FunctionLibrary.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InSpecHandle_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_InInstigator;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_InTargetActor;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_InSpecHandle;
+	static void NewProp_ReturnValue_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UW1FunctionLibrary_ApplyGameplayEffectSpecHandleToTargetActor_Statics::NewProp_InInstigator = { "InInstigator", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1FunctionLibrary_eventApplyGameplayEffectSpecHandleToTargetActor_Parms, InInstigator), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UW1FunctionLibrary_ApplyGameplayEffectSpecHandleToTargetActor_Statics::NewProp_InTargetActor = { "InTargetActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1FunctionLibrary_eventApplyGameplayEffectSpecHandleToTargetActor_Parms, InTargetActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UW1FunctionLibrary_ApplyGameplayEffectSpecHandleToTargetActor_Statics::NewProp_InSpecHandle = { "InSpecHandle", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(W1FunctionLibrary_eventApplyGameplayEffectSpecHandleToTargetActor_Parms, InSpecHandle), Z_Construct_UScriptStruct_FGameplayEffectSpecHandle, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InSpecHandle_MetaData), NewProp_InSpecHandle_MetaData) }; // 3383902265
+void Z_Construct_UFunction_UW1FunctionLibrary_ApplyGameplayEffectSpecHandleToTargetActor_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+{
+	((W1FunctionLibrary_eventApplyGameplayEffectSpecHandleToTargetActor_Parms*)Obj)->ReturnValue = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UW1FunctionLibrary_ApplyGameplayEffectSpecHandleToTargetActor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(W1FunctionLibrary_eventApplyGameplayEffectSpecHandleToTargetActor_Parms), &Z_Construct_UFunction_UW1FunctionLibrary_ApplyGameplayEffectSpecHandleToTargetActor_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UW1FunctionLibrary_ApplyGameplayEffectSpecHandleToTargetActor_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1FunctionLibrary_ApplyGameplayEffectSpecHandleToTargetActor_Statics::NewProp_InInstigator,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1FunctionLibrary_ApplyGameplayEffectSpecHandleToTargetActor_Statics::NewProp_InTargetActor,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1FunctionLibrary_ApplyGameplayEffectSpecHandleToTargetActor_Statics::NewProp_InSpecHandle,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UW1FunctionLibrary_ApplyGameplayEffectSpecHandleToTargetActor_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UW1FunctionLibrary_ApplyGameplayEffectSpecHandleToTargetActor_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UW1FunctionLibrary_ApplyGameplayEffectSpecHandleToTargetActor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UW1FunctionLibrary, nullptr, "ApplyGameplayEffectSpecHandleToTargetActor", nullptr, nullptr, Z_Construct_UFunction_UW1FunctionLibrary_ApplyGameplayEffectSpecHandleToTargetActor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UW1FunctionLibrary_ApplyGameplayEffectSpecHandleToTargetActor_Statics::PropPointers), sizeof(Z_Construct_UFunction_UW1FunctionLibrary_ApplyGameplayEffectSpecHandleToTargetActor_Statics::W1FunctionLibrary_eventApplyGameplayEffectSpecHandleToTargetActor_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UW1FunctionLibrary_ApplyGameplayEffectSpecHandleToTargetActor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UW1FunctionLibrary_ApplyGameplayEffectSpecHandleToTargetActor_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UW1FunctionLibrary_ApplyGameplayEffectSpecHandleToTargetActor_Statics::W1FunctionLibrary_eventApplyGameplayEffectSpecHandleToTargetActor_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UW1FunctionLibrary_ApplyGameplayEffectSpecHandleToTargetActor()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UW1FunctionLibrary_ApplyGameplayEffectSpecHandleToTargetActor_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UW1FunctionLibrary::execApplyGameplayEffectSpecHandleToTargetActor)
+{
+	P_GET_OBJECT(AActor,Z_Param_InInstigator);
+	P_GET_OBJECT(AActor,Z_Param_InTargetActor);
+	P_GET_STRUCT_REF(FGameplayEffectSpecHandle,Z_Param_Out_InSpecHandle);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(bool*)Z_Param__Result=UW1FunctionLibrary::ApplyGameplayEffectSpecHandleToTargetActor(Z_Param_InInstigator,Z_Param_InTargetActor,Z_Param_Out_InSpecHandle);
+	P_NATIVE_END;
+}
+// End Class UW1FunctionLibrary Function ApplyGameplayEffectSpecHandleToTargetActor
 
 // Begin Class UW1FunctionLibrary Function BP_DoesActorHaveTag
 struct Z_Construct_UFunction_UW1FunctionLibrary_BP_DoesActorHaveTag_Statics
@@ -473,6 +540,7 @@ void UW1FunctionLibrary::StaticRegisterNativesUW1FunctionLibrary()
 	UClass* Class = UW1FunctionLibrary::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
 		{ "AddGameplayTagToActorIfNone", &UW1FunctionLibrary::execAddGameplayTagToActorIfNone },
+		{ "ApplyGameplayEffectSpecHandleToTargetActor", &UW1FunctionLibrary::execApplyGameplayEffectSpecHandleToTargetActor },
 		{ "BP_DoesActorHaveTag", &UW1FunctionLibrary::execBP_DoesActorHaveTag },
 		{ "BP_GetPawnCombatComponentFromActor", &UW1FunctionLibrary::execBP_GetPawnCombatComponentFromActor },
 		{ "ComputeHitReactDirectionTag", &UW1FunctionLibrary::execComputeHitReactDirectionTag },
@@ -502,6 +570,7 @@ struct Z_Construct_UClass_UW1FunctionLibrary_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_AddGameplayTagToActorIfNone, "AddGameplayTagToActorIfNone" }, // 2269320346
+		{ &Z_Construct_UFunction_UW1FunctionLibrary_ApplyGameplayEffectSpecHandleToTargetActor, "ApplyGameplayEffectSpecHandleToTargetActor" }, // 437910561
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_BP_DoesActorHaveTag, "BP_DoesActorHaveTag" }, // 2172562801
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_BP_GetPawnCombatComponentFromActor, "BP_GetPawnCombatComponentFromActor" }, // 939907904
 		{ &Z_Construct_UFunction_UW1FunctionLibrary_ComputeHitReactDirectionTag, "ComputeHitReactDirectionTag" }, // 886069136
@@ -557,10 +626,10 @@ UW1FunctionLibrary::~UW1FunctionLibrary() {}
 struct Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UW1FunctionLibrary, UW1FunctionLibrary::StaticClass, TEXT("UW1FunctionLibrary"), &Z_Registration_Info_UClass_UW1FunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UW1FunctionLibrary), 1925689868U) },
+		{ Z_Construct_UClass_UW1FunctionLibrary, UW1FunctionLibrary::StaticClass, TEXT("UW1FunctionLibrary"), &Z_Registration_Info_UClass_UW1FunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UW1FunctionLibrary), 3516160659U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_912547705(TEXT("/Script/W1"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_1774358448(TEXT("/Script/W1"),
 	Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_unreal_action_W1_Source_W1_W1FunctionLibrary_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

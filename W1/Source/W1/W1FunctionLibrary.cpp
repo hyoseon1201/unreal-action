@@ -138,3 +138,13 @@ bool UW1FunctionLibrary::IsValidBlock(AActor* InAttacker, AActor* InDefender)
 
 	return DotResult < -0.1f;
 }
+
+bool UW1FunctionLibrary::ApplyGameplayEffectSpecHandleToTargetActor(AActor* InInstigator, AActor* InTargetActor, const FGameplayEffectSpecHandle& InSpecHandle)
+{
+	UW1AbilitySystemComponent* SourceASC = NativeGetW1ASCFromActor(InInstigator);
+	UW1AbilitySystemComponent* TargetASC = NativeGetW1ASCFromActor(InTargetActor);
+
+	FActiveGameplayEffectHandle ActiveGameplayEffectHandle = SourceASC->ApplyGameplayEffectSpecToTarget(*InSpecHandle.Data, TargetASC);
+
+	return ActiveGameplayEffectHandle.WasSuccessfullyApplied();
+}
