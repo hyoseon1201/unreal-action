@@ -61,7 +61,6 @@
 			"W1CharacterBase.cpp.obj",
 			"W1EnemyCharacter.cpp.obj",
 			"W1HeroCharacter.cpp.obj",
-			"EnemyCombatComponent.cpp.obj",
 			"HeroCombatComponent.cpp.obj",
 			"PawnCombatComponent.cpp.obj",
 			"W1InputComponent.cpp.obj",
@@ -85,6 +84,7 @@
 			"W1FunctionLibrary.cpp.obj",
 			"W1StructTypes.cpp.obj",
 			"W1WidgetBase.cpp.obj",
+			"EnemyCombatComponent.cpp.obj",
 			"W1GameplayTags.cpp.obj"
 		]
 	}
