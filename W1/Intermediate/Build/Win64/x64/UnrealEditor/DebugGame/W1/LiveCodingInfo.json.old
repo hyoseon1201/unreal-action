@@ -29,7 +29,6 @@
 			"W1EnemyCharacter.gen.cpp.obj",
 			"W1EnemyGameplayAbility.gen.cpp.obj",
 			"W1EnumTypes.gen.cpp.obj",
-			"W1FunctionLibrary.gen.cpp.obj",
 			"W1GameModeBase.gen.cpp.obj",
 			"W1GameplayAbility.gen.cpp.obj",
 			"W1HeroAnimInstance.gen.cpp.obj",
@@ -83,6 +82,7 @@
 			"W1StructTypes.cpp.obj",
 			"W1WidgetBase.cpp.obj",
 			"W1.init.gen.cpp.obj",
+			"W1FunctionLibrary.gen.cpp.obj",
 			"W1ProjectileBase.gen.cpp.obj",
 			"W1ProjectileBase.cpp.obj",
 			"W1FunctionLibrary.cpp.obj"
