@@ -61,11 +61,11 @@
 			"W1CharacterBase.cpp.obj",
 			"W1EnemyCharacter.cpp.obj",
 			"W1HeroCharacter.cpp.obj",
+			"EnemyCombatComponent.cpp.obj",
 			"HeroCombatComponent.cpp.obj",
 			"PawnCombatComponent.cpp.obj",
 			"W1InputComponent.cpp.obj",
 			"PawnExtensionComponentBase.cpp.obj",
-			"EnemyUIComponent.cpp.obj",
 			"HeroUIComponent.cpp.obj",
 			"PawnUIComponent.cpp.obj",
 			"W1AIController.cpp.obj",
@@ -82,10 +82,10 @@
 			"W1WeaponBase.cpp.obj",
 			"W1.cpp.obj",
 			"W1FunctionLibrary.cpp.obj",
+			"W1GameplayTags.cpp.obj",
 			"W1StructTypes.cpp.obj",
 			"W1WidgetBase.cpp.obj",
-			"EnemyCombatComponent.cpp.obj",
-			"W1GameplayTags.cpp.obj"
+			"EnemyUIComponent.cpp.obj"
 		]
 	}
 }
