@@ -18,7 +18,7 @@ class W1_API UAbilityTask_WaitSpawnEnemies : public UAbilityTask
 	
 public:
 	UFUNCTION(BlueprintCallable, Category = "W1|AbilityTasks", meta = (DisplayName = "Wait Gameplay Event And Spawn Enemies", HidePin = "OwningAbility", DefaultToSelf = "OwningAbility", BlueprintInternalUseOnly = "true", NumToSpawn = "1", RandomSpawnRadius = "200"))
-	static UAbilityTask_WaitSpawnEnemies* WaitSpawnEnemies(UGameplayAbility* OwningAbility, FGameplayTag EventTag, TSoftClassPtr<AW1EnemyCharacter> SoftEnemyClassToSpawn, int32 NumToSpawn, const FVector& SpawnOrigin, float RandomSpawnRadius, const FRotator& SpawnRotation);
+	static UAbilityTask_WaitSpawnEnemies* WaitSpawnEnemies(UGameplayAbility* OwningAbility, FGameplayTag EventTag, TSoftClassPtr<AW1EnemyCharacter> SoftEnemyClassToSpawn, int32 NumToSpawn, const FVector& SpawnOrigin, float RandomSpawnRadius);
 
 	UPROPERTY(BlueprintAssignable)
 	FWaitSpawnEnemiesDelegate OnSpawnFinished;
@@ -37,8 +37,8 @@ private:
 	int32 CachedNumToSpawn;
 	FVector CachedSpawnOrigin;
 	float CachedRandomSpawnRadius;
-	FRotator CachedSpawnRotation;
 	FDelegateHandle DelegateHandle;
 
 	void OnGameplayEventReceived(const FGameplayEventData* InPayload);
+	void OnEnemyClassLoaded();
 };

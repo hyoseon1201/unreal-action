@@ -68,6 +68,7 @@
 			"EnemyUIComponent.cpp.obj",
 			"HeroUIComponent.cpp.obj",
 			"PawnUIComponent.cpp.obj",
+			"W1AIController.cpp.obj",
 			"W1HeroController.cpp.obj",
 			"DA_EnemyStartUpData.cpp.obj",
 			"DA_HeroStartUpData.cpp.obj",
@@ -81,13 +82,12 @@
 			"W1WeaponBase.cpp.obj",
 			"W1.cpp.obj",
 			"W1FunctionLibrary.cpp.obj",
+			"W1GameplayTags.cpp.obj",
 			"W1StructTypes.cpp.obj",
 			"W1WidgetBase.cpp.obj",
 			"AbilityTask_WaitSpawnEnemies.gen.cpp.obj",
 			"W1.init.gen.cpp.obj",
-			"AbilityTask_WaitSpawnEnemies.cpp.obj",
-			"W1AIController.cpp.obj",
-			"W1GameplayTags.cpp.obj"
+			"AbilityTask_WaitSpawnEnemies.cpp.obj"
 		]
 	}
 }

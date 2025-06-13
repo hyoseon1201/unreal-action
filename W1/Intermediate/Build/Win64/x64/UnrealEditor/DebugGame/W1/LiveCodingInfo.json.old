@@ -3,6 +3,7 @@
 	{
 		"Module.W1.cpp.obj": [
 			"AbilityTask_ExecuteTaskOnTick.gen.cpp.obj",
+			"AbilityTask_WaitSpawnEnemies.gen.cpp.obj",
 			"BTService_OrientToTargetActor.gen.cpp.obj",
 			"BTTask_RotateToFaceTarget.gen.cpp.obj",
 			"DA_EnemyStartUpData.gen.cpp.obj",
@@ -20,6 +21,7 @@
 			"PawnExtensionComponentBase.gen.cpp.obj",
 			"PawnUIComponent.gen.cpp.obj",
 			"PawnUIInterface.gen.cpp.obj",
+			"W1.init.gen.cpp.obj",
 			"W1AbilitySystemComponent.gen.cpp.obj",
 			"W1AIController.gen.cpp.obj",
 			"W1AnimInstanceBase.gen.cpp.obj",
@@ -82,12 +84,10 @@
 			"W1WeaponBase.cpp.obj",
 			"W1.cpp.obj",
 			"W1FunctionLibrary.cpp.obj",
+			"W1GameplayTags.cpp.obj",
 			"W1StructTypes.cpp.obj",
 			"W1WidgetBase.cpp.obj",
-			"AbilityTask_WaitSpawnEnemies.gen.cpp.obj",
-			"W1.init.gen.cpp.obj",
-			"AbilityTask_WaitSpawnEnemies.cpp.obj",
-			"W1GameplayTags.cpp.obj"
+			"AbilityTask_WaitSpawnEnemies.cpp.obj"
 		]
 	}
 }
