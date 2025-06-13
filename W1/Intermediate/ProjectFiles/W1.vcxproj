@@ -300,6 +300,10 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\W1\AbilitySystems\AbilityTasks\AbilityTask_ExecuteTaskOnTick.h"/>
+    <ClCompile Include="..\..\Source\W1\AbilitySystems\AbilityTasks\AbilityTask_WaitSpawnEnemies.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\W1\AbilitySystems\AbilityTasks\AbilityTask_WaitSpawnEnemies.h"/>
     <ClCompile Include="..\..\Source\W1\AbilitySystems\GEExecCalc\GEExecCalc_DamageTaken.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
